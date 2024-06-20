@@ -27,7 +27,7 @@ export default function Home() {
         <Image
           src={Globe}
           alt="Globe"
-          className="xl:!w-[580px] xl:!h-[510px] lg:!w-[437px] lg:!h-[431px] sm:!w-[390px] sm:!h-[390px]  !w-[290px] !h-[290px] spinGlobe"
+          className="xl:!w-[560px] xl:!h-[500px] lg:!w-[437px] lg:!h-[431px] sm:!w-[390px] sm:!h-[390px]  !w-[290px] !h-[290px] spinGlobe"
         />
       </Box>
     </Box>
