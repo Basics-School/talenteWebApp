@@ -21,13 +21,13 @@ export default function Home() {
         />
       </Box>
       <Box
-        className="absolute lg:-bottom-8 -bottom-5 lg:!-right-20 -right-8"
+        className="absolute lg:-bottom-16 md:-bottom-10 -bottom-5 xl:!-right-[8.5rem] lg:-right-20 md:-right-20 -right-20"
         style={{ zIndex: -10 }}
       >
         <Image
           src={Globe}
           alt="Globe"
-          className="xl:!w-[340px] xl:!h-[340px] lg:!w-[237px] lg:!h-[201px] sm:!w-[150px] sm:!h-[150px]  !w-[110px] !h-[110px] spinGlobe"
+          className="xl:!w-[580px] xl:!h-[510px] lg:!w-[437px] lg:!h-[431px] sm:!w-[390px] sm:!h-[390px]  !w-[290px] !h-[290px] spinGlobe"
         />
       </Box>
     </Box>
