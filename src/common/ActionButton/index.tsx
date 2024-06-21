@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 import { useRouter } from "next/navigation";
-import WaitListDialog from "@/components/WaitListDIalog";
+import WaitListDialog from "@/components/WaitListDialog";
 
 interface ActionButtonProps {
   text: string;
