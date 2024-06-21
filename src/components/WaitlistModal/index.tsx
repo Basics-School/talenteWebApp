@@ -45,7 +45,7 @@ interface WaitListDialogProps {
   onClose: () => void;
 }
 
-const WaitListDialog = ({ open, onClose }: WaitListDialogProps) => {
+const WaitlistModal = ({ open, onClose }: WaitListDialogProps) => {
   const [loading, setLoading] = useState(false);
   const {
     register,
@@ -133,6 +133,7 @@ const WaitListDialog = ({ open, onClose }: WaitListDialogProps) => {
                       size="small"
                       variant="outlined"
                       {...register("name")}
+                      autoFocus
                     />
                     <Typography className="!mt-1 !ml-1 Spartan-Medium !text-sm !text-[--error-message]">
                       {errors.name?.message}
@@ -209,4 +210,4 @@ const WaitListDialog = ({ open, onClose }: WaitListDialogProps) => {
   );
 };
 
-export default WaitListDialog;
+export default WaitlistModal;

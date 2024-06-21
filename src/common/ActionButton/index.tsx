@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 import { useRouter } from "next/navigation";
-import WaitListDialog from "@/components/WaitListDialog";
+import WaitlistModal from "@/components/WaitlistModal";
 
 interface ActionButtonProps {
   text: string;
@@ -58,7 +58,7 @@ const ActionButton = ({ text, className, routeTo, openDialog }: ActionButtonProp
       >
         {text}
       </GradientButton>
-      {openDialog && <WaitListDialog open={dialogOpen} onClose={handleCloseDialog} />}
+      {openDialog && <WaitlistModal open={dialogOpen} onClose={handleCloseDialog} />}
     </>
   );
 };
