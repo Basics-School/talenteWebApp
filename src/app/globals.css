@@ -92,29 +92,24 @@ body {
 
 .animates {
   background-size: 200% 200%;
-  animation: back-forth 10s ease infinite;
+  animation: back-forth 10s linear infinite;
 }
 
 @keyframes back-forth {
   0% {
-    left: -5px;
-    top: -5px;
+    transform: scale(1);
   }
   25% {
-    left: -40px;
-    top: -40px;
+    transform: scale(1.3);
   }
   50% {
-    left: -5px;
-    left: -5px;
+    transform: scale(1);
   }
   75% {
-    left: -40px;
-    left: -40px;
+    transform: scale(1.3);
   }
   100% {
-    left: -5px;
-    top: -5px;
+    transform: scale(1);
   }
 }
 

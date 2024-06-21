@@ -11,7 +11,7 @@ import InputLabel from "@mui/material/InputLabel";
 import TextField from "@mui/material/TextField";
 import { styled } from "@mui/material/styles";
 import WaitListDialogBg from "@/assets/svg/WaitListDialogBg.svg";
-// import { axiosInstance } from "@/lib/axios";
+import { axiosInstance } from "@/lib/axios";
 
 const CustomTextField = styled(TextField)(({}) => ({
   "& .MuiOutlinedInput-root": {
@@ -27,23 +27,21 @@ interface WaitListDialogProps {
 }
 
 const WaitListDialog = ({ open, onClose }: WaitListDialogProps) => {
-  // const onSubmit = async () => {
-  //   try {
-  //     const response = await axiosInstance.post("/api/hubspot/contact", {
-  //       properties: {
-  //         email: "example@hubspot.com",
-  //         firstname: "Jane",
-  //         lastname: "Doe",
-  //         phone: "(555) 555-5555",
-  //         company: "HubSpot",
-  //         website: "hubspot.com",
-  //         lifecyclestage: "marketingqualifiedlead",
-  //       },
-  //     });
-  //   } catch (error) {
-  //     console.error(error, "error is here");
-  //   }
-  // };
+  const onSubmit = async () => {
+    try {
+      await axiosInstance.post("hubspot/contact", {
+        properties: {
+          email: "akshay@yopmail.com",
+          firstname: "Akshay",
+          lastname: "",
+          phone: "(+91) 9988312111",
+          company: "Acme",
+          website: "acme.com",
+          lifecyclestage: "marketingqualifiedlead",
+        },
+      });
+    } catch (error) {}
+  };
 
   return (
     <>
@@ -154,7 +152,7 @@ const WaitListDialog = ({ open, onClose }: WaitListDialogProps) => {
           <Button
             className="Montserrat-SemiBold !text-[--black-color] !normal-case !rounded-lg !bg-[--button-border] !w-full !mb-5 shadowSubmit"
             color="primary"
-            // onClick={onSubmit}
+            onClick={onSubmit}
           >
             Submit
           </Button>
