@@ -70,7 +70,7 @@ const WaitlistModal = ({ open, onClose }: WaitListDialogProps) => {
           setLoading(false);
           onClose();
           reset();
-          notifySuccess("Data submitted successfully");
+          notifySuccess("Request submitted successfully");
         })
         .catch(() => {
           setLoading(false);
