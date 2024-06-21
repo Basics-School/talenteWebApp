@@ -70,7 +70,7 @@ const Navbar = () => {
       <Image
         src={DottedCircle}
         alt="Dotted Image"
-        className="absolute top-0 left-0 lg:!w-[210px] lg:!h-[210px] !w-[150px] !h-[150px]"
+        className="absolute top-0 left-0 lg:!w-[250px] lg:!h-[250px] !w-[150px] !h-[150px] animates"
       />
       <CssBaseline />
       <AppBar
