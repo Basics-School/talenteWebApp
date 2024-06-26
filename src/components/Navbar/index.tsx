@@ -68,6 +68,7 @@ const Navbar = () => {
   return (
     <Box className="relative">
       <Image
+        draggable="false"
         src={DottedCircle}
         alt="Dotted Image"
         className="absolute top-0 left-0 lg:!w-[250px] lg:!h-[250px] !w-[150px] !h-[150px] animates"
@@ -83,8 +84,9 @@ const Navbar = () => {
         className="!h-[72px] left-0 !shadow-none borderNav"
       >
         <Toolbar className="m-auto max-w-[1637px] w-full">
-          <Link href="/" className="cursor-pointer">
+          <Link href="/" className="cursor-pointer" draggable="false">
             <Image
+              draggable="false"
               alt="Logo"
               src={TalenteLogo}
               className="xl:w-[146px] !cursor-pointer xl:h-[50px] h-[90px] w-[90px]"

@@ -38,9 +38,16 @@
 }
 
 body {
-  min-height: 100vh;
-  background: linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
+
+/* body {
+  background: linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important;
+} */
 
 .borderNav {
   text-align: center;
@@ -83,9 +90,11 @@ body {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -100,15 +109,19 @@ body {
   0% {
     transform: scale(1);
   }
+
   25% {
     transform: scale(1.3);
   }
+
   50% {
     transform: scale(1);
   }
+
   75% {
     transform: scale(1.3);
   }
+
   100% {
     transform: scale(1);
   }
@@ -141,6 +154,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -154,6 +168,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -162,6 +177,7 @@ body {
 .MuiDrawer-paper {
   margin-top: 72px;
 }
+
 .MuiList-root {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -171,10 +187,11 @@ body {
   background: transparent !important;
 }
 
-.MuiListItem-gutters > a {
+.MuiListItem-gutters>a {
   width: 100% !important;
   transition: background 0.4s ease;
 }
+
 .MuiListItemText-root {
   text-align: left !important;
   color: var(--white-text);
@@ -187,6 +204,7 @@ body {
 .last-child-no-border {
   border-bottom: none;
 }
+
 .MuiListItem-gutters:hover {
   background: linear-gradient(270deg, var(--button-color), var(--black-color), var(--button-color));
   background-size: 200% 200%;
@@ -197,9 +215,11 @@ body {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -245,9 +265,11 @@ body {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
