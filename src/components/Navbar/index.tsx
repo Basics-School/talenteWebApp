@@ -94,7 +94,7 @@ const Navbar = () => {
         component="nav"
         sx={{
           transition: "all 0.3s ease-in-out",
-          backgroundColor: scrolled ? "#000" : "transparent",
+          background: scrolled ? "var(--hover-nav-color)" : "transparent",
           borderBottom: "linear-gradient(to right, transparent, var(--button-shadow), transparent)",
         }}
         className="!h-[72px] left-0 !shadow-none borderNav"
