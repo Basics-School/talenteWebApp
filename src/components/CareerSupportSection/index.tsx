@@ -15,23 +15,23 @@ const CareerSupportSection = () => {
         draggable="false"
         src={CareerSupportImage}
         alt="Blue Circle"
-        className="absolute !w-[400px]"
+        className="absolute xl:!w-[400px] lg:!w-[200px] !w-[150px]"
       />
       <Box className="flex flex-col justify-center items-center !mt-20">
-        <GradientTextReverse text="Feeling stuck in the job market?" className="!mb-1 z-20" />
+        <GradientTextReverse text="Feeling stuck in the job market?" className="xl:!mb-1 z-20" />
         <GradientTextCommon text="We’re here to change that!" className="!mt-6" />
-        <Box className="flex flex-row !mt-6">
+        <Box className="flex flex-row !mt-6 xl:!px-0 !px-8">
           <Image
             draggable="false"
             src={CustomerSupporttImage}
             alt="Customer Support Image"
-            className="!w-[620px] !h-[620px] z-20"
+            className="xl:!w-[620px] xl:!h-[620px] lg:!w-[420px] lg:!h-[420px] !w-[300px] !h-[300px] z-20"
           />
           <Image
             draggable="false"
             src={Arrow}
             alt="Blue Circle"
-            className="absolute !w-[100px] right-[17.75rem] !mt-8"
+            className="absolute xl:!w-[100px] lg:!w-[70px] !w-[50px] xl:!right-[17.75rem] !right-[8rem] xl:!mt-8 !-mt-2"
           />
           <CommonTextArea
             heading="Customized career support"

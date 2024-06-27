@@ -44,9 +44,13 @@ export default function Home() {
         <CareerSupportSection />
       </Box>
       <Box style={{ background: "var(--section-color)" }}>
-        <Image src={Decoration} alt="Decoration Image" className="!mx-auto !w-[160px] !h-[160px]" />
+        <Image
+          src={Decoration}
+          alt="Decoration Image"
+          className="!mx-auto xl:!w-[160px] xl:!h-[160px] lg:!w-[120px] lg:!h-[120px] !w-[90px] !h-[90px]"
+        />
       </Box>
-      <Box style={{ minHeight: "450px", background: "var(--section-color)" }}>
+      <Box style={{ minHeight: "470px", background: "var(--section-color)" }}>
         <CareerGuideSection />
       </Box>
     </Box>

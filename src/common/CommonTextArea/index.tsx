@@ -4,24 +4,24 @@ import React from "react";
 interface TextAreaProps {
   heading: string;
   content: string;
+  className?: string;
 }
 
-const CommonTextArea = ({ heading, content }: TextAreaProps) => {
+const CommonTextArea = ({ heading, content, className }: TextAreaProps) => {
   return (
     <Box className="!text-center !my-auto">
-      <Box className="Spartan-Bold !text-5xl !mb-2">{heading}</Box>
+      <Box className="Spartan-Bold xl:!text-[2.5rem] lg:!text-3xl !text-xl !mb-2">{heading}</Box>
       <Box
         sx={{
-          maxWidth: "300px",
-          maxHeight: "460px",
-          margin: "auto",
-          marginTop: "1.5rem",
-          marginBottom: "1.5rem",
-          height: "4px",
           background: "linear-gradient(90deg, #000, #5E17EB8F)",
         }}
+        className="max-w-[300px] max-h-[460px] m-auto mt-6 mb-6 h-1 bg-gradient-to-r from-black via-[#5E17EB8F] to-[#5E17EB8F] xl:max-w-[300px] lg:max-w-[250px] md:!max-w-[170px]"
       />
-      <Box className="Spartan-Medium !text-3xl max-w-[800px] !mt-2 leading-8">{content}</Box>
+      <Box
+        className={`Spartan-Medium xl:text-3xl lg:text-2xl text-lg  max-w-[800px] !mt-2 lg:!leading-8 ${className}`}
+      >
+        {content}
+      </Box>
     </Box>
   );
 };
