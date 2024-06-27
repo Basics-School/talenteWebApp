@@ -59,7 +59,7 @@ const WaitlistModal = ({ open, onClose }: WaitListDialogProps) => {
     control,
   } = useForm({ defaultValues, resolver: yupResolver(loginSchema), mode: "onChange" });
 
-  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const timezone = "America/New_York" || Intl.DateTimeFormat().resolvedOptions().timeZone;
   const timezoneInfo = countriesAndTimezones.getTimezone(timezone);
   const defalutCountryCode = timezoneInfo?.countries?.[0]?.toLocaleLowerCase();
 
