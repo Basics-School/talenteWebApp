@@ -16,14 +16,12 @@ const GradientTextCommon = ({ text, className }: GradientTextCommonProps) => {
     backgroundClip: "text",
     textFillColor: "transparent",
     maxWidth: "1200px",
-    paddingLeft: "20px",
-    paddingRight: "20px",
   });
 
   return (
     <>
       <GradientText
-        className={`Spartan-SemiBold tracking-wide !normal-case flex text-gradient xl:!text-6xl lg:!text-5xl !text-4xl ${className}`}
+        className={`Spartan-SemiBold tracking-wide !normal-case flex text-gradient xl:!text-6xl lg:!text-5xl md:!text-4xl !text-2xl ${className}`}
       >
         {text}
       </GradientText>
