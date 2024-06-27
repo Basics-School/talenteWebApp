@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Box className="w-full flex flex-col">
       <Box
-        className="relative flex flex-col min-h-screen w-full"
+        className="relative flex flex-col min-h-screen w-full overflow-clip"
         sx={{
           background:
             "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
@@ -19,7 +19,7 @@ export default function Home() {
         <Box className="xl:!mt-44 lg:!mt-32 !mt-24 flex-1">
           <InfoSection />
         </Box>
-        <Box className="absolute bottom-6 lg:!-left-7 -left-16 spinCircle z-10">
+        <Box className="absolute bottom-6 -left-8 md:!-left-7 lg-left-16 spinCircle z-10">
           <Image
             draggable="false"
             src={BlueCircle}

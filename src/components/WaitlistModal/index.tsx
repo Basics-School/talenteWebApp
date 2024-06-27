@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Dialog from "@mui/material/Dialog";
 import Box from "@mui/material/Box";
@@ -13,12 +12,17 @@ import TextField from "@mui/material/TextField";
 import { styled } from "@mui/material/styles";
 import WaitListDialogBg from "@/assets/svg/WaitListDialogBg.svg";
 import { axiosInstance } from "@/lib/axios";
-import { SubmitHandler, useForm } from "react-hook-form";
+import { SubmitHandler, useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import loginSchema from "@/validations/loginSchema";
 import Typography from "@mui/material/Typography";
 import CircularProgress from "@mui/material/CircularProgress";
+import { PhoneInput } from "react-international-phone";
+import * as countriesAndTimezones from "countries-and-timezones";
 import { notifyError, notifySuccess } from "@/utils/Notistack/utils";
+
+const MODAL_MAX_HEIGHT = 550;
+const MODAL_MAX_WIDTH = 400;
 
 const CustomTextField = styled(TextField)(({}) => ({
   "& .MuiOutlinedInput-root": {
@@ -52,8 +56,12 @@ const WaitlistModal = ({ open, onClose }: WaitListDialogProps) => {
     handleSubmit,
     reset,
     formState: { errors },
+    control,
   } = useForm({ defaultValues, resolver: yupResolver(loginSchema), mode: "onChange" });
-  // const { enqueueSnackbar } = useSnackbar();
+
+  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const timezoneInfo = countriesAndTimezones.getTimezone(timezone);
+  const defalutCountryCode = timezoneInfo?.countries?.[0]?.toLocaleLowerCase();
 
   const onSubmitDetials: SubmitHandler<FormValues> = async (data) => {
     setLoading(true);
@@ -63,7 +71,7 @@ const WaitlistModal = ({ open, onClose }: WaitListDialogProps) => {
           properties: {
             email: data.email,
             firstname: data.name,
-            phone: `(+91) ${data.phone}`,
+            phone: data.phone,
           },
         })
         .then(() => {
@@ -87,8 +95,8 @@ const WaitlistModal = ({ open, onClose }: WaitListDialogProps) => {
         sx={{
           "& .MuiDialog-paper": {
             width: "100%",
-            maxWidth: "400px",
-            maxHeight: 550,
+            maxWidth: MODAL_MAX_WIDTH,
+            maxHeight: MODAL_MAX_HEIGHT,
             borderRadius: "8px",
             background: `url(${WaitListDialogBg.src})`,
             backgroundColor: "var(--dialog-bg)",
@@ -97,20 +105,20 @@ const WaitlistModal = ({ open, onClose }: WaitListDialogProps) => {
           },
         }}
       >
-        <form onSubmit={handleSubmit(onSubmitDetials)}>
-          <DialogContent>
-            <DialogTitle className="flex justify-between Spartan-SemiBold !w-full !text-[--white-text] !p-0">
-              <Box className="flex flex-col gap-1 !text-sm md:!text-[16px]">
-                Join Our Waitlist
-                <span className="Montserrat-Regular md:!text-xs !text-[11px]">
-                  Please Fill the Form to Join Our Talente Waitlist
-                </span>
-              </Box>
-              <CloseIcon onClick={onClose} className="!cursor-pointer md:!w-7 md:!h-7 !w-6 !h-6" />
-            </DialogTitle>
+        <DialogTitle className="flex justify-between Spartan-SemiBold !w-full !text-[--white-text] pt-5 pb-0">
+          <Box className="flex flex-col gap-1 !text-sm md:!text-[16px]">
+            Join Our Waitlist
+            <span className="Montserrat-Regular md:!text-xs !text-[11px]">
+              Please Fill the Form to Join Our Talente Waitlist
+            </span>
+          </Box>
+          <CloseIcon onClick={onClose} className="!cursor-pointer md:!w-7 md:!h-7 !w-6 !h-6" />
+        </DialogTitle>
+        <form onSubmit={handleSubmit(onSubmitDetials)} className="waitlist-modal">
+          <DialogContent className="pt-0">
             <Box className="flex md:!flex-row !flex-col gap-10">
               <Box className="w-full">
-                <DialogContentText className="flex flex-col gap-6">
+                <Box className="flex flex-col gap-6">
                   {/* Name* */}
                   <Box className="!w-full !mt-6">
                     <InputLabel className="!text-[--white-text] Spartan-Thin !gap-1 !text-sm mb-2">
@@ -171,26 +179,31 @@ const WaitlistModal = ({ open, onClose }: WaitListDialogProps) => {
                     <InputLabel className="!text-[--white-text] Spartan-Thin !gap-1 !text-sm mb-2">
                       Phone (Optional)
                     </InputLabel>
-                    <CustomTextField
-                      fullWidth
-                      InputProps={{
-                        style: {
-                          color: "var(--white-text)",
-                          fontFamily: "var(--league-spartan-medium)",
-                          padding: "5.5px 0",
-                          borderRadius: "7px",
-                          fontSize: "14px",
-                          background: "var(--bg-input)",
-                        },
-                      }}
-                      className="!w-full"
-                      type="text"
-                      size="small"
-                      variant="outlined"
-                      {...register("phone")}
+                    <Controller
+                      name="phone"
+                      control={control}
+                      render={({ field }) => (
+                        <PhoneInput
+                          {...field}
+                          style={
+                            {
+                              "--react-international-phone-border-radius": "0px",
+                              "--react-international-phone-border-color": "var(--bg-input)",
+                              "--react-international-phone-background-color": "var(--bg-input)",
+                              "--react-international-phone-text-color": "var(--white-text)",
+                              "--react-international-phone-selected-dropdown-item-background-color":
+                                "var(--dialog-bg)",
+                              "--react-international-phone-country-selector-background-color-hover":
+                                "var(--dialog-bg)",
+                            } as React.CSSProperties
+                          }
+                          inputClassName="flex-1 !border-0 h-[40px]"
+                          defaultCountry={defalutCountryCode}
+                        />
+                      )}
                     />
                   </Box>
-                </DialogContentText>
+                </Box>
               </Box>
             </Box>
           </DialogContent>

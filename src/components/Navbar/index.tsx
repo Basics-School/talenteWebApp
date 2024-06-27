@@ -115,7 +115,7 @@ const Navbar = () => {
           />
           <Button
             onClick={handleDrawerToggle}
-            className="focus:outline-none text-center !min-w-[30px] !ml-5 sm:!hidden "
+            className="focus:outline-none text-center !min-w-[30px] !ml-5 sm:!hidden"
           >
             {mobileOpen && <MenuIcon className="text-[--white-text] !w-5 !h-5" />}
             {!mobileOpen && <CloseIcon className="text-[--white-text] !w-5 !h-5" />}
