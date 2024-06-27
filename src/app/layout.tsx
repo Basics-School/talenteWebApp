@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import NotistackProvider from "@/utils/Notistack/NotiStackProvider";
+import "react-international-phone/style.css";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

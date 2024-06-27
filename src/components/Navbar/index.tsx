@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -28,10 +28,26 @@ const navItemsAvatar = [
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const drawer = (
     <Box
@@ -68,6 +84,7 @@ const Navbar = () => {
   return (
     <Box className="relative">
       <Image
+        draggable="false"
         src={DottedCircle}
         alt="Dotted Image"
         className="absolute top-0 left-0 lg:!w-[250px] lg:!h-[250px] !w-[150px] !h-[150px] animates"
@@ -77,14 +94,15 @@ const Navbar = () => {
         component="nav"
         sx={{
           transition: "all 0.3s ease-in-out",
-          backgroundColor: "transparent",
+          background: scrolled ? "var(--hover-nav-color)" : "transparent",
           borderBottom: "linear-gradient(to right, transparent, var(--button-shadow), transparent)",
         }}
         className="!h-[72px] left-0 !shadow-none borderNav"
       >
         <Toolbar className="m-auto max-w-[1637px] w-full">
-          <Link href="/" className="cursor-pointer">
+          <Link href="/" className="cursor-pointer" draggable="false">
             <Image
+              draggable="false"
               alt="Logo"
               src={TalenteLogo}
               className="xl:w-[146px] !cursor-pointer xl:h-[50px] h-[90px] w-[90px]"
@@ -113,7 +131,7 @@ const Navbar = () => {
           />
           <Button
             onClick={handleDrawerToggle}
-            className="focus:outline-none text-center !min-w-[30px] !ml-5 sm:!hidden "
+            className="focus:outline-none text-center !min-w-[30px] !ml-5 sm:!hidden"
           >
             {mobileOpen && <MenuIcon className="text-[--white-text] !w-5 !h-5" />}
             {!mobileOpen && <CloseIcon className="text-[--white-text] !w-5 !h-5" />}
