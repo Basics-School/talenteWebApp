@@ -12,13 +12,14 @@ import TextField from "@mui/material/TextField";
 import { styled } from "@mui/material/styles";
 import WaitListDialogBg from "@/assets/svg/WaitListDialogBg.svg";
 import { axiosInstance } from "@/lib/axios";
-import { SubmitHandler, useForm, Controller } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
+// , Controller
 import { yupResolver } from "@hookform/resolvers/yup";
 import loginSchema from "@/validations/loginSchema";
 import Typography from "@mui/material/Typography";
 import CircularProgress from "@mui/material/CircularProgress";
-import { PhoneInput } from "react-international-phone";
-import * as countriesAndTimezones from "countries-and-timezones";
+// import { PhoneInput } from "react-international-phone";
+// import * as countriesAndTimezones from "countries-and-timezones";
 import { notifyError, notifySuccess } from "@/utils/Notistack/utils";
 
 const MODAL_MAX_HEIGHT = 550;
@@ -56,12 +57,12 @@ const WaitlistModal = ({ open, onClose }: WaitListDialogProps) => {
     handleSubmit,
     reset,
     formState: { errors },
-    control,
+    // control,
   } = useForm({ defaultValues, resolver: yupResolver(loginSchema), mode: "onChange" });
 
-  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  const timezoneInfo = countriesAndTimezones.getTimezone(timezone);
-  const defalutCountryCode = timezoneInfo?.countries?.[0]?.toLocaleLowerCase();
+  // const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  // const timezoneInfo = countriesAndTimezones.getTimezone(timezone);
+  // const defalutCountryCode = timezoneInfo?.countries?.[0]?.toLocaleLowerCase();
 
   const onSubmitDetials: SubmitHandler<FormValues> = async (data) => {
     setLoading(true);
@@ -71,7 +72,8 @@ const WaitlistModal = ({ open, onClose }: WaitListDialogProps) => {
           properties: {
             email: data.email,
             firstname: data.name,
-            phone: data.phone,
+            // phone: data.phone,
+            phone: `(+1) ${data.phone}`,
           },
         })
         .then(() => {
@@ -179,7 +181,7 @@ const WaitlistModal = ({ open, onClose }: WaitListDialogProps) => {
                     <InputLabel className="!text-[--white-text] Spartan-Thin !gap-1 !text-sm mb-2">
                       Phone (Optional)
                     </InputLabel>
-                    <Controller
+                    {/* <Controller
                       name="phone"
                       control={control}
                       render={({ field }) => (
@@ -201,6 +203,24 @@ const WaitlistModal = ({ open, onClose }: WaitListDialogProps) => {
                           defaultCountry={defalutCountryCode}
                         />
                       )}
+                    /> */}
+                    <CustomTextField
+                      fullWidth
+                      InputProps={{
+                        style: {
+                          color: "var(--white-text)",
+                          fontFamily: "var(--league-spartan-medium)",
+                          padding: "5.5px 0",
+                          borderRadius: "7px",
+                          fontSize: "14px",
+                          background: "var(--bg-input)",
+                        },
+                      }}
+                      className="!w-full"
+                      type="text"
+                      size="small"
+                      variant="outlined"
+                      {...register("phone")}
                     />
                   </Box>
                 </Box>
