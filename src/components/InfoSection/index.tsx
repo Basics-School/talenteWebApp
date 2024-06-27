@@ -50,7 +50,7 @@ const InfoSection = () => {
       <GradientTextButton className="Montserrat-Medium tracking-wide !normal-case flex text-gradient xl:!text-[20px] !text-sm bg-[linear-gradient(to_right,theme(colors.pink.400),theme(colors.pink.100),theme(colors.white),theme(colors.pink.400),theme(colors.white),theme(colors.pink.100),theme(colors.pink.400))] bg-[length:200%_auto] animate-gradient bg-clip-text">
         AI-Powered Career Support
       </GradientTextButton>
-      <GradientText className="Spartan-SemiBold xl:!text-[52px] xl:!leading-[4.3rem] lg:!text-5xl  lg:!leading-[3.7rem] sm:!text-4xl md:!leading-[3.2rem] !text-[25px] !text-center overflow-wrap break-words">
+      <GradientText className="Spartan-SemiBold xl:!text-[55px] xl:!leading-[4.3rem] lg:!text-5xl  lg:!leading-[3.7rem] sm:!text-4xl md:!leading-[3.2rem] !text-[25px] !text-center overflow-wrap break-words">
         <span className="text-gradient1"> Fast, confidential, and personalized support</span>
         <span className="text-gradient2"> whenever you need it, helping you find better </span>
         <span className="text-gradient3">career opportunities.</span>

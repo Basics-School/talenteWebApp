@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -28,10 +28,26 @@ const navItemsAvatar = [
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const drawer = (
     <Box
@@ -78,7 +94,7 @@ const Navbar = () => {
         component="nav"
         sx={{
           transition: "all 0.3s ease-in-out",
-          backgroundColor: "transparent",
+          backgroundColor: scrolled ? "#000" : "transparent",
           borderBottom: "linear-gradient(to right, transparent, var(--button-shadow), transparent)",
         }}
         className="!h-[72px] left-0 !shadow-none borderNav"

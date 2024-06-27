@@ -4,6 +4,9 @@ import Image from "next/image";
 import Globe from "@/assets/svg/Globe.svg";
 import BlueCircle from "@/assets/svg/BlueCircle.svg";
 import Box from "@mui/material/Box";
+import CareerSupportSection from "@/components/CareerSupportSection";
+import CareerGuideSection from "@/components/CareerGuideSection";
+import Decoration from "@/assets/svg/Decoration.svg";
 
 export default function Home() {
   return (
@@ -37,7 +40,15 @@ export default function Home() {
         </Box>
       </Box>
 
-      <Box style={{ minHeight: "500px" }}>Hello</Box>
+      <Box style={{ minHeight: "500px", background: "var(--section-color)" }}>
+        <CareerSupportSection />
+      </Box>
+      <Box style={{ background: "var(--section-color)" }}>
+        <Image src={Decoration} alt="Decoration Image" className="!mx-auto !w-[160px] !h-[160px]" />
+      </Box>
+      <Box style={{ minHeight: "450px", background: "var(--section-color)" }}>
+        <CareerGuideSection />
+      </Box>
     </Box>
   );
 }
