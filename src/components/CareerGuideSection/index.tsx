@@ -10,7 +10,10 @@ const CareerGuideSection = () => {
   return (
     <>
       <Box className="flex flex-col justify-center lg:!mt-20 md:!mt-12 !mt-8 xl:!px-0 !px-8">
-        <GradientTextCommon text="We’re your ultimate career guide" className="!mb-1 !mx-auto" />
+        <GradientTextCommon
+          text="We’re your ultimate career guide"
+          className="!mb-1 !mx-auto xl:!text-6xl lg:!text-5xl md:!text-4xl !text-2xl"
+        />
         <Image
           draggable="false"
           src={DottedArrow}

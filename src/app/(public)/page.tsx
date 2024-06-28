@@ -18,7 +18,6 @@ export default function Home() {
             "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
         }}
       >
-        {/* <Navbar /> */}
         <Box className="xl:!mt-44 lg:!mt-32 !mt-24 flex-1">
           <InfoSection />
         </Box>

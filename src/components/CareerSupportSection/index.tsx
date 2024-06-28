@@ -19,7 +19,10 @@ const CareerSupportSection = () => {
       />
       <Box className="flex flex-col justify-center items-center !mt-20">
         <GradientTextReverse text="Feeling stuck in the job market?" className="xl:!mb-1 z-20" />
-        <GradientTextCommon text="We’re here to change that!" className="md:!mt-6 !mt-1" />
+        <GradientTextCommon
+          text="We’re here to change that!"
+          className="md:!mt-6 !mt-1 xl:!text-6xl lg:!text-5xl md:!text-4xl !text-2xl"
+        />
         <Box className="flex md:!flex-row !flex-col !mt-6 !px-8 md:!gap-0 !gap-4">
           <Image
             draggable="false"
