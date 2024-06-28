@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import NotistackProvider from "@/utils/Notistack/NotiStackProvider";
 import "react-international-phone/style.css";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,10 @@ export default function RootLayout({
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <link rel="icon" type="image/png" href="/favicon.png" />
       <body className={inter.className}>
-        <NotistackProvider>{children}</NotistackProvider>
+        <NotistackProvider>
+          <Navbar />
+          {children}
+        </NotistackProvider>
       </body>
     </html>
   );
