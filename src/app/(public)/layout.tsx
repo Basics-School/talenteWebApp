@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import NotistackProvider from "@/utils/Notistack/NotiStackProvider";
 import "react-international-phone/style.css";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
