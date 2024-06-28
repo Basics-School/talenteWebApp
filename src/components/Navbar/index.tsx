@@ -87,7 +87,7 @@ const Navbar = () => {
         draggable="false"
         src={DottedCircle}
         alt="Dotted Image"
-        className="absolute top-0 left-0 lg:!w-[250px] lg:!h-[250px] !w-[150px] !h-[150px] animates"
+        className="absolute top-0 left-0 lg:!w-[250px] lg:!h-[250px] !w-[150px] !h-[150px] animates z-10"
       />
       <CssBaseline />
       <AppBar
