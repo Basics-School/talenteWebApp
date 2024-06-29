@@ -20,7 +20,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Container from "@/components/Container";
 
 const navItemsAvatar = [
-  { label: "Ask Tasha", path: "/" },
+  { label: "Ask Tasha", path: "/ask-tasha" },
   { label: "Career Hub", path: "/" },
   { label: "Tools", path: "/" },
   { label: "Research", path: "/" },
