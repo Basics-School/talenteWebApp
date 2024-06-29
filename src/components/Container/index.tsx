@@ -6,7 +6,7 @@ interface IProps {
 }
 
 const Container = ({ children }: IProps) => {
-  return <MUIContainer className="max-w-[1366px]">{children}</MUIContainer>;
+  return <MUIContainer className="max-w-[1366px] mx-auto">{children}</MUIContainer>;
 };
 
 export default Container;

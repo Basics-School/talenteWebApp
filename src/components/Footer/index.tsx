@@ -23,14 +23,14 @@ import { usefulLinks } from "@/data/navbar";
 const Footer = () => {
   return (
     <Box
-      className="overflow-clip py-8 sm:py-10 md:py-16"
+      className="overflow-clip py-8 sm:py-10 md:pt-16 md:pb-4"
       sx={{
         background: "var(--black-color)",
         color: "var(--white-text)",
         position: "relative",
       }}
     >
-      <Box className="absolute sm:left-[-40px] md:left-[-120px] bottom-[-10px] rotate-[0deg]">
+      <Box className="absolute sm:left-[-40px] md:left-[-150px] bottom-[-30px] scale-[.75] rotate-[0deg]">
         <Image
           draggable="false"
           src={CircularShape}
@@ -97,11 +97,11 @@ const Footer = () => {
           </Grid>
         </Grid>
 
-        <Typography className="mt-16 md:mt-28 text-base Spartan-Regular text-center">
+        <Typography className="mt-16 md:mt-28 text-base Spartan-Regular text-center px-3">
           {appConfig.company.footerText}
         </Typography>
       </Container>
-      <Box className="absolute right-[-150px] top-0">
+      <Box className="absolute right-[-150px] top-2">
         <Image
           draggable="false"
           src={Globe}
