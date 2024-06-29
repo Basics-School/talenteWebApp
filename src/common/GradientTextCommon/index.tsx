@@ -11,7 +11,12 @@ interface GradientTextCommonProps {
   endColor?: string;
 }
 
-const GradientTextCommon = ({ text, className, startColor, endColor }: GradientTextCommonProps) => {
+const GradientTextCommon = ({
+  text,
+  className,
+  startColor = "var(--black-color)",
+  endColor = "var(--bg-gradient-color)",
+}: GradientTextCommonProps) => {
   const GradientText = styled(Typography)({
     background: `linear-gradient(to right, ${startColor}, ${endColor})`,
     WebkitBackgroundClip: "text",
@@ -30,11 +35,6 @@ const GradientTextCommon = ({ text, className, startColor, endColor }: GradientT
       </GradientText>
     </>
   );
-};
-
-GradientTextCommon.defaultProps = {
-  startColor: "var(--black-color)",
-  endColor: "var(--bg-gradient-color)",
 };
 
 export default GradientTextCommon;
