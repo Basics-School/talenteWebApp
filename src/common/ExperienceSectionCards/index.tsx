@@ -15,9 +15,9 @@ interface CardProps {
 
 const ExperinceSectionCards = ({ cardNum, points, text, subText }: CardProps) => {
   return (
-    <Box className="xl:!max-w-[370px] lg:!max-w-[300px] !max-w-[220px]">
+    <Box className="lg:!max-w-[400px] md:!max-w-[300px] sm:!max-w-[225px] !max-w-[350px]">
       <Box
-        className="border-[2px] border-solid border-[--white-text] !rounded-md xl:!h-[626px] lg:!h-[550px]"
+        className="border-[2px] border-solid border-[--white-text] !rounded-md lg:!h-[570px] md:!h-[525px] sm:!h-[495px] !h-[480px]"
         sx={{
           overflow: "auto",
           display: "flex",
@@ -27,12 +27,12 @@ const ExperinceSectionCards = ({ cardNum, points, text, subText }: CardProps) =>
         <Box className="Spartan-Medium text-[--white-text] lg:!text-4xl !text-2xl !mt-12">
           {cardNum}
         </Box>
-        <AnimatedGradientText text={text} className="lg:!text-4xl !text-2xl" />
-        <Box className="Spartan-Medium text-[--white-text] xl:!text-5xl lg:!text-4xl !text-2xl !mb-8">
+        <AnimatedGradientText text={text} className="lg:!text-5xl !text-3xl" />
+        <Box className="Spartan-Medium text-[--white-text] lg:!text-5xl !text-3xl !mb-8">
           {subText}
         </Box>
 
-        <Box className="flex flex-col gap-3 xl:!pl-8 lg:!pl-12 !pl-10 !pr-4 flex-grow">
+        <Box className="flex flex-col gap-3 lg:!pl-12 !pl-10 !pr-4 flex-grow">
           <List
             sx={{
               listStyleType: "disc",
@@ -50,7 +50,7 @@ const ExperinceSectionCards = ({ cardNum, points, text, subText }: CardProps) =>
               >
                 <ListItemText
                   primaryTypographyProps={{
-                    fontSize: { xs: "20px", sm: "18px", md: "20px", lg: "25px", xl: "30px" },
+                    fontSize: { xs: "20px", sm: "18px", md: "20px", lg: "22px" },
                   }}
                   className="Spartan-Medium !text-[--white-text]"
                 >
@@ -63,7 +63,7 @@ const ExperinceSectionCards = ({ cardNum, points, text, subText }: CardProps) =>
         <Box className="!my-6 flex-shrink-0">
           <ActionButton
             text="Download E-Book"
-            className="Montserrat-Regular xl:!px-8 xl:!py-3 lg:!px-5 lg:!py-2 !px-5 !py-1 xl:!text-base !text-sm"
+            className="Montserrat-Regular xl:!px-8 xl:!py-3 lg:!px-6 lg:!py-3 !px-5 !py-2 xl:!text-base !text-sm"
           />
         </Box>
       </Box>
