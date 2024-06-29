@@ -9,7 +9,10 @@ import DottedArrow from "@/assets/svg/DottedArrow.svg";
 const CareerGuideSection = () => {
   return (
     <>
-      <Box className="flex flex-col justify-center lg:!mt-20 md:!mt-12 !mt-8 xl:!px-0 !px-8">
+      <Box
+        className="flex flex-col justify-center xl:!px-0 !px-8"
+        style={{ minHeight: "480px", background: "var(--section-color)" }}
+      >
         <GradientTextCommon text="We’re your ultimate career guide" className="!mb-1 !mx-auto" />
         <Image
           draggable="false"

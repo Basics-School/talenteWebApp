@@ -1,5 +1,4 @@
 import InfoSection from "@/components/InfoSection";
-// import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Globe from "@/assets/svg/Globe.svg";
 import BlueCircle from "@/assets/svg/BlueCircle.svg";
@@ -7,6 +6,7 @@ import Box from "@mui/material/Box";
 import CareerSupportSection from "@/components/CareerSupportSection";
 import CareerGuideSection from "@/components/CareerGuideSection";
 import Decoration from "@/assets/svg/Decoration.svg";
+import ExperienceSection from "@/components/ExperienceSection";
 
 export default function Home() {
   return (
@@ -18,7 +18,6 @@ export default function Home() {
             "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
         }}
       >
-        {/* <Navbar /> */}
         <Box className="xl:!mt-44 lg:!mt-32 !mt-24 flex-1">
           <InfoSection />
         </Box>
@@ -52,6 +51,25 @@ export default function Home() {
       </Box>
       <Box style={{ minHeight: "480px", background: "var(--section-color)" }}>
         <CareerGuideSection />
+      </Box>
+      <Box
+        sx={{
+          background:
+            "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
+          position: "relative",
+          overflow: "hidden",
+          paddingBottom: "3rem",
+        }}
+      >
+        <ExperienceSection />
+        <Box className="absolute xl:!-bottom-36 lg:-bottom-32 -bottom-24 -left-52 xl:!-left-32 lg:!-left-36 z-10">
+          <Image
+            draggable="false"
+            src={Globe}
+            alt="Globe"
+            className="xl:!w-[380px] xl:!h-[410px] lg:!w-[300px] lg:!h-[350px] !w-[250] !h-[270px] spinGlobe"
+          />
+        </Box>
       </Box>
     </Box>
   );

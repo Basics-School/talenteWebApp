@@ -208,7 +208,7 @@ body {
   border-bottom: none;
 }
 
-.MuiListItem-gutters:hover {
+.navList .MuiListItem-gutters:hover {
   background: linear-gradient(270deg, var(--button-color), var(--black-color), var(--button-color));
   background-size: 200% 200%;
   animation: backgroundAnimation 8s ease infinite;
