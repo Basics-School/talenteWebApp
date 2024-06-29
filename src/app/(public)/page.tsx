@@ -1,5 +1,4 @@
 import InfoSection from "@/components/InfoSection";
-// import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Globe from "@/assets/svg/Globe.svg";
 import BlueCircle from "@/assets/svg/BlueCircle.svg";

@@ -1,5 +1,6 @@
 "use client";
-import React, { useState, useEffect } from "react";
+
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -28,11 +29,19 @@ const navItemsAvatar = [
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(true);
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(true);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+
+  useLayoutEffect(() => {
+    if (window.scrollY > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
