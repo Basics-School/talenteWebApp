@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useLayoutEffect } from "react";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
-import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from "@mui/material/Toolbar";
 import Link from "next/link";
 import Image from "next/image";
@@ -18,6 +17,7 @@ import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
 import Drawer from "@mui/material/Drawer";
 import CloseIcon from "@mui/icons-material/Close";
+import Container from "@/components/Container";
 
 const navItemsAvatar = [
   { label: "Ask Tasha", path: "/" },
@@ -98,7 +98,6 @@ const Navbar = () => {
         alt="Dotted Image"
         className="absolute top-0 left-0 lg:!w-[250px] lg:!h-[250px] !w-[150px] !h-[150px] animates z-10"
       />
-      <CssBaseline />
       <AppBar
         component="nav"
         sx={{
@@ -108,44 +107,49 @@ const Navbar = () => {
         }}
         className="!h-[72px] left-0 !shadow-none borderNav"
       >
-        <Toolbar className="m-auto max-w-[1637px] w-full">
-          <Link href="/" className="cursor-pointer" draggable="false">
-            <Image
-              draggable="false"
-              alt="Logo"
-              src={TalenteLogo}
-              className="xl:w-[146px] !cursor-pointer xl:h-[50px] h-[90px] w-[90px]"
-            />
-          </Link>
-          <Box sx={{ display: { xs: "flex", sm: "flex" } }} className="mx-auto flex justify-evenly">
+        <Container>
+          <Toolbar className="m-auto w-full">
+            <Link href="/" className="cursor-pointer" draggable="false">
+              <Image
+                draggable="false"
+                alt="Logo"
+                src={TalenteLogo}
+                className="xl:w-[146px] !cursor-pointer xl:h-[50px] h-[90px] w-[90px]"
+              />
+            </Link>
             <Box
-              sx={{ display: "flex", gap: 3, alignItems: "center" }}
-              className="sm:!flex hidden xl:!gap-[60px] !items-center"
+              sx={{ display: { xs: "flex", sm: "flex" } }}
+              className="mx-auto flex justify-evenly"
             >
-              {navItemsAvatar.map((item) => (
-                <Link
-                  href={item.path}
-                  key={item.label}
-                  style={{ color: "var(--white-text)" }}
-                  className="Spartan-SemiBold !text-[18px] hover-underline-animation !w-fit !whitespace-nowrap !capitalize xl:!text-base !text-sm !leading-normal flex flex-row"
-                >
-                  {item.label}
-                </Link>
-              ))}
+              <Box
+                sx={{ display: "flex", gap: 3, alignItems: "center" }}
+                className="sm:!flex hidden xl:!gap-[60px] !items-center"
+              >
+                {navItemsAvatar.map((item) => (
+                  <Link
+                    href={item.path}
+                    key={item.label}
+                    style={{ color: "var(--white-text)" }}
+                    className="Spartan-SemiBold !text-[18px] hover-underline-animation !w-fit !whitespace-nowrap !capitalize xl:!text-base !text-sm !leading-normal flex flex-row"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </Box>
             </Box>
-          </Box>
-          <ActionButton
-            text="Log In"
-            className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-5 !py-1 xl:!text-base !text-sm"
-          />
-          <Button
-            onClick={handleDrawerToggle}
-            className="focus:outline-none text-center !min-w-[30px] !ml-5 sm:!hidden"
-          >
-            {mobileOpen && <MenuIcon className="text-[--white-text] !w-5 !h-5" />}
-            {!mobileOpen && <CloseIcon className="text-[--white-text] !w-5 !h-5" />}
-          </Button>
-        </Toolbar>
+            <ActionButton
+              text="Log In"
+              className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-5 !py-1 xl:!text-base !text-sm"
+            />
+            <Button
+              onClick={handleDrawerToggle}
+              className="focus:outline-none text-center !min-w-[30px] !ml-5 sm:!hidden"
+            >
+              {mobileOpen && <MenuIcon className="text-[--white-text] !w-5 !h-5" />}
+              {!mobileOpen && <CloseIcon className="text-[--white-text] !w-5 !h-5" />}
+            </Button>
+          </Toolbar>
+        </Container>
       </AppBar>
 
       <nav>
