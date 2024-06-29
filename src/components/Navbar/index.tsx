@@ -19,7 +19,7 @@ import Drawer from "@mui/material/Drawer";
 import CloseIcon from "@mui/icons-material/Close";
 
 const navItemsAvatar = [
-  { label: "Ask Tasha", path: "/" },
+  { label: "Ask Tasha", path: "/ask-tasha" },
   { label: "Career Hub", path: "/" },
   { label: "Tools", path: "/" },
   { label: "Research", path: "/" },
@@ -87,7 +87,7 @@ const Navbar = () => {
         draggable="false"
         src={DottedCircle}
         alt="Dotted Image"
-        className="absolute top-0 left-0 lg:!w-[250px] lg:!h-[250px] !w-[150px] !h-[150px] animates"
+        className="absolute top-0 left-0 lg:!w-[250px] lg:!h-[250px] !w-[150px] !h-[150px] animates "
       />
       <CssBaseline />
       <AppBar
