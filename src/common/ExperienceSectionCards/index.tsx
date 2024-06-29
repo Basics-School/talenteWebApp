@@ -15,7 +15,7 @@ interface CardProps {
 
 const ExperinceSectionCards = ({ cardNum, points, text, subText }: CardProps) => {
   return (
-    <Box className="lg:!max-w-[400px] md:!max-w-[300px] sm:!max-w-[225px] !max-w-[350px]">
+    <Box className="flex-1">
       <Box
         className="border-[2px] border-solid border-[--white-text] !rounded-md lg:!h-[600px] md:!h-[525px] sm:!h-[495px] !h-[480px]"
         sx={{

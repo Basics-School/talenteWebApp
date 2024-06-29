@@ -9,6 +9,7 @@ import DottedCircle from "@/assets/svg/DottedCircle.svg";
 import RightArrow from "@/assets/svg/RightArrow.svg";
 import LeftArrow from "@/assets/svg/LeftArrow.svg";
 import Globe from "@/assets/svg/Globe.svg";
+import Container from "@/components/Container";
 
 const points1 = [
   "Career Accelaration Master Classes",
@@ -67,32 +68,34 @@ const ExperienceSection = () => {
           alt="Right Arrow"
           className="absolute lg:!top-32 sm:!top-24 lg:!left-44 sm:!left-32 md:!top-24 !top-16 !left-16 lg:!w-[70px] lg:!h-[70px] md:!w-[55px] md:!h-[55px] !w-[45px] !h-[45px]"
         />
-        <Box className="!text-center">
-          <AnimatedGradientText
-            text="Experience The Talente Difference"
-            className="md:!pt-12 !pt-6 lg:!mb-20 md:!pb-16 !pb-16 !mt-0"
-          />
-          <Box className="flex sm:!flex-row xs:!flex-col gap-4 justify-center !items-center">
-            <ExperinceSectionCards
-              cardNum="#01"
-              points={points1}
-              text="Performance"
-              subText="Accelaration"
+        <Container>
+          <Box className="!text-center">
+            <AnimatedGradientText
+              text="Experience The Talente Difference"
+              className="md:!pt-12 !pt-6 lg:!mb-20 md:!pb-16 !pb-16 !mt-0"
             />
-            <ExperinceSectionCards
-              cardNum="#02"
-              points={points2}
-              text="Compensation"
-              subText="Benchmarking"
-            />
-            <ExperinceSectionCards
-              cardNum="#03"
-              points={points3}
-              text="Career"
-              subText="Advancement"
-            />
+            <Box className="flex sm:!flex-row xs:!flex-col gap-4 justify-center !items-center">
+              <ExperinceSectionCards
+                cardNum="#01"
+                points={points1}
+                text="Performance"
+                subText="Accelaration"
+              />
+              <ExperinceSectionCards
+                cardNum="#02"
+                points={points2}
+                text="Compensation"
+                subText="Benchmarking"
+              />
+              <ExperinceSectionCards
+                cardNum="#03"
+                points={points3}
+                text="Career"
+                subText="Advancement"
+              />
+            </Box>
           </Box>
-        </Box>
+        </Container>
       </Box>
 
       {/* Globe */}
