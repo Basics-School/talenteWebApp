@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
+import Container from "@/components/Container";
 import Image from "next/image";
 import CommonTextArea from "@/common/CommonTextArea";
 import CareerGuideImage from "@/assets/images/CareerGuideImage.png";

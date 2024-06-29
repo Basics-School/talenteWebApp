@@ -1,12 +1,12 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Unstable_Grid2";
 import Image from "next/image";
 import Link from "next/link";
 
+import Container from "@/components/Container";
 import CircularShape from "@/assets/svg/CircularShape.svg";
 import Globe from "@/assets/svg/Globe.svg";
 import TalenteLogo from "@/assets/svg/TalenteLogo.svg";

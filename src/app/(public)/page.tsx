@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import CareerSupportSection from "@/components/CareerSupportSection";
 import CareerGuideSection from "@/components/CareerGuideSection";
 import Decoration from "@/assets/svg/Decoration.svg";
+import ExperienceSection from "@/components/ExperienceSection";
 
 export default function Home() {
   return (
@@ -51,6 +52,7 @@ export default function Home() {
       <Box style={{ minHeight: "480px", background: "var(--section-color)" }}>
         <CareerGuideSection />
       </Box>
+      <ExperienceSection />
     </Box>
   );
 }

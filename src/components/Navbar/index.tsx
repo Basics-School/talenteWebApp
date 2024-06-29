@@ -76,7 +76,7 @@ const Navbar = () => {
             <ListItem
               key={item.label}
               disablePadding
-              className={`Spartan-SemiBold !flex${index === navItemsAvatar.length - 1 ? " last-child-no-border" : ""}`} // Check if it's the last item
+              className={`Spartan-SemiBold navList !flex${index === navItemsAvatar.length - 1 ? " last-child-no-border" : ""}`} // Check if it's the last item
             >
               <Link className="Spartan-SemiBold" href={item.path}>
                 <ListItemButton className="Spartan-SemiBold" sx={{ textAlign: "center" }}>
