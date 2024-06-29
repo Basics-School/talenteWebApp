@@ -1,26 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["www.shutterstock.com", "images.unsplash.com", "res.cloudinary.com"],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "images.unsplash.com",
-        port: "",
-      },
-      {
-        protocol: "https",
         hostname: "res.cloudinary.com",
-        port: "",
-      },
-      {
-        protocol: "https",
-        hostname: "qiko-dev.s3.ap-southeast-2.amazonaws.com",
-        port: "",
-      },
-      {
-        protocol: "https",
-        hostname: "qiko-prod.s3.ap-southeast-2.amazonaws.com",
         port: "",
       },
     ],
