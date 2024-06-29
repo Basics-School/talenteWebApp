@@ -1,6 +1,7 @@
-import Box from "@mui/material/Box";
-import Image from "next/image";
 import React from "react";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Image from "next/image";
 import CommonTextArea from "@/common/CommonTextArea";
 import CareerGuideImage from "@/assets/images/CareerGuideImage.png";
 import GradientTextCommon from "@/common/GradientTextCommon";
@@ -8,9 +9,12 @@ import DottedArrow from "@/assets/svg/DottedArrow.svg";
 
 const CareerGuideSection = () => {
   return (
-    <>
+    <Container>
       <Box className="flex flex-col justify-center lg:!mt-20 md:!mt-12 !mt-8 xl:!px-0 !px-8">
-        <GradientTextCommon text="We’re your ultimate career guide" className="!mb-1 !mx-auto" />
+        <GradientTextCommon
+          text="We’re your ultimate career guide"
+          className="!mb-1 !mx-auto xl:!text-6xl lg:!text-5xl md:!text-4xl !text-2xl"
+        />
         <Image
           draggable="false"
           src={DottedArrow}
@@ -31,7 +35,7 @@ const CareerGuideSection = () => {
           />
         </Box>
       </Box>
-    </>
+    </Container>
   );
 };
 
