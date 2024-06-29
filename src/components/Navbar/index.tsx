@@ -1,5 +1,6 @@
 "use client";
-import React, { useState, useEffect } from "react";
+
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -28,11 +29,19 @@ const navItemsAvatar = [
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(true);
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(true);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+
+  useLayoutEffect(() => {
+    if (window.scrollY > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -87,7 +96,7 @@ const Navbar = () => {
         draggable="false"
         src={DottedCircle}
         alt="Dotted Image"
-        className="absolute top-0 left-0 lg:!w-[250px] lg:!h-[250px] !w-[150px] !h-[150px] animates"
+        className="absolute top-0 left-0 lg:!w-[250px] lg:!h-[250px] !w-[150px] !h-[150px] animates z-10"
       />
       <CssBaseline />
       <AppBar

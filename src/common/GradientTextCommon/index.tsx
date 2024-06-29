@@ -2,15 +2,18 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
+import { cn } from "@/lib/cn";
 
 interface GradientTextCommonProps {
   text: string;
   className?: string;
+  startColor?: string;
+  endColor?: string;
 }
 
-const GradientTextCommon = ({ text, className }: GradientTextCommonProps) => {
+const GradientTextCommon = ({ text, className, startColor, endColor }: GradientTextCommonProps) => {
   const GradientText = styled(Typography)({
-    background: "linear-gradient(to right, var(--black-color), var(--bg-gradient-color))",
+    background: `linear-gradient(to right, ${startColor}, ${endColor})`,
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     backgroundClip: "text",
@@ -21,12 +24,17 @@ const GradientTextCommon = ({ text, className }: GradientTextCommonProps) => {
   return (
     <>
       <GradientText
-        className={`Spartan-SemiBold tracking-wide !normal-case flex text-gradient xl:!text-6xl lg:!text-5xl md:!text-4xl !text-2xl ${className}`}
+        className={cn("Spartan-SemiBold tracking-wide !normal-case flex text-gradient", className)}
       >
         {text}
       </GradientText>
     </>
   );
+};
+
+GradientTextCommon.defaultProps = {
+  startColor: "var(--black-color)",
+  endColor: "var(--bg-gradient-color)",
 };
 
 export default GradientTextCommon;
