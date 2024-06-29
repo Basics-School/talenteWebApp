@@ -52,25 +52,7 @@ export default function Home() {
       <Box style={{ minHeight: "480px", background: "var(--section-color)" }}>
         <CareerGuideSection />
       </Box>
-      <Box
-        sx={{
-          background:
-            "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
-          position: "relative",
-          overflow: "hidden",
-          paddingBottom: "3rem",
-        }}
-      >
-        <ExperienceSection />
-        <Box className="absolute xl:!-bottom-36 lg:-bottom-32 -bottom-24 -left-52 xl:!-left-32 lg:!-left-36 z-10">
-          <Image
-            draggable="false"
-            src={Globe}
-            alt="Globe"
-            className="xl:!w-[380px] xl:!h-[410px] lg:!w-[300px] lg:!h-[350px] !w-[250] !h-[270px] spinGlobe"
-          />
-        </Box>
-      </Box>
+      <ExperienceSection />
     </Box>
   );
 }
