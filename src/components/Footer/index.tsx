@@ -104,7 +104,7 @@ const Footer = () => {
           </Grid>
         </Grid>
 
-        <Typography className="mt-16 md:mt-28 text-base Spartan-Regular text-center px-3">
+        <Typography className="mt-16 text-base Spartan-Regular text-center px-3">
           {appConfig.company.footerText}
         </Typography>
       </Container>

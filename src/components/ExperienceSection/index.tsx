@@ -52,7 +52,7 @@ const ExperienceSection = () => {
           draggable="false"
           src={LeftArrow}
           alt="Left Arrow"
-          className="absolute lg:!top-32 md:!top-24 lg:!right-48 sm:!right-32 !top-16 !right-16 lg:!w-[70px] lg:!h-[70px] md:!w-[55px] md:!h-[55px] !w-[45px] !h-[45px]"
+          className="absolute md:!top-24 lg:!right-48 sm:!right-32 !top-16 !right-16 lg:!w-[70px] lg:!h-[70px] md:!w-[55px] md:!h-[55px] !w-[45px] !h-[45px]"
         />
         {/* Decor Image */}
         <Image
@@ -66,13 +66,13 @@ const ExperienceSection = () => {
           draggable="false"
           src={RightArrow}
           alt="Right Arrow"
-          className="absolute lg:!top-32 sm:!top-24 lg:!left-44 sm:!left-32 md:!top-24 !top-16 !left-16 lg:!w-[70px] lg:!h-[70px] md:!w-[55px] md:!h-[55px] !w-[45px] !h-[45px]"
+          className="absolute sm:!top-24 lg:!left-44 sm:!left-32 md:!top-24 !top-16 !left-16 lg:!w-[70px] lg:!h-[70px] md:!w-[55px] md:!h-[55px] !w-[45px] !h-[45px]"
         />
         <Container>
           <Box className="!text-center">
             <AnimatedGradientText
               text="Experience The Talente Difference"
-              className="md:!pt-12 !pt-6 lg:!mb-20 md:!pb-16 !pb-16 !mt-0"
+              className="md:!pt-12 !pt-6 lg:!mb-0 md:!pb-10 !pb-10 !mt-0"
             />
             <Box className="flex sm:!flex-row xs:!flex-col gap-4 justify-center !items-center">
               <ExperinceSectionCards
