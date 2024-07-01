@@ -20,7 +20,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Container from "@/components/Container";
 
 const navItemsAvatar = [
-  { label: "Ask Tasha", path: "/" },
+  { label: "Ask Tasha", path: "/ask-tasha" },
   { label: "Career Hub", path: "/" },
   { label: "Tools", path: "/" },
   { label: "Research", path: "/" },
@@ -105,16 +105,16 @@ const Navbar = () => {
           background: scrolled ? "var(--hover-nav-color)" : "transparent",
           borderBottom: "linear-gradient(to right, transparent, var(--button-shadow), transparent)",
         }}
-        className="!h-[72px] left-0 !shadow-none borderNav"
+        className="!h-[72px] left-0 !shadow-none borderNav flex items-center justify-center"
       >
         <Container>
-          <Toolbar className="m-auto w-full">
+          <Toolbar className="m-auto w-full !px-0">
             <Link href="/" className="cursor-pointer" draggable="false">
               <Image
                 draggable="false"
                 alt="Logo"
                 src={TalenteLogo}
-                className="xl:w-[146px] !cursor-pointer xl:h-[50px] h-[90px] w-[90px]"
+                className="lg:ml-[-8px] xl:w-[146px] !cursor-pointer xl:h-[50px] h-[90px] w-[90px]"
               />
             </Link>
             <Box

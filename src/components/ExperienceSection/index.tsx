@@ -9,6 +9,7 @@ import DottedCircle from "@/assets/svg/DottedCircle.svg";
 import RightArrow from "@/assets/svg/RightArrow.svg";
 import LeftArrow from "@/assets/svg/LeftArrow.svg";
 import Globe from "@/assets/svg/Globe.svg";
+import Container from "@/components/Container";
 
 const points1 = [
   "Career Accelaration Master Classes",
@@ -44,64 +45,66 @@ const ExperienceSection = () => {
           draggable="false"
           src={DottedCircle}
           alt="Dotted Circle"
-          className="absolute left-0 top-0 xl:!h-[200px] xl:!w-[200px] !w-[150px] !h-[150px] animates"
+          className="absolute left-0 -top-8 lg:!w-[250px] lg:!h-[250px] sm:!w-[200px] sm:!h-[200px] !w-[150px] !h-[150px] animates"
         />
         {/* Left Arrow */}
         <Image
           draggable="false"
           src={LeftArrow}
           alt="Left Arrow"
-          className="absolute top-28 xl:!right-40 !right-24 xl:!h-[70px] xl:!w-[70px] !w-[50px] !h-[50px]"
+          className="absolute lg:!top-32 md:!top-24 lg:!right-48 sm:!right-32 !top-16 !right-16 lg:!w-[70px] lg:!h-[70px] md:!w-[55px] md:!h-[55px] !w-[45px] !h-[45px]"
         />
         {/* Decor Image */}
         <Image
           draggable="false"
           src={Decor}
           alt="Decor"
-          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 xl:!h-[800px] !h-[700px]"
+          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 xl:!h-[800px] sm:!h-[670px] !h-[1000px]"
         />
         {/* Right Arrow */}
         <Image
           draggable="false"
           src={RightArrow}
           alt="Right Arrow"
-          className="absolute top-28 xl:!left-40 !left-24 xl:!h-[70px] xl:!w-[70px] !w-[50px] !h-[50px]"
+          className="absolute lg:!top-32 sm:!top-24 lg:!left-44 sm:!left-32 md:!top-24 !top-16 !left-16 lg:!w-[70px] lg:!h-[70px] md:!w-[55px] md:!h-[55px] !w-[45px] !h-[45px]"
         />
-        <Box className="!text-center">
-          <AnimatedGradientText
-            text="Experience The Talente Difference"
-            className="!pt-12 !pb-20 !mt-0"
-          />
-          <Box className="flex md:!flex-row !flex-col gap-4 justify-center !items-center">
-            <ExperinceSectionCards
-              cardNum="#01"
-              points={points1}
-              text="Performance"
-              subText="Accelaration"
+        <Container>
+          <Box className="!text-center">
+            <AnimatedGradientText
+              text="Experience The Talente Difference"
+              className="md:!pt-12 !pt-6 lg:!mb-20 md:!pb-16 !pb-16 !mt-0"
             />
-            <ExperinceSectionCards
-              cardNum="#02"
-              points={points2}
-              text="Compensation"
-              subText="Benchmarking"
-            />
-            <ExperinceSectionCards
-              cardNum="#03"
-              points={points3}
-              text="Career"
-              subText="Advancement"
-            />
+            <Box className="flex sm:!flex-row xs:!flex-col gap-4 justify-center !items-center">
+              <ExperinceSectionCards
+                cardNum="#01"
+                points={points1}
+                text="Performance"
+                subText="Accelaration"
+              />
+              <ExperinceSectionCards
+                cardNum="#02"
+                points={points2}
+                text="Compensation"
+                subText="Benchmarking"
+              />
+              <ExperinceSectionCards
+                cardNum="#03"
+                points={points3}
+                text="Career"
+                subText="Advancement"
+              />
+            </Box>
           </Box>
-        </Box>
+        </Container>
       </Box>
 
       {/* Globe */}
-      <Box className="absolute xl:!-bottom-36 lg:-bottom-32 -bottom-24 -left-52 xl:!-left-32 lg:!-left-36 z-10">
+      <Box className="absolute lg:!-bottom-40 lg:!-left-36 md:!-bottom-20 md:!-left-52 !-bottom-10 !-left-24 z-10">
         <Image
           draggable="false"
           src={Globe}
           alt="Globe"
-          className="xl:!w-[380px] xl:!h-[410px] lg:!w-[300px] lg:!h-[350px] !w-[250] !h-[270px] spinGlobe"
+          className="lg:!w-[380px] lg:!h-[410px] !w-[200px] !h-[250px] spinGlobe"
         />
       </Box>
     </Box>
