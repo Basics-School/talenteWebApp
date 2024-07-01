@@ -6,7 +6,7 @@ import React from "react";
 import CareerSupportImage from "@/assets/svg/CustomerSupportSection.svg";
 import Container from "@/components/Container";
 import CommonTextArea from "@/common/CommonTextArea";
-import CustomerSupporttImage from "@/assets/images/CustomerSupportImage.png";
+import CustomerSupporttImg from "@/assets/images/CustomerSupportImg.png";
 import Arrow from "@/assets/svg/Arrow.svg";
 
 const CareerSupportSection = () => {
@@ -26,12 +26,14 @@ const CareerSupportSection = () => {
             className="md:!mt-6 !mt-1 xl:!text-6xl lg:!text-5xl md:!text-4xl !text-2xl"
           />
           <Box className="flex md:!flex-row !flex-col !mt-6 !px-8 md:!gap-0 !gap-4">
-            <Image
-              draggable="false"
-              src={CustomerSupporttImage}
-              alt="Customer Support Image"
-              className="xl:!w-[620px] xl:!h-[620px] lg:!w-[420px] lg:!h-[420px] md:!w-[300px] md:!h-[300px] !w-[200px] !h-[200px] z-20 !mx-auto "
-            />
+            <div className="borderImg">
+              <Image
+                draggable="false"
+                src={CustomerSupporttImg}
+                alt="Customer Support Image"
+                // className="lg:!w-[260px] lg:!h-[260px] md:!w-[220px] md:!h-[300px] !w-[200px] !h-[200px] z-20 !mx-auto"
+              />
+            </div>
             <Image
               draggable="false"
               src={Arrow}

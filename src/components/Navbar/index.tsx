@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   useLayoutEffect(() => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 0) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -45,7 +45,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 0) {
         setScrolled(true);
       } else {
         setScrolled(false);
