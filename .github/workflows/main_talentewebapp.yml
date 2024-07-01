@@ -59,4 +59,4 @@ jobs:
           app-name: 'TalenteWebApp'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8CB93CBC302946458D9A73DAB8878C4F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0C62845DF06646908AA140CEC2D303DD }}
