@@ -20,7 +20,7 @@ const AskTashaPage = () => {
         }}
       >
         <Box
-          className="flex text-[var(--white-text)] items-center gap-7 relative w-full"
+          className="flex text-[var(--white-text)] items-center gap-7 relative w-full px-2 sm:px-0"
           sx={{
             background: `url(${BgPattern.src})`,
             backgroundSize: "cover",
@@ -52,7 +52,7 @@ const AskTashaPage = () => {
                     company-centric
                   </Typography>
                   <Typography className="Spartan-SemiBold text-[var(--white-text)] md:!text-5xl lg:!text-6xl !mb-1 !text-4xl">
-                    HR support?
+                    HR Support?
                   </Typography>
                   <Typography className="Spartan-SemiBold text-[var(--white-text)] md:!text-5xl lg:!text-6xl !mb-1 !text-4xl">
                     So are we.
@@ -88,7 +88,7 @@ const AskTashaPage = () => {
         <Image
           src={BlueCircle}
           alt="BlueCircle image for Tasha page"
-          className="w-[110px] absolute bottom-36 right-[-2.4rem] z-10"
+          className="w-[110px] absolute bottom-36 right-[-2.4rem] z-0"
         />
       </Box>
     </>

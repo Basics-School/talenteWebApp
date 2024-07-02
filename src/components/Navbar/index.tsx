@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   useLayoutEffect(() => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 0) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -45,7 +45,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 0) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -114,7 +114,7 @@ const Navbar = () => {
                 draggable="false"
                 alt="Logo"
                 src={TalenteLogo}
-                className="lg:ml-[-8px] xl:w-[146px] !cursor-pointer xl:h-[50px] h-[90px] w-[90px]"
+                className="lg:ml-[-8px] !cursor-pointer h-[146px] w-[146px]"
               />
             </Link>
             <Box

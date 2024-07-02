@@ -42,7 +42,14 @@ const Footer = () => {
         <Grid container className="space-y-10 md:space-y-0">
           <Grid xs={12} md={3}>
             <Stack direction="column" alignItems="flex-start" spacing={2}>
-              <Image draggable="false" alt="Logo" src={TalenteLogo} className="w-[125px]" />
+              <Link href="/">
+                <Image
+                  draggable="false"
+                  alt="Logo"
+                  src={TalenteLogo}
+                  className="w-[125px] cursor-pointer"
+                />
+              </Link>
               <Box className="w-[150px]">
                 <Stack direction="row" justifyContent="center" alignItems="center" spacing={2}>
                   <FacebookCircularIcon className="h-5 w-5" />
@@ -97,7 +104,7 @@ const Footer = () => {
           </Grid>
         </Grid>
 
-        <Typography className="mt-16 md:mt-28 text-base Spartan-Regular text-center px-3">
+        <Typography className="mt-16 text-base Spartan-Regular text-center px-3">
           {appConfig.company.footerText}
         </Typography>
       </Container>

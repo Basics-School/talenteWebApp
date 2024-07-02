@@ -21,7 +21,7 @@ const GradientTextReverse = ({ text, className }: GradientTextReverseProps) => {
   return (
     <>
       <GradientText
-        className={`Spartan-SemiBold tracking-wide !normal-case flex text-gradient xl:!text-6xl lg:!text-5xl md:!text-4xl !text-2xl ${className}`}
+        className={`Spartan-SemiBold tracking-wide !normal-case flex text-gradient xl:!text-[45px] lg:!text-5xl md:!text-4xl !text-2xl !leading-[1.7rem] ${className}`}
       >
         {text}
       </GradientText>

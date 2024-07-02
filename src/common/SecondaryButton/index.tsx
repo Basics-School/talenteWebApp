@@ -12,15 +12,15 @@ const SecondaryButton: React.FC<IProps> = ({ text, color }) => {
   return (
     <Button
       style={{ backgroundColor: color }}
-      className=" px-4 w-[350px] !rounded-full flex justify-between lg:!w-[370px] lg:!h-[48px]"
+      className="px-4 w-[190px] !rounded-full flex justify-between lg:!h-[48px] sm:!h-[44px] xs:!h-[42px]"
     >
-      <Typography className="Montserrat-Medium !text-[var(--black-color)] pl-4 !normal-case !text-lg">
+      <Typography className="Montserrat-Medium !text-[var(--black-color)] pl-4 !normal-case lg:!text-lg xs:!text-base">
         {text}
       </Typography>
       <Image
         src={ExitButtonIcon}
         alt="ExitButtonIcon image for Tasha page"
-        className="!w-[50px] !h-[50px] !-mr-3 "
+        className="!w-[50px] !h-[50px] lg:!-mr-3 -mr-4"
       />
     </Button>
   );
