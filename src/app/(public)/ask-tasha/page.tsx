@@ -13,7 +13,7 @@ const AskTashaPage = () => {
   return (
     <>
       <Box
-        className="h-[100vh] flex justify-center relative overflow-hidden"
+        className="!h-[100vh] flex justify-center relative  overflow-hidden"
         sx={{
           background:
             "linear-gradient(to bottom, var( --black-color), var(--bg-gradient-color)) !important",
@@ -35,9 +35,8 @@ const AskTashaPage = () => {
               className="xl:!w-[80px] xl:!h-[80px] lg:!w-[67px] lg:!h-[61px] !w-[80px] !h-[80px] spinGlobe"
             />
           </Box>
-
-          <Container className="flex justify-center md:block">
-            <Box className="max-w-full sm:max-w-lg relative z-10">
+          <Container className="!flex-col sm:!justify-center sm:!flex sm:!mt-[-8rem] md:!mt-[-4rem] lg:!mt-0  mt-36">
+            <Box className="max-w-full sm:max-w-lg relative z-30 flex justify-center">
               <Stack
                 direction="column"
                 alignItems="center"
@@ -45,26 +44,26 @@ const AskTashaPage = () => {
                 className="h-full"
               >
                 <Stack direction="column">
-                  <Typography className="Spartan-SemiBold text-[var(--white-text)] md:!text-5xl lg:!text-6xl !mb-1 !text-4xl">
+                  <Typography className="Spartan-SemiBold text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-6xl !text-3xl">
                     Tired of
                   </Typography>
-                  <Typography className="Spartan-SemiBold text-[var(--white-text)] md:!text-5xl lg:!text-6xl !mb-1 !text-4xl">
+                  <Typography className="Spartan-SemiBold text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-6xl !mb-1 !text-3xl">
                     company-centric
                   </Typography>
-                  <Typography className="Spartan-SemiBold text-[var(--white-text)] md:!text-5xl lg:!text-6xl !mb-1 !text-4xl">
+                  <Typography className="Spartan-SemiBold text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-6xl !mb-1 !text-3xl">
                     HR Support?
                   </Typography>
-                  <Typography className="Spartan-SemiBold text-[var(--white-text)] md:!text-5xl lg:!text-6xl !mb-1 !text-4xl">
+                  <Typography className="Spartan-SemiBold text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-6xl !mb-1 !text-3xl">
                     So are we.
                   </Typography>
                   <Typography className="text-[var(--white-text)] !mb-6">
-                    <Typography className="Montserrat-Regular md:!text-xl !text-lg">
+                    <Typography className="Montserrat-Regular sm:!text-lg !text-md">
                       AT Talente we deliver confidential,
                     </Typography>
-                    <Typography className="Montserrat-Regular md:!text-xl !text-lg">
+                    <Typography className="Montserrat-Regular sm:!text-lg !text-md">
                       trustworthy, on-demand HR support
                     </Typography>
-                    <Typography className="Montserrat-Regular md:!text-xl !text-lg">
+                    <Typography className="Montserrat-Regular sm:!text-lg !text-md">
                       whenever and wherever you need it.
                     </Typography>
                   </Typography>
@@ -78,17 +77,19 @@ const AskTashaPage = () => {
               </Grid>
               <Grid xs={12} md={8}></Grid>
             </Grid> */}
-            <Image
-              src={TashaImg}
-              alt="Tasha image for Tasha page"
-              className="mt-4 absolute z-20 bottom-0 right-0 xs:hidden md:block lg:w-[800px] md:w-[600px] sm:w-[500px]"
-            />
+            <Box className=" flex justify-center">
+              <Image
+                src={TashaImg}
+                alt="Tasha image for Tasha page"
+                className="!mt-4 sm:!absolute z-20 xs:!bottom-0 sm:!right-0 lg:!w-[800px] md:!w-[600px] sm:!w-[500px] !w-[300px]"
+              />
+            </Box>
           </Container>
         </Box>
         <Image
           src={BlueCircle}
           alt="BlueCircle image for Tasha page"
-          className="w-[110px] absolute bottom-36 right-[-2.4rem] z-0"
+          className="w-[110px] absolute bottom-36 right-[-2.4rem] z-0 spinGlobe"
         />
       </Box>
     </>
