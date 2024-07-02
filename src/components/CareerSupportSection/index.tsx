@@ -12,7 +12,7 @@ import Arrow from "@/assets/svg/Arrow.svg";
 const CareerSupportSection = () => {
   return (
     <>
-      <Box className={"relative pb-7"}>
+      <Box className={"relative pb-7 overflow-hidden"}>
         {/* <Image
           draggable="false"
           src={CareerSupportImage}
