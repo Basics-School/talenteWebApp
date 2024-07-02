@@ -13,7 +13,7 @@ const AskTashaPage = () => {
   return (
     <>
       <Box
-        className="!h-[100vh] flex justify-center relative  overflow-hidden"
+        className="!h-[100vh] flex justify-center relative sm:!overflow-hidden overflow-x-hidden"
         sx={{
           background:
             "linear-gradient(to bottom, var( --black-color), var(--bg-gradient-color)) !important",
@@ -27,7 +27,7 @@ const AskTashaPage = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <Box className="absolute bottom-6 -left-8 md:!-left-7 lg-left-16 spinCircle z-10">
+          <Box className="absolute bottom-6 -left-8 md:!-left-7 lg-left-16 spinCircle z-10 overflow-clip">
             <Image
               draggable="false"
               src={BlueCircle}
@@ -35,7 +35,7 @@ const AskTashaPage = () => {
               className="xl:!w-[80px] xl:!h-[80px] lg:!w-[67px] lg:!h-[61px] !w-[80px] !h-[80px] spinGlobe"
             />
           </Box>
-          <Container className="!flex-col sm:!justify-center sm:!flex sm:!mt-[-8rem] md:!mt-[-4rem] lg:!mt-0  mt-36">
+          <Container className="!flex-col sm:!justify-center sm:!flex lg:!mt-0 sm:!mb-0 !mb-32">
             <Box className="max-w-full sm:max-w-lg relative z-30 flex justify-center">
               <Stack
                 direction="column"
@@ -44,16 +44,16 @@ const AskTashaPage = () => {
                 className="h-full"
               >
                 <Stack direction="column">
-                  <Typography className="Spartan-SemiBold text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-6xl !text-3xl">
+                  <Typography className="Spartan-SemiBold text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-6xl !text-4xl">
                     Tired of
                   </Typography>
-                  <Typography className="Spartan-SemiBold text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-6xl !mb-1 !text-3xl">
+                  <Typography className="Spartan-SemiBold text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-6xl !mb-1 !text-4xl">
                     company-centric
                   </Typography>
-                  <Typography className="Spartan-SemiBold text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-6xl !mb-1 !text-3xl">
+                  <Typography className="Spartan-SemiBold text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-6xl !mb-1 !text-4xl">
                     HR Support?
                   </Typography>
-                  <Typography className="Spartan-SemiBold text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-6xl !mb-1 !text-3xl">
+                  <Typography className="Spartan-SemiBold text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-6xl !mb-1 !text-4xl">
                     So are we.
                   </Typography>
                   <Typography className="text-[var(--white-text)] !mb-6">
@@ -81,7 +81,7 @@ const AskTashaPage = () => {
               <Image
                 src={TashaImg}
                 alt="Tasha image for Tasha page"
-                className="!mt-4 sm:!absolute z-20 xs:!bottom-0 sm:!right-0 lg:!w-[800px] md:!w-[600px] sm:!w-[500px] !w-[300px]"
+                className="!mt-4 sm:!absolute z-20 xs:!bottom-0 sm:!right-0 lg:!w-[800px] md:!w-[600px] sm:!w-[500px] !w-[400px] !fixed"
               />
             </Box>
           </Container>
