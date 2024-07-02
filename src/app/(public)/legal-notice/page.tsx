@@ -5,7 +5,7 @@ import space from "@/assets/svg/Space.svg";
 import Globe from "@/assets/svg/Globe.svg";
 import Image from "next/image";
 import Stack from "@mui/material/Stack";
-import { Container } from "@mui/material";
+import Container from "@mui/material/Container";
 
 const LegalNotice = () => {
   return (
