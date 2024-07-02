@@ -6,22 +6,31 @@ import CommonTextArea from "@/common/CommonTextArea";
 import CareerGuideImage from "@/assets/images/CareerGuideImg2.svg";
 import GradientTextCommon from "@/common/GradientTextCommon";
 import DottedArrow from "@/assets/svg/DottedArrow.svg";
-import BlueCircle from "@/assets/svg/BlueCircle.svg";
+import PurpleCircle from "@/assets/svg/PurpleCircle.svg";
+import Stack from "@mui/material/Stack";
+
 const CareerGuideSection = () => {
   return (
     <Box className="relative">
       <Container>
         <Box className="flex relative flex-col justify-center lg:!mt-10 md:!mt-12 !mt-8 xl:!px-0 !px-8">
-          <GradientTextCommon
-            text="We're your ultimate career guide"
-            className="!mb-1 !mx-auto xl:!text-[55px] lg:!text-5xl md:!text-4xl !text-2xl text-center"
-          />
-          <Image
-            draggable="false"
-            src={DottedArrow}
-            alt="Customer Support Image"
-            className="lg:!w-[100px] !w-[70px] xl:!ml-[14rem] md:!ml-[5rem] !mt-1"
-          />
+          <Stack
+            className="max-w-4xl mx-auto"
+            direction="column"
+            justifyContent="center"
+            alignItems="flex-start"
+          >
+            <GradientTextCommon
+              text="We're your ultimate career guide"
+              className="!mb-1 !mx-auto xl:!text-[55px] lg:!text-5xl md:!text-4xl !text-2xl text-center"
+            />
+            <Image
+              draggable="false"
+              src={DottedArrow}
+              alt="Customer Support Image"
+              className="lg:!w-[100px] !w-[70px] xl:ml-[-2rem]  lg:ml-[-3rem] md:ml-[1rem] sm:ml-[2rem] ml-4"
+            />
+          </Stack>
           <Box className="relative flex md:!flex-row !flex-col !w-full !justify-center lg:!gap-20 md:!gap-10 !gap-6 md:!px-8">
             <CommonTextArea
               heading="We help you win at work"
@@ -41,7 +50,7 @@ const CareerGuideSection = () => {
         </Box>
       </Container>
       <Image
-        src={BlueCircle}
+        src={PurpleCircle}
         alt="BlueCircle image for Tasha page"
         className="absolute xl:!w-[110px] !left-[-3rem] xl:!bottom-[7rem] lg:!w-[80px] !bottom-[15rem] spinGlobe w-[110px] md:w-[144px]"
       />

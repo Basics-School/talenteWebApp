@@ -5,6 +5,7 @@ import space from "@/assets/svg/Space.svg";
 import Globe from "@/assets/svg/Globe.svg";
 import Image from "next/image";
 import Stack from "@mui/material/Stack";
+import { Container } from "@mui/material";
 
 const LegalNotice = () => {
   return (
@@ -25,7 +26,7 @@ const LegalNotice = () => {
       </Box>
 
       {/* Main Content */}
-      <Box className="max-w-[1637px] w-[90%] xl:!mt-[10rem] lg:!mt-[10rem] !mt-[10rem] flex-1  sm:px-0">
+      <Container className="max-w-[1380px] !mt-[10rem] !px-8 flex-1 sm:px-0">
         <Typography
           variant="h1"
           className="Spartan-SemiBold text-white xl:text-[50px] xl:leading-[71px] lg:text-[40px]  lg:leading-[3rem] md:text-[40px] md:leading-[3.5rem] sm:text-[40px] sm:leading-[3.5rem] text-[27px] overflow-wrap break-words"
@@ -88,7 +89,7 @@ const LegalNotice = () => {
             </Box>
           </Stack>
         </Stack>
-      </Box>
+      </Container>
 
       {/* Globe */}
       <Box className="absolute z-10 lg:-bottom-16 md:-bottom-10 -bottom-5 xl:-right-[8.5rem] lg:-right-20 md:-right-20 -right-20">
