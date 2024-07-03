@@ -51,8 +51,8 @@ const CareerGuideSection = () => {
       </Container>
       <Image
         src={PurpleCircle}
-        alt="BlueCircle image for Tasha page"
-        className="absolute xl:!w-[110px] !left-[-3rem] xl:!bottom-[7rem] lg:!w-[80px] !bottom-[15rem] spinGlobe w-[110px] md:w-[144px]"
+        alt="PurpleCircle image for Tasha page"
+        className="absolute xl:!w-[110px] xl:!left-[-3rem] xl:!bottom-[7rem] lg:!w-[90px] lg:!left-[-3rem] lg:!bottom-[6rem] md:w-[70px] md:!left-[-2rem] md:!bottom-[2rem] sm:w-[60px] sm:!left-[-2rem] sm:!bottom-[16rem] tab:!bottom-[14rem] w-[50px] !left-[-2rem] !bottom-[18rem] spinGlobe"
       />
     </Box>
   );

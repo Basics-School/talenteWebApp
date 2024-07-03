@@ -46,7 +46,7 @@ export default function Home() {
         <Image
           src={Decoration}
           alt="Decoration Image"
-          className="!mx-auto sm:-mt-14 xl:!w-[160px] xl:!h-[55px] lg:!w-[120px] !w-[90px]"
+          className="!mx-auto sm:-mt-[-4rem] xl:!w-[160px] xl:!h-[55px] lg:!w-[120px] !w-[90px]"
         />
       </Box>
       <Box style={{ minHeight: "480px", background: "var(--section-color)" }}>
