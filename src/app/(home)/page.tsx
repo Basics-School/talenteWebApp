@@ -18,7 +18,7 @@ export default function Home() {
             "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
         }}
       >
-        <Box className="xl:!mt-44 lg:!mt-32 !mt-24 flex-1">
+        <Box className="xl:!mt-44 !mt-40 flex-1 mb-[60px] flex items-center">
           <InfoSection />
         </Box>
         <Box className="absolute bottom-6 -left-8 md:!-left-7 lg-left-16 spinCircle z-10">
@@ -34,7 +34,7 @@ export default function Home() {
             draggable="false"
             src={Globe}
             alt="Globe"
-            className="xl:!w-[560px] xl:!h-[500px] lg:!w-[437px] lg:!h-[431px] sm:!w-[390px] sm:!h-[390px] !w-[290px] !h-[290px] spinGlobe"
+            className="lg:!w-[400px] sm:!w-[350px] !w-[290px] spinGlobe"
           />
         </Box>
       </Box>

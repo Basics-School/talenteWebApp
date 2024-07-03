@@ -6,8 +6,6 @@ import AnimatedGradientText from "@/common/AnimatedGradientText";
 import Image from "next/image";
 import Decor from "@/assets/svg/ExperienceSecetionDecor.svg";
 import DottedCircle from "@/assets/svg/DottedCircle.svg";
-import RightArrow from "@/assets/svg/RightArrow.svg";
-import LeftArrow from "@/assets/svg/LeftArrow.svg";
 import Globe from "@/assets/svg/Globe.svg";
 import Container from "@/components/Container";
 
@@ -48,12 +46,12 @@ const ExperienceSection = () => {
           className="absolute left-0 -top-8 lg:!w-[250px] lg:!h-[250px] sm:!w-[200px] sm:!h-[200px] !w-[150px] !h-[150px] animates"
         />
         {/* Left Arrow */}
-        <Image
+        {/* <Image
           draggable="false"
           src={LeftArrow}
           alt="Left Arrow"
           className="absolute md:!top-24 lg:!right-48 sm:!right-32 !top-16 !right-16 lg:!w-[70px] lg:!h-[70px] md:!w-[55px] md:!h-[55px] !w-[45px] !h-[45px]"
-        />
+        /> */}
         {/* Decor Image */}
         <Image
           draggable="false"
@@ -62,19 +60,19 @@ const ExperienceSection = () => {
           className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 xl:!h-[800px] sm:!h-[670px] !h-[1000px]"
         />
         {/* Right Arrow */}
-        <Image
+        {/* <Image
           draggable="false"
           src={RightArrow}
           alt="Right Arrow"
           className="absolute sm:!top-24 lg:!left-44 sm:!left-32 md:!top-24 !top-16 !left-16 lg:!w-[70px] lg:!h-[70px] md:!w-[55px] md:!h-[55px] !w-[45px] !h-[45px]"
-        />
+        /> */}
         <Container>
           <Box className="!text-center">
             <AnimatedGradientText
               text="Experience The Talente Difference"
               className="md:!pt-12 !pt-6 lg:!mb-0 md:!pb-10 !pb-10 !mt-0"
             />
-            <Box className="flex sm:!flex-row xs:!flex-col gap-4 justify-center !items-center">
+            <Box className="grid tab:grid-cols-3 gap-4 justify-center !items-center">
               <ExperinceSectionCards
                 cardNum="#01"
                 points={points1}
