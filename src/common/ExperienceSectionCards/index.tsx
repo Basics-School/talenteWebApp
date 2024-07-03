@@ -15,16 +15,16 @@ interface CardProps {
 
 const ExperinceSectionCards = ({ cardNum, points, text, subText }: CardProps) => {
   return (
-    <Box className="flex-1">
+    <Box className="!h-full">
       <Box
-        className="border-[2px] border-solid border-[--white-text] !rounded-md lg:!h-[545px] md:!h-[525px] sm:!h-[495px] !h-[480px]"
+        className="border-[2px] border-solid border-[--white-text] !rounded-md !min-h-[480px] !h-full overflow-visible !py-8"
         sx={{
           overflow: "auto",
           display: "flex",
           flexDirection: "column",
         }}
       >
-        <Box className={"Spartan-Medium text-[--white-text] lg:!text-4xl !text-2xl !mt-12"}>
+        <Box className={"Spartan-Medium text-[--white-text] lg:!text-4xl !text-2xl !mt-0"}>
           {cardNum}
         </Box>
         <AnimatedGradientText text={text} className="lg:!text-5xl !text-3xl" />
@@ -60,7 +60,7 @@ const ExperinceSectionCards = ({ cardNum, points, text, subText }: CardProps) =>
             ))}
           </List>
         </Box>
-        <Box className="!my-6 flex-shrink-0">
+        <Box className="!mt-6 flex-shrink-0">
           <ActionButton
             text="Download E-Book"
             className="Montserrat-Regular xl:!px-8 xl:!py-3 lg:!px-6 lg:!py-3 !px-5 !py-2 xl:!text-base !text-sm"
