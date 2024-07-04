@@ -35,7 +35,7 @@ const AskTashaPage = () => {
               className="xl:!w-[80px] xl:!h-[80px] lg:!w-[67px] lg:!h-[61px] !w-[80px] !h-[80px] spinGlobe"
             />
           </Box>
-          <Container className="!flex-col sm:!justify-center sm:!flex lg:!mt-0 sm:!mb-0 !mb-32">
+          <Container className=" sm:!justify-center sm:!flex lg:!mt-0 sm:!mb-0 !mb-32">
             <Box className="max-w-full sm:max-w-lg relative z-30 flex justify-center">
               <Stack
                 direction="column"
@@ -81,7 +81,7 @@ const AskTashaPage = () => {
               <Image
                 src={TashaImg}
                 alt="Tasha image for Tasha page"
-                className="!mt-4 sm:!absolute z-20 xs:!bottom-0 sm:!right-0 lg:!w-[800px] md:!w-[600px] sm:!w-[500px] !w-[400px] !fixed"
+                className="!mt-4 z-20  lg:!w-[750px] md:!w-[600px] sm:!w-[500px] !w-[400px] lg:!mb-[-110px] tab:!relative !absolute"
               />
             </Box>
           </Container>
