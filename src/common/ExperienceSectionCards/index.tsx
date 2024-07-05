@@ -32,7 +32,7 @@ const ExperinceSectionCards = ({ cardNum, points, text, subText }: CardProps) =>
           {subText}
         </Box>
 
-        <Box className="flex flex-col gap-3 lg:!pl-12 !pl-10 !pr-4 flex-grow">
+        <Box className="flex flex-col gap-3 lg:!pl-12 !pl-10 !pr-4 flex-grow text-center">
           <List
             sx={{
               listStyleType: "disc",
@@ -52,7 +52,7 @@ const ExperinceSectionCards = ({ cardNum, points, text, subText }: CardProps) =>
                   primaryTypographyProps={{
                     fontSize: { xs: "20px", sm: "18px", md: "20px", lg: "22px" },
                   }}
-                  className="Spartan-Medium !text-[--white-text]"
+                  className="Spartan-Medium !text-[--white-text] !text-center"
                 >
                   {value}
                 </ListItemText>

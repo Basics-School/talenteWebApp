@@ -214,7 +214,7 @@ body {
 }
 
 .MuiListItemText-root {
-  text-align: left !important;
+  text-align: left;
   color: var(--white-text);
 }
 
