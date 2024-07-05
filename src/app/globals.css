@@ -21,6 +21,7 @@
   --bg-input: #333333;
   --error-message: #f64e60;
   --border-tab: #222082;
+  --bg-card: #080213;
   --league-spartan-black: "Spartan-Black";
   --league-spartan-bold: "Spartan-Bold";
   --league-spartan-extra-bold: "Spartan-Extra-Bold";
@@ -92,6 +93,16 @@ body {
   border: 1px solid var(--button-border);
 } */
 
+.bgCard {
+  background: linear-gradient(to right, var(--bg-card), var(--bg-gradient-color));
+  clip-path: polygon(0% 0%, 100% 0, 85% 99%, 0% 100%);
+}
+.bgCircle {
+  border: 1px solid var(--bg-gradient-color);
+  background: var(--section-color);
+  border-radius: 100%;
+}
+
 .bgButton {
   background: linear-gradient(
     to right,
@@ -99,6 +110,13 @@ body {
     var(--black-color),
     var(--button-color)
   );
+}
+
+.linear-bg2 {
+  background: linear-gradient(270deg, var(--button-color), var(--black-color), var(--button-color));
+  background-size: 200% 200%;
+  animation: gradient-flow 8s ease infinite;
+  border: 2px solid var(--button-border);
 }
 
 .linear-bg {
@@ -193,6 +211,11 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.MuiListItemText-root {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 .MuiDrawer-paper {
