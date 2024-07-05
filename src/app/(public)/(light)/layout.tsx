@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import BlackTalenteLogo from "@/assets/svg/BlackTalenteLogo.svg";
 
 export default function RootLayout({
   children,
@@ -9,9 +9,12 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <Navbar />
+      <Navbar
+        color="var(--black-color)"
+        logo={BlackTalenteLogo}
+        scrollColor={"var(--section-color)"}
+      />
       {children}
-      <Footer />
     </>
   );
 }

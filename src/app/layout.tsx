@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Inter } from "next/font/google";
 import NotistackProvider from "@/utils/Notistack/NotiStackProvider";
-import Navbar from "@/components/Navbar";
 
 import "react-international-phone/style.css";
 import "./globals.css";
@@ -27,7 +26,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <NotistackProvider>
           <CssBaseline />
-          <Navbar />
           {children}
         </NotistackProvider>
       </body>

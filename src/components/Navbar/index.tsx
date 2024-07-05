@@ -26,10 +26,18 @@ const navItemsAvatar = [
   { label: "Research", path: "/" },
   { label: "More", path: "/" },
 ];
-
-const Navbar = () => {
+interface StyleProps {
+  color?: string;
+  logo?: any;
+  scrollColor?: string;
+}
+const Navbar = ({
+  color = "var(--white-text)",
+  logo = TalenteLogo,
+  scrollColor = "var(--hover-nav-color)",
+}: StyleProps) => {
   const [mobileOpen, setMobileOpen] = useState(true);
-  const [scrolled, setScrolled] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -102,7 +110,7 @@ const Navbar = () => {
         component="nav"
         sx={{
           transition: "all 0.3s ease-in-out",
-          background: scrolled ? "var(--hover-nav-color)" : "transparent",
+          background: scrolled ? scrollColor : "transparent",
           borderBottom: "linear-gradient(to right, transparent, var(--button-shadow), transparent)",
         }}
         className="!h-[72px] left-0 !shadow-none borderNav flex items-center justify-center"
@@ -113,7 +121,7 @@ const Navbar = () => {
               <Image
                 draggable="false"
                 alt="Logo"
-                src={TalenteLogo}
+                src={logo}
                 className="lg:ml-[-8px] !cursor-pointer h-[146px] w-[146px]"
               />
             </Link>
@@ -129,7 +137,7 @@ const Navbar = () => {
                   <Link
                     href={item.path}
                     key={item.label}
-                    style={{ color: "var(--white-text)" }}
+                    style={{ color: `${color}` }}
                     className="Spartan-SemiBold !text-[18px] hover-underline-animation !w-fit !whitespace-nowrap !capitalize xl:!text-base !text-sm !leading-normal flex flex-row"
                   >
                     {item.label}

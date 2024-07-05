@@ -20,6 +20,7 @@
   --dialog-bg: #242424;
   --bg-input: #333333;
   --error-message: #f64e60;
+  --border-tab: #222082;
   --league-spartan-black: "Spartan-Black";
   --league-spartan-bold: "Spartan-Bold";
   --league-spartan-extra-bold: "Spartan-Extra-Bold";
@@ -81,6 +82,23 @@ body {
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.MuiTabs-indicator {
+  display: none !important;
+}
+
+/* .MuiTouchRipple-root {
+  border: 1px solid var(--button-border);
+} */
+
+.bgButton {
+  background: linear-gradient(
+    to right,
+    var(--button-color),
+    var(--black-color),
+    var(--button-color)
+  );
 }
 
 .linear-bg {
