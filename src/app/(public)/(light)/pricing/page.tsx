@@ -87,8 +87,13 @@ const Pricing = () => {
           </Box>
           <Box className="flex flex-col justify-center lg:!gap-8 !gap-2 xl:!mt-0 !mt-4">
             <Box>
-              <div className="borderImgPricing !my-auto ">
-                <Image draggable="false" src={PricingSectionImg} alt="Customer Support Image" />
+              <div className="borderImgPricing !my-auto">
+                <Image
+                  draggable="false"
+                  src={PricingSectionImg}
+                  alt="Customer Support Image"
+                  className="!bg-[--img-bg]"
+                />
               </div>
             </Box>
             <Button className="Montserrat-Medium !normal-case linear-bg2 !w-fit !text-[--white-text] xl:!px-10 !px-7 !py-2 !rounded-full !mx-auto z-20 xl:!text-base !text-sm">
