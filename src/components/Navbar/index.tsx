@@ -21,7 +21,7 @@ import Container from "@/components/Container";
 
 const navItemsAvatar = [
   { label: "Ask Tasha", path: "/ask-tasha" },
-  { label: "Career Hub", path: "/" },
+  { label: "Career Hub", path: "/", url: "https://community.mytalente.ai/" },
   { label: "Tools", path: "/" },
   { label: "Research", path: "/" },
   { label: "More", path: "/" },
@@ -80,7 +80,19 @@ const Navbar = () => {
             >
               <Link className="Spartan-SemiBold" href={item.path}>
                 <ListItemButton className="Spartan-SemiBold" sx={{ textAlign: "center" }}>
-                  <ListItemText className="Spartan-SemiBold" primary={item.label} />
+                  {item.url ? (
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="Spartan-SemiBold text-white "
+                      onClick={(event) => event.stopPropagation()}
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <ListItemText className="Spartan-SemiBold" primary={item.label} />
+                  )}
                 </ListItemButton>
               </Link>
             </ListItem>
@@ -126,20 +138,37 @@ const Navbar = () => {
                 className="sm:!flex hidden xl:!gap-[60px] !items-center"
               >
                 {navItemsAvatar.map((item) => (
-                  <Link
-                    href={item.path}
-                    key={item.label}
-                    style={{ color: "var(--white-text)" }}
-                    className="Spartan-SemiBold !text-[18px] hover-underline-animation !w-fit !whitespace-nowrap !capitalize xl:!text-base !text-sm !leading-normal flex flex-row"
-                  >
-                    {item.label}
-                  </Link>
+                  <React.Fragment key={item.label}>
+                    {item.url ? (
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="Spartan-SemiBold !text-[18px] hover-underline-animation !w-fit !whitespace-nowrap !capitalize xl:!text-base !text-sm !leading-normal flex flex-row"
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={item.path}
+                        key={item.label}
+                        style={{ color: "var(--white-text)" }}
+                        className="Spartan-SemiBold !text-[18px] hover-underline-animation !w-fit !whitespace-nowrap !capitalize xl:!text-base !text-sm !leading-normal flex flex-row"
+                      >
+                        {item.label}
+                      </Link>
+                    )}
+                  </React.Fragment>
                 ))}
               </Box>
             </Box>
             <ActionButton
               text="Log In"
-              className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-5 !py-1 xl:!text-base !text-sm"
+              className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-2 !py-1 xl:!text-base !text-[13px] tab:me-3 me-2"
+            />
+            <ActionButton
+              text="Sign Up"
+              className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-2 !py-1 xl:!text-base !text-[13px]"
             />
             <Button
               onClick={handleDrawerToggle}

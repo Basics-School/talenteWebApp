@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -71,9 +72,27 @@ const Footer = () => {
               />
               <Stack direction="row" spacing={2}>
                 {usefulLinks.map((link) => (
-                  <Link key={link.path} className="Spartan-Medium" href={link.path}>
-                    {link.label}
-                  </Link>
+                  <>
+                    {link.url ? (
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="Spartan-SemiBold text-white navList hover-underline-animation"
+                        onClick={(event) => event.stopPropagation()}
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        key={link.path}
+                        className="Spartan-Medium navList hover-underline-animation"
+                        href={link.path}
+                      >
+                        {link.label}
+                      </Link>
+                    )}
+                  </>
                 ))}
               </Stack>
             </Stack>
