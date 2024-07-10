@@ -15,14 +15,12 @@ const GradientText = styled(Typography)({
   backgroundClip: "text",
   textFillColor: "transparent",
   maxWidth: "1200px",
-  paddingLeft: "10px",
-  paddingRight: "10px",
 });
 
 const AnimatedGradientText = ({ text, className }: GradientProps) => {
   return (
     <GradientText
-      className={`Spartan-SemiBold lg:text-5xl lg:!leading-[3.7rem] sm:text-4xl md:!leading-[3.2rem] text-[25px] !text-center overflow-wrap break-words !mx-auto xl:!mt-4 !mt-3 ${className}`}
+      className={`Spartan-SemiBold lg:text-5xl lg:!leading-[3.7rem] sm:text-4xl md:!leading-[3.2rem] text-[25px] !text-center overflow-wrap break-words !mx-auto xl:!mt-4 !mt-3 px-[10px] ${className}`}
     >
       <span className="text-gradient1">{text}</span>
     </GradientText>

@@ -169,6 +169,7 @@ const Navbar = () => {
             <ActionButton
               text="Sign Up"
               className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-2 !py-1 xl:!text-base !text-[13px]"
+              openDialog
             />
             <Button
               onClick={handleDrawerToggle}

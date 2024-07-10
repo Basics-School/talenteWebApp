@@ -123,9 +123,28 @@ const Footer = () => {
           </Grid>
         </Grid>
 
-        <Typography className="mt-16 text-base Spartan-Regular text-center px-3">
+        <Typography className="mt-16 text-base Spartan-Regular text-center px-3 mb-[10px]">
           {appConfig.company.footerText}
         </Typography>
+        <Box className="border-t pt-[10px]">
+          <Box className="flex justify-center">
+            <Link
+              href="/"
+              className="Spartan-Medium navList hover-underline-animation px-3 border-r"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/"
+              className="Spartan-Medium navList hover-underline-animation px-3 border-r"
+            >
+              Terms of Use
+            </Link>
+            <Link href="/" className="Spartan-Medium navList hover-underline-animation px-3">
+              Legal
+            </Link>
+          </Box>
+        </Box>
       </Container>
       <Box className="absolute right-[-150px] top-2">
         <Image

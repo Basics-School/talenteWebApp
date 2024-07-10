@@ -8,7 +8,8 @@
     "start": "node server.js",
     "lint": "next lint",
     "prepare": "husky install",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "local": "next"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
