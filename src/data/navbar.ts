@@ -3,6 +3,5 @@ export const usefulLinks = [
   { label: "Career Hub", path: "/", url: "https://community.mytalente.ai/" },
   { label: "Tools", path: "/" },
   { label: "Research", path: "/" },
-  { label: "Legal", path: "/" },
-  { label: "Terms of Use", path: "/" },
+  { label: "More", path: "/" },
 ];
