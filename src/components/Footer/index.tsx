@@ -127,20 +127,23 @@ const Footer = () => {
           {appConfig.company.footerText}
         </Typography>
         <Box className="border-t pt-[10px]">
-          <Box className="flex justify-center">
+          <Box className="flex justify-center gap-2-">
             <Link
               href="/"
-              className="Spartan-Medium navList hover-underline-animation px-3 border-r"
+              className="Spartan-Medium navList hover-underline-animation mx-3 relative"
             >
               Privacy Policy
             </Link>
             <Link
               href="/"
-              className="Spartan-Medium navList hover-underline-animation px-3 border-r"
+              className="Spartan-Medium navList hover-underline-animation mx-3 relative before:content-[''] before:absolute before:h-[10px] before:w-[1px] before:bg-white before:left-[-10px] before:top-1/2 before:-translate-y-1/2"
             >
               Terms of Use
             </Link>
-            <Link href="/" className="Spartan-Medium navList hover-underline-animation px-3">
+            <Link
+              href="/legal-notice"
+              className="Spartan-Medium navList hover-underline-animation mx-3 relative before:content-[''] before:absolute before:h-[10px] before:w-[1px] before:bg-white before:left-[-10px] before:top-1/2 before:-translate-y-1/2"
+            >
               Legal
             </Link>
           </Box>
