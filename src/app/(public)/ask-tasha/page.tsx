@@ -58,7 +58,7 @@ const AskTashaPage = () => {
                   </Typography>
                   <Typography className="text-[var(--white-text)] !mb-6">
                     <Typography className="Montserrat-Regular sm:!text-lg !text-md">
-                      AT Talente we deliver confidential,
+                      At Talente we deliver confidential,
                     </Typography>
                     <Typography className="Montserrat-Regular sm:!text-lg !text-md">
                       trustworthy, on-demand HR support

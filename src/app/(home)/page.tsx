@@ -34,7 +34,7 @@ export default function Home() {
             draggable="false"
             src={Globe}
             alt="Globe"
-            className="sm:!w-[310px] !w-[220px] spinGlobe"
+            className="tab:!w-[310px] !w-[40vw] spinGlobe"
           />
         </Box>
       </Box>
