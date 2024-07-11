@@ -132,7 +132,7 @@ const Navbar = () => {
                 src={TalenteLogo}
                 className="lg:ml-[-8px] !cursor-pointer tab:h-[146px] w-[146px]"
               />
-              <Box className="Spartan-light text-[12px]">Beta Live</Box>
+              <Box className="Spartan-light text-[12px] tab:mt-[10px]">Beta Live</Box>
             </Link>
             <Box
               sx={{ display: { xs: "flex", sm: "flex" } }}
