@@ -121,13 +121,18 @@ const Navbar = () => {
       >
         <Container>
           <Toolbar className="m-auto w-full !px-0">
-            <Link href="/" className="cursor-pointer" draggable="false">
+            <Link
+              href="/"
+              className="cursor-pointer flex flex-col tab:flex-row tab:items-center"
+              draggable="false"
+            >
               <Image
                 draggable="false"
                 alt="Logo"
                 src={TalenteLogo}
-                className="lg:ml-[-8px] !cursor-pointer h-[146px] w-[146px]"
+                className="lg:ml-[-8px] !cursor-pointer tab:h-[146px] w-[146px]"
               />
+              <Box className="Spartan-light text-[12px]">Beta Live</Box>
             </Link>
             <Box
               sx={{ display: { xs: "flex", sm: "flex" } }}
