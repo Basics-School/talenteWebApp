@@ -127,7 +127,7 @@ const Footer = () => {
           {appConfig.company.footerText}
         </Typography>
         <Box className="border-t pt-[10px]">
-          <Box className="flex justify-center gap-2-">
+          <Box className="flex justify-center gap-2">
             <Link
               href="/"
               className="Spartan-Medium navList hover-underline-animation mx-3 relative"
