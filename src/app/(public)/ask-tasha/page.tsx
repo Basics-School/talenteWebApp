@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Image from "next/image";
 import SecondaryButton from "@/common/SecondaryButton";
 import BgPattern from "@/assets/images/AskTashaBgPattern.png";
-import TashaImg from "@/assets/images/TashaImage.png";
+import TashaChat from "@/assets/images/tasha-chat.png";
 import BlueCircle from "@/assets/svg/BlueCircle.svg";
 import Stack from "@mui/material/Stack";
 import Container from "@/components/Container";
@@ -35,7 +35,7 @@ const AskTashaPage = () => {
               className="xl:!w-[80px] xl:!h-[80px] lg:!w-[67px] lg:!h-[61px] !w-[80px] !h-[80px] spinGlobe"
             />
           </Box>
-          <Container className=" sm:!justify-center sm:!flex lg:!mt-0 sm:!mb-0 !mb-32">
+          <Container className=" sm:!justify-between sm:!flex lg:!mt-0 sm:!mb-0 !mb-32">
             <Box className="max-w-full sm:max-w-lg relative z-30 flex justify-center">
               <Stack
                 direction="column"
@@ -58,13 +58,13 @@ const AskTashaPage = () => {
                   </Typography>
                   <Typography className="text-[var(--white-text)] !mb-6">
                     <Typography className="Montserrat-Regular sm:!text-lg !text-md">
-                      At Talente we deliver confidential,
+                      With Talente you control your career. Get as
                     </Typography>
                     <Typography className="Montserrat-Regular sm:!text-lg !text-md">
-                      trustworthy, on-demand HR support
+                      little or as much HR and Career support as
                     </Typography>
                     <Typography className="Montserrat-Regular sm:!text-lg !text-md">
-                      whenever and wherever you need it.
+                      you want. You decide.
                     </Typography>
                   </Typography>
                   <SecondaryButton text="Chat Now" color="#FBCC3E" />
@@ -77,11 +77,11 @@ const AskTashaPage = () => {
               </Grid>
               <Grid xs={12} md={8}></Grid>
             </Grid> */}
-            <Box className=" flex justify-center">
+            <Box className="flex justify-center w-auto">
               <Image
-                src={TashaImg}
+                src={TashaChat}
                 alt="Tasha image for Tasha page"
-                className="!mt-4 z-20  lg:!w-[750px] md:!w-[600px] sm:!w-[500px] !w-[400px] lg:!mb-[-110px] tab:!relative !absolute"
+                className="!mt-4 z-20 lg:!w-[750px] h-[400px] object-contain md:!w-[600px] sm:!w-[500px] !w-[400px] lg:!mb-[-110px] tab:!relative !absolute"
               />
             </Box>
           </Container>

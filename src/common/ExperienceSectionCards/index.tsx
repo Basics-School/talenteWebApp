@@ -10,7 +10,7 @@ interface CardProps {
   cardNum: string;
   points: string[];
   text: string;
-  subText: string;
+  subText: React.ReactNode;
 }
 
 const ExperinceSectionCards = ({ cardNum, points, text, subText }: CardProps) => {
@@ -31,9 +31,9 @@ const ExperinceSectionCards = ({ cardNum, points, text, subText }: CardProps) =>
         </Box>
         <AnimatedGradientText
           text={text}
-          className="lg:!text-5xl !text-3xl !ml-0 tab:!mx-auto px-[20px] tab:!px-[10px]"
+          className="lg:!text-3xl !text-2xl !ml-0 tab:!mx-auto px-[20px] tab:!px-[10px]"
         />
-        <Box className="Spartan-Medium text-[--white-text] lg:!text-5xl !text-3xl px-[20px] !mb-8">
+        <Box className="Spartan-Medium text-[--white-text] lg:!text-3xl !text-2xl px-[20px] !mb-8 min-h-[30px]">
           {subText}
         </Box>
 

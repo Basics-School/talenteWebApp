@@ -7,6 +7,7 @@ import CareerSupportSection from "@/components/CareerSupportSection";
 import CareerGuideSection from "@/components/CareerGuideSection";
 import Decoration from "@/assets/svg/Decoration.svg";
 import ExperienceSection from "@/components/ExperienceSection";
+import CareerAutomate from "@/components/CareerAutomate";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
             "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
         }}
       >
-        <Box className="xl:!mt-44 !mt-40 flex-1 mb-[60px] flex items-center">
+        <Box className="xl:!mt-20 !mt-40 flex-1 mb-[0px] flex items-center">
           <InfoSection />
         </Box>
         <Box className="absolute bottom-6 -left-8 md:!-left-7 lg-left-16 spinCircle z-10">
@@ -39,7 +40,7 @@ export default function Home() {
         </Box>
       </Box>
 
-      <Box style={{ minHeight: "500px", background: "var(--section-color)" }}>
+      <Box style={{ background: "var(--section-color)" }}>
         <CareerSupportSection />
       </Box>
       <Box style={{ background: "var(--section-color)" }}>
@@ -51,6 +52,9 @@ export default function Home() {
       </Box>
       <Box style={{ minHeight: "480px", background: "var(--section-color)" }}>
         <CareerGuideSection />
+      </Box>
+      <Box style={{ background: "var(--section-color)" }}>
+        <CareerAutomate />
       </Box>
       <ExperienceSection />
     </Box>
