@@ -83,7 +83,7 @@ const InfoSection = () => {
                 <span className="text-gradient3">automation.</span>
               </GradientText>
               <Typography className="Montserrat-Regular !mx-auto mb-6 !text-[--white-text] xl:!text-lg !text-[13px]">
-                TOn-demand HR and Career Services support. Through Talente. Right into an Applicant
+                On-demand HR and Career Services support. Through Talente. Right into an Applicant
                 Tracking System (ATS) or Human Resources
                 <br />
                 Information System (HRIS). <br />
