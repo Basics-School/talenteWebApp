@@ -100,9 +100,13 @@ const InfoSection = () => {
               </Typography>
             </Grid>
 
-            <Grid xs={12} md={5}>
-              =
-              <Image src={BannerImg} alt="Banner Image" height={650} className="mx-auto" />
+            <Grid xs={12} md={5} className="z-20">
+              <Image
+                src={BannerImg}
+                alt="Banner Image"
+                height={650}
+                className="mx-auto h-[250px] lg:!h-[650px] object-contain"
+              />
             </Grid>
           </Grid>
         </Container>
