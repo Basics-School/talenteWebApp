@@ -69,12 +69,12 @@ const InfoSection = () => {
     //     openDialog
     //   />
     // </Box>
-    <Box className="flex flex-col lg:!gap-10 !gap-8 !mx-auto mb-[-10px]">
+    <Box className="flex flex-col lg:!gap-10 !gap-8 !mx-auto mb-[-10px] w-full max-w-[1366px]">
       <Box>
         <Container>
-          <Grid container className="space-y-10 md:space-y-0 items-center">
-            <Grid xs={12} md={7}>
-              <GradientTextButton className="Montserrat-Medium tracking-wide mb-4 ml-0 !normal-case flex justify-start text-gradient xl:!text-[20px] !text-sm bg-[linear-gradient(to_right,theme(colors.pink.400),theme(colors.pink.100),theme(colors.white),theme(colors.pink.400),theme(colors.white),theme(colors.pink.100),theme(colors.pink.400))] bg-[length:200%_auto] animate-gradient bg-clip-text">
+          <Grid container className="space-y-10 md:space-y-0 items-center justify-between">
+            <Grid xs={12} md={7} className="max-w-[660px]">
+              <GradientTextButton className="Montserrat-Medium tracking-wide mb-10 ml-0 !normal-case flex justify-start text-gradient xl:!text-[20px] !text-sm bg-[linear-gradient(to_right,theme(colors.pink.400),theme(colors.pink.100),theme(colors.white),theme(colors.pink.400),theme(colors.white),theme(colors.pink.100),theme(colors.pink.400))] bg-[length:200%_auto] animate-gradient bg-clip-text">
                 AI-Powered Career Support
               </GradientTextButton>
               <GradientText className="Spartan-SemiBold xl:!text-[55px] p-0 mb-4 xl:!leading-[4rem] lg:!text-5xl  lg:!leading-[3.7rem] sm:!text-4xl md:!leading-[3.2rem] !text-[25px] overflow-wrap break-words">
@@ -84,18 +84,16 @@ const InfoSection = () => {
               </GradientText>
               <Typography className="Montserrat-Regular !mx-auto mb-6 !text-[--white-text] xl:!text-lg !text-[13px]">
                 On-demand HR and Career Services support. Through Talente. Right into an Applicant
-                Tracking System (ATS) or Human Resources
-                <br />
-                Information System (HRIS). <br />
+                Tracking System (ATS) or Human Resources Information System (HRIS).
                 {/* <span className="!text-[--button-border]">so you can focus on what really matters.</span> */}
               </Typography>
               <ActionButton
-                text="Join Our Wishlist"
-                className="Montserrat-Medium !mb-5 xl:!text-[18px] !text-sm xl:!py-4 lg:!py-2 !px-8"
+                text="Join Our Waitlist"
+                className="Montserrat-Medium !mb-5 xl:!text-[18px] !text-sm xl:!py-4 lg:!py-2 !px-8 border--fix2"
                 openDialog
               />
 
-              <Typography className="Montserrat-Regular !mx-auto mb-6 !text-[--white-text] text-[14px]">
+              <Typography className="Montserrat-Regular !mx-auto mt-3 mb-6 !text-[--white-text] text-[14px]">
                 We will only use this to keep you in the loop. We hate spam too!
               </Typography>
             </Grid>
@@ -105,7 +103,7 @@ const InfoSection = () => {
                 src={BannerImg}
                 alt="Banner Image"
                 height={650}
-                className="mx-auto h-[250px] lg:!h-[650px] object-contain"
+                className="mx-auto h-[400px] tab:!h-[460px] lg:!h-[700px] object-contain object-bottom"
               />
             </Grid>
           </Grid>

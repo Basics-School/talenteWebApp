@@ -16,18 +16,26 @@ import Decoration from "@/assets/svg/Decoration.svg";
 import Container from "@/components/Container";
 
 const card1 = {
-  title: "Essential",
-  subtitle: "No Cost",
-  points: ["Limited on-demand support", "Access to community boards for networking and support"],
+  title: "Basic",
+  subtitle: "$0/mo",
+  points: [
+    "Basic Profile",
+    "Limited chat support",
+    "Access to Career Hub - Community Forums",
+    "Professional Networking",
+    "Peer-to-Peer Q&A",
+  ],
 };
 const card2 = {
   title: "Premium",
-  subtitle: "$39.99/mo",
+  subtitle: "$49.99/mo",
   points: [
-    "All Essential features",
-    "Access to Performance Management and Compensation Benchmarking",
-    "Resume refinement",
-    "Interview preparation",
+    "All Basic features plus",
+    "Tasha: AI HR & Career Assistant",
+    "Personalized Career Dashboard",
+    "Job Search",
+    "Resume Optimization",
+    "Interview Preparation",
   ],
 };
 const card3 = {
@@ -35,6 +43,17 @@ const card3 = {
   subtitle: "$59.99/mo",
   points: [
     "All Premium features",
+    "Personalized Career Advancement tools",
+    "Access to exclusive masterclasses and webinars",
+    "Assistance with complex work-related issues",
+  ],
+};
+
+const card4 = {
+  title: "Ultimate",
+  subtitle: "$69.99/mo",
+  points: [
+    "All Elite features",
     "Personalized Career Advancement tools",
     "Access to exclusive masterclasses and webinars",
     "Assistance with complex work-related issues",
@@ -81,7 +100,7 @@ const Pricing = () => {
         />
         <Box className="flex lg:!flex-row !flex-col !justify-between !items-center !mt-4 xl:!mb-0 !mb-10">
           <Box>
-            <PricingInfoCard card={card1} />
+            <PricingInfoCard card={selectedItem === 1 ? card1 : card4} />
             <PricingInfoCard card={card2} />
             <PricingInfoCard card={card3} />
           </Box>

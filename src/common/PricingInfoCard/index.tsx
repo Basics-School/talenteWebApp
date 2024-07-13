@@ -22,7 +22,7 @@ const PricingInfoCard = ({ card }: PricingInfoCardProps) => {
           {card.title}
           <span className="Montserrat-SemiBold !text-base !mx-auto">{card.subtitle}</span>
         </Box>
-        <Box className="bgCard !text-[--white-text] lg:!w-[750px] md:!w-[600px] sm:!w-[550px] !w-[300px] xl:!h-[130px] md:!h-[125px] !h-[135px] !my-auto !py-5 flex !items-center">
+        <Box className="bgCard !text-[--white-text] lg:!w-[750px] md:!w-[600px] sm:!w-[550px] !w-[300px] xl:!min-h-[130px] md:!min-h-[125px] !min-h-[135px] !my-auto !py-2 flex !items-center">
           <List
             sx={{
               listStyleType: "disc",

@@ -6,7 +6,7 @@ import DottedCircle from "@/assets/svg/DottedCircle.svg";
 import ArrowRight from "@/assets/svg/arrow-right.svg";
 import Container from "@/components/Container";
 import CommonTextArea from "@/common/CommonTextArea";
-import CustomerSupporttImg from "@/assets/images/CustomerSupportImg.png";
+import CustomerSupporttImg from "@/assets/images/CustomerSupportImg_450.png";
 import Arrow from "@/assets/svg/Arrow.svg";
 
 const CareerSupportSection = () => {
@@ -26,7 +26,7 @@ const CareerSupportSection = () => {
           className="absolute top-0 left-0 lg:!w-[250px] lg:!h-[250px] !w-[150px] !h-[150px] animates z-10"
         />
         <Container>
-          <Box className="flex flex-col justify-center items-center !pt-16">
+          <Box className="flex flex-col justify-center items-center !pt-16 max-w-[950px] mx-auto">
             <GradientTextReverse
               text="Why Talente is the smarter choice."
               className="xl:!mb-1 z-20"
@@ -40,7 +40,7 @@ const CareerSupportSection = () => {
                 draggable="false"
                 src={ArrowRight}
                 alt="Arrow Right"
-                className="absolute bottom-0 right-0 lg:!w-[50px] hidden md:block lg:!h-[200px] !w-[50px] !h-[200px] animates z-10"
+                className="absolute bottom-0 right-0 lg:!w-[65px] hidden md:block lg:!h-[200px] !w-[50px] !h-[200px] animates z-10"
               />
               <div className="borderImg">
                 <Image

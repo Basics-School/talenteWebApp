@@ -365,7 +365,15 @@ body {
   position: relative;
   z-index: 1;
 }
-
+.border--fix {
+  animation: none !important;
+  border-color: transparent;
+  box-shadow: none;
+  background: #3533cb;
+}
+.border--fix2{
+  border-color: transparent;
+}
 @media only screen and (min-width: 900px) and (max-width: 1159px) {
   .borderImg {
     width: 250px !important;

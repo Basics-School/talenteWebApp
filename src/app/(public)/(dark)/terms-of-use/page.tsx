@@ -44,7 +44,7 @@ const TermsOfUse = () => {
         <Stack direction="column" spacing={2}>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             The website located at{" "}
             <Link
@@ -60,7 +60,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             THESE TERMS OF USE (THESE “TERMS”) SET FORTH THE LEGALLY BINDING TERMS AND CONDITIONS
             THAT GOVERN YOUR USE OF THE SITE. BY ACCESSING OR USING THE SITE, YOU ARE ACCEPTING
@@ -72,7 +72,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             PLEASE BE AWARE THAT{" "}
             <Link href={"#section_10_2"} className="text-[--button-shadow] Spartan-SemiBold">
@@ -96,7 +96,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             UNLESS YOU OPT OUT OF THE AGREEMENT TO ARBITRATE WITHIN 30 DAYS: (1) YOU WILL ONLY BE
             PERMITTED TO PURSUE DISPUTES OR CLAIMS AND SEEK RELIEF AGAINST US ON AN INDIVIDUAL
@@ -113,7 +113,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>1.1 Account Creation.</b> In order to use certain features of the Site, you must
             register for an account (“Account”) and provide certain information about yourself as
@@ -129,7 +129,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>1.2 Account Responsibilities.</b> You are responsible for maintaining the
             confidentiality of your Account login information and are fully responsible for all
@@ -147,7 +147,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_2_1"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>2.1 License.</b> Subject to these Terms, Company grants you a non-transferable,
             non-exclusive, revocable, limited license to use and access the Site solely for your own
@@ -156,7 +156,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_2_2"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>2.2 Certain Restrictions.</b> The rights granted to you in these Terms are subject to
             the following restrictions: (a) you shall not license, sell, rent, lease, transfer,
@@ -174,7 +174,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_2_3"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>2.3 Modification.</b> Company reserves the right, at any time, to modify, suspend, or
             discontinue the Site (in whole or in part) with or without notice to you. You agree that
@@ -184,7 +184,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_2_4"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>2.4 No Support or Maintenance.</b> You acknowledge and agree that Company will have
             no obligation to provide you with any support or maintenance in connection with the
@@ -193,7 +193,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_2_5"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>2.5 Ownership.</b> Excluding any User Content that you may provide (defined below),
             you acknowledge that all the intellectual property rights, including copyrights,
@@ -211,7 +211,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_2_6"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>2.6 Feedback.</b> If you provide Company with any feedback or suggestions regarding
             the Site (“Feedback”), you hereby assign to Company all rights in such Feedback and
@@ -231,7 +231,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_3_1"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>3.1 User Content.</b> “User Content” means any and all information and content that a
             user submits to, or uses with, the Site (e.g., content in the user’s profile or
@@ -254,7 +254,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_3_2"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>3.2 License.</b> You hereby grant (and you represent and warrant that you have the
             right to grant) to Company an irrevocable, nonexclusive, royalty-free and fully paid,
@@ -268,7 +268,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_3_3"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>3.3 Acceptable Use Policy.</b> The following terms constitute our “Acceptable Use
             Policy”: (a) You agree not to use the Site to collect, upload, transmit, display, or
@@ -304,7 +304,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_3_4"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>3.4 Enforcement.</b> We reserve the right (but have no obligation) to review, refuse
             and/or remove any User Content in our sole discretion, and to investigate and/or take
@@ -326,7 +326,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             You agree to indemnify and hold Company (and its officers, employees, and agents)
             harmless, including costs and attorneys’ fees, from any claim or demand made by any
@@ -348,7 +348,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_5_1"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>5.1 Third-Party Links & Ads.</b> The Site may contain links to third-party websites
             and services, and/or display advertisements for third parties (collectively,
@@ -366,7 +366,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_5_2"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>5.2 Other Users.</b> Each Site user is solely responsible for any and all of its own
             User Content. Since we do not control User Content, you acknowledge and agree that we
@@ -380,7 +380,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_5_3"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>5.3 Release.</b> You hereby release and forever discharge Company (and our officers,
             employees, agents, successors, and assigns) from, and hereby waive and relinquish, each
@@ -404,7 +404,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             THE SITE IS PROVIDED ON AN “AS-IS” AND “AS AVAILABLE” BASIS, AND COMPANY (AND OUR
             SUPPLIERS) EXPRESSLY DISCLAIM ANY AND ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER
@@ -420,7 +420,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             SOME JURISDICTIONS DO NOT ALLOW LIMITATIONS ON HOW LONG AN IMPLIED WARRANTY LASTS, SO
             THE ABOVE LIMITATION MAY NOT APPLY TO YOU.
@@ -434,7 +434,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL COMPANY (OR OUR SUPPLIERS) BE
             LIABLE TO YOU OR ANY THIRD PARTY FOR ANY LOST PROFITS, LOST DATA, COSTS OF PROCUREMENT
@@ -447,7 +447,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             TO THE MAXIMUM EXTENT PERMITTED BY LAW, NOTWITHSTANDING ANYTHING TO THE CONTRARY
             CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY DAMAGES ARISING FROM OR RELATED TO THESE
@@ -458,7 +458,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL
             OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.
@@ -472,7 +472,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             Subject to this Section, these Terms will remain in full force and effect while you use
             the Site. We may suspend or terminate your rights to use the Site (including your
@@ -514,7 +514,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             Company respects the intellectual property of others and asks that users of our Site do
             the same. In connection with our Site, we have adopted and implemented a policy
@@ -526,44 +526,44 @@ const TermsOfUse = () => {
             following information in the form of a written notification (pursuant to 17 U.S.C. §
             512(c)) must be provided to our designated Copyright Agent:
           </Typography>
-          <Typography className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
+          <Typography className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
             1. your physical or electronic signature;
           </Typography>
-          <Typography className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
+          <Typography className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
             2. identification of the copyrighted work(s) that you claim to have been infringed;
           </Typography>
-          <Typography className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
+          <Typography className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
             3. identification of the material on our services that you claim is infringing and that
             you request us to remove;
           </Typography>
-          <Typography className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
+          <Typography className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
             4. sufficient information to permit us to locate such material;{" "}
           </Typography>
-          <Typography className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
+          <Typography className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
             5. your address, telephone number, and e-mail address;{" "}
           </Typography>
-          <Typography className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
+          <Typography className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
             6. a statement that you have a good faith belief that use of the objectionable material
             is not authorized by the copyright owner, its agent, or under the law; and{" "}
           </Typography>
-          <Typography className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
+          <Typography className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
             7. a statement that the information in the notification is accurate, and under penalty
             of perjury, that you are either the owner of the copyright that has allegedly been
             infringed or that you are authorized to act on behalf of the copyright owner.
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             Please note that, pursuant to 17 U.S.C. § 512(f), any misrepresentation of material fact
             (falsities) in a written notification automatically subjects the complaining party to
             liability for any damages, costs and attorney’s fees incurred by us in connection with
             the written notification and allegation of copyright infringement.
           </Typography>
-          <Typography className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] !mt-7 overflow-wrap break-words">
+          <Typography className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] !mt-7 overflow-wrap break-words">
             Legal Compliance Officer
           </Typography>
-          <Typography className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
+          <Typography className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] !mt-2 overflow-wrap break-words">
             131 Continental Drive Suite 305,
             <br /> Newark DE 19713 <br />
             (888) 390-5004 legal@mytalente.com
@@ -577,7 +577,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>10.1 Changes.</b> These Terms are subject to occasional revision, and if we make any
             substantial changes, we may notify you by sending you an e-mail to the last e-mail
@@ -593,7 +593,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_10_2"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>10.2 Dispute Resolution.</b> Please read the following arbitration agreement in this
             Section (the “Arbitration Agreement”) carefully. It requires you to arbitrate disputes
@@ -604,7 +604,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>(a) Applicability of Arbitration Agreement.</b> You agree that any dispute between
             you and any of the Company Parties relating in any way to the Site, the services offered
@@ -626,7 +626,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>(b) Informal Dispute Resolution.</b> There might be instances when a Dispute arises
             between you and Company. If that occurs, Company is committed to working with you to
@@ -662,7 +662,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>(c) Arbitration Rules and Forum.</b> These Terms evidence a transaction involving
             interstate commerce; and notwithstanding any other provision herein with respect to the
@@ -736,7 +736,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>(d) Authority of Arbitrator.</b> The arbitrator shall have exclusive authority to
             resolve all disputes subject to arbitration hereunder including, without limitation, any
@@ -769,7 +769,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>(e) Waiver of Jury Trial.</b> EXCEPT AS SPECIFIED IN{" "}
             <Link href={"#section_10_2"} className="text-[--button-shadow] Spartan-SemiBold">
@@ -789,7 +789,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>(f) Waiver of Class or Other Non-Individualized Relief.</b> YOU AND COMPANY AGREE
             THAT, EXCEPT AS SPECIFIED IN{" "}
@@ -822,7 +822,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>(g) Attorneys’ Fees and Costs.</b> The parties shall bear their own attorneys’ fees
             and costs in arbitration unless the arbitrator finds that either the substance of the
@@ -840,7 +840,7 @@ const TermsOfUse = () => {
           <Typography
             id={"subSection-10_2_h"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>(h) Batch Arbitration.</b> To increase the efficiency of administration and
             resolution of arbitrations, you and Company agree that in the event that there are 100
@@ -875,7 +875,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>(i) 30-Day Right to Opt Out.</b> You have the right to opt out of the provisions of
             this Arbitration Agreement by sending a timely written notice of your decision to opt
@@ -889,7 +889,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>(j) Invalidity, Expiration.</b> Except as provided in the subsection entitled “Waiver
             of Class or Other Non-Individualized Relief”, if any part or parts of this Arbitration
@@ -905,7 +905,7 @@ const TermsOfUse = () => {
           </Typography>
           <Typography
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>(k) Modification.</b> Notwithstanding any provision in these Terms to the contrary,
             we agree that if Company makes any future material change to this Arbitration Agreement,
@@ -930,7 +930,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_10_3"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>10.3 Export.</b> The Site may be subject to U.S. export control laws and may be
             subject to export or import regulations in other countries. You agree not to export,
@@ -941,7 +941,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_10_4"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>10.4 Disclosures.</b> Company is located at the address in{" "}
             <Link href={"#section_10_8"} className="text-[--button-shadow] Spartan-SemiBold">
@@ -955,7 +955,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_10_5"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>10.5 Electronic Communications.</b> The communications between you and Company use
             electronic means, whether you use the Site or send us emails, or whether Company posts
@@ -969,7 +969,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_10_6"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>10.6 Entire Terms.</b> These Terms constitute the entire agreement between you and us
             regarding the use of the Site. Our failure to exercise or enforce any right or provision
@@ -990,7 +990,7 @@ const TermsOfUse = () => {
           <Typography
             id={"section_10_7"}
             variant="body1"
-            className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words"
+            className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words"
           >
             <b>10.7 Copyright/Trademark Information.</b> Copyright © 2024 Talente, Inc. . All
             rights reserved. All trademarks, logos and service marks (“Marks”) displayed on the Site
@@ -1005,7 +1005,7 @@ const TermsOfUse = () => {
           >
             10.8 Customer Support
           </Typography>
-          <Typography className="Spartan-Light text-white sm:text-[20px] text-[15px] leading-[1.4] overflow-wrap break-words">
+          <Typography className="Spartan-Light text-white sm:text-[18px] text-[15px] leading-[1.4] overflow-wrap break-words">
             131 Continental Drive Suite 305
             <br /> Newark, Delaware 19713 <br />
             (888) 390-5004
