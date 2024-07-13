@@ -67,7 +67,7 @@ const AskTashaPage = () => {
                       you want. You decide.
                     </Typography>
                   </Typography>
-                  <SecondaryButton text="Chat Now" color="#FBCC3E" />
+                  <SecondaryButton text="Get Started" color="#FBCC3E" />
                 </Stack>
               </Stack>
             </Box>

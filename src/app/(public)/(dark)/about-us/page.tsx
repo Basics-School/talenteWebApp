@@ -7,6 +7,10 @@ import FounderImg from "@/assets/images/founder.png";
 import BlueCircle from "@/assets/svg/BlueCircle.svg";
 import Stack from "@mui/material/Stack";
 import Container from "@/components/Container";
+import LinkedIn from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { Button } from "@mui/material";
+import GradientTextReverse from "@/common/GradientTextReverse";
 
 const AboutUs = () => {
   return (
@@ -34,8 +38,8 @@ const AboutUs = () => {
               className="xl:!w-[80px] xl:!h-[80px] lg:!w-[67px] lg:!h-[61px] !w-[80px] !h-[80px] spinGlobe"
             />
           </Box>
-          <Container className="sm:!justify-between sm:!flex lg:!mt-0 sm:!mb-0 !mb-32">
-            <Box className="max-w-full relative z-30 flex justify-center">
+          <Container className="sm:!justify-between sm:!flex items-center lg:!mt-0 sm:!mb-0 !mb-32">
+            <Box className="max-w-full relative z-30 flex justify-center w-full tab:w-1/2 lg:w-auto">
               <Stack
                 direction="column"
                 alignItems="center"
@@ -78,6 +82,25 @@ const AboutUs = () => {
                 </Stack>
               </Stack>
             </Box>
+            <Box className="w-full tab:w-1/2 lg:w-auto">
+              <Box className="relative flex-none xl:!w-[300px] xl:!h-[300px] lg:!w-[270px] lg:!h-[270px]  lg:!mb-10 md:!w-[230px] md:!h-[230px] !mx-auto !w-[180px] !h-[180px] !mb-7">
+                <Image
+                  draggable="false"
+                  src={FounderImg}
+                  alt="Founder Image"
+                  className="!bg-[var(--section-color)] !relative z-10 border-[8px] border-[--white-text] !rounded-full xl:!w-[300px] xl:!h-[300px] xl:!mb-24 xl:!border-[15px] lg:!w-[270px] lg:!h-[270px] lg:!border-[13px] lg:!mb-12 md:!w-[230px] md:!h-[230px] md:!border-[9px] md:!mb-4  !mx-auto !w-[180px] !h-[180px]"
+                />
+                <Box className="!absolute z-2 !bg-[--bg-gradient-color] !rounded-full xl:!w-[285px] xl:!h-[285px] xl:!left-[0px] xl:!top-[29px] lg:!w-[255px] lg:!h-[255px] lg:!left-[-16px] lg:!top-[24px] !left-[-10px] !top-[16px]  md:!left-[-12px] md:top-[25px] md:!w-[215px] md:!h-[215px] !mx-auto !w-[170px] !h-[170px]" />
+              </Box>
+              <Box className={"flex justify-center"}>
+                <Button href="#linkedIn_URL" className="min-w-[fit-content]">
+                  <LinkedIn className="text-[var(--white-text)] w-9 h-9" />
+                </Button>
+                <Button href="#Instagram_URL" className="min-w-[fit-content]">
+                  <InstagramIcon className="text-[var(--white-text)] w-9 h-9" />
+                </Button>
+              </Box>
+            </Box>
             {/* <Grid container>
               <Grid xs={12} md={4}>
                 
@@ -108,22 +131,12 @@ const AboutUs = () => {
           />
         </Box>
         <Container className="sm:!flex lg:!mt-0 sm:!mb-0 !mb-32">
-          <Box className="relative flex-none xl:!w-[300px] xl:!h-[300px] xl:!mb-14 lg:!w-[270px] lg:!h-[270px]  lg:!mb-12 md:!w-[230px] md:!h-[230px] !mx-auto !w-[180px] !h-[180px] !mb-7">
-            <Image
-              draggable="false"
-              src={FounderImg}
-              alt="Founder Image"
-              className="!bg-[var(--section-color)] !relative z-10 border-[8px] border-[--white-text] !rounded-full xl:!w-[300px] xl:!h-[300px] xl:!mb-24 xl:!border-[15px] lg:!w-[270px] lg:!h-[270px] lg:!border-[13px] lg:!mb-12 md:!w-[230px] md:!h-[230px] md:!border-[9px] md:!mb-4  !mx-auto !w-[180px] !h-[180px] right-[20px]"
-            />
-            <Box className="!absolute z-2 !bg-[--bg-gradient-color] !rounded-full xl:!w-[285px] xl:!h-[285px] xl:!left-[-18px] xl:!top-[29px] lg:!w-[255px] lg:!h-[255px] lg:!left-[-16px] lg:!top-[24px] !left-[-10px] !top-[16px]  md:!left-[-12px] md:top-[25px] md:!w-[215px] md:!h-[215px] !mx-auto !w-[170px] !h-[170px]" />
-          </Box>
-          <Box className="max-w-full relative z-30 flex">
+          {/* <Box className="max-w-full relative z-30 flex">
             <Stack
               direction="column"
               alignItems="center"
               justifyContent="center"
-              className="h-full"
-            >
+              className="h-full">
               <Stack direction="column">
                 <Typography className="Spartan-Regular text-[var(--black-text)] text-lg mb-4">
                   With almost 20 years of HR mastery, Maureen Simmons isn&apos;t your
@@ -143,6 +156,9 @@ const AboutUs = () => {
                 </Typography>
               </Stack>
             </Stack>
+          </Box> */}
+          <Box className="w-full">
+            <GradientTextReverse text="Our Core Values" className="xl:!mb-1 z-20 justify-center" />
           </Box>
         </Container>
         <Image

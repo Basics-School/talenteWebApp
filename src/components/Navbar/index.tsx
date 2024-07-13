@@ -181,11 +181,11 @@ const Navbar = ({
             </Box>
             <ActionButton
               text="Log In"
-              className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-2 !py-1 xl:!text-base !text-[13px] tab:me-3 me-2"
+              className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-2 !py-1 xl:!text-base !text-[13px] tab:me-3 me-2 border--fix2"
             />
             <ActionButton
               text="Sign Up"
-              className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-2 !py-1 xl:!text-base !text-[13px]"
+              className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-2 !py-1 xl:!text-base !text-[13px] border--fix2"
               openDialog
             />
             <Button

@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@/components/Container";
 import Image from "next/image";
 import CommonTextArea from "@/common/CommonTextArea";
-import CareerGuideImage from "@/assets/images/CareerGuideImg2.svg";
+import CareerGuideImage from "@/assets/images/CareerGuideImage_2x-t.png";
 import DottedArrow from "@/assets/svg/DottedArrow.svg";
 import ArrowLeft from "@/assets/svg/arrow-left.svg";
 import PurpleCircle from "@/assets/svg/PurpleCircle.svg";
@@ -13,7 +13,7 @@ const CareerGuideSection = () => {
   return (
     <Box className="relative">
       <Container>
-        <Box className="flex relative flex-col justify-center lg:!mt-10 md:!mt-12 !mt-8 xl:!px-0 !px-8">
+        <Box className="flex relative flex-col justify-center lg:!mt-10 md:!mt-12 !mt-8 xl:!px-0 !px-8 max-w-[950px] mx-auto">
           <Stack
             className="max-w-4xl mx-auto"
             direction="column"
@@ -31,12 +31,12 @@ const CareerGuideSection = () => {
               className="lg:!w-[100px] !w-[70px] xl:ml-[-2rem]  lg:ml-[-3rem] md:ml-[1rem] sm:ml-[2rem] ml-4"
             />
           </Stack>
-          <Box className="relative flex md:!flex-row !flex-col !w-full !justify-center lg:!gap-20 md:!gap-10 !gap-6 md:!px-8">
+          <Box className="relative flex md:!flex-row !flex-col-reverse !w-full !justify-center lg:!gap-20 md:!gap-10 !gap-6 md:!px-8">
             <Image
               draggable="false"
               src={ArrowLeft}
               alt="Arrow Left"
-              className="absolute bottom-12 left-0 lg:!w-[50px] lg:!h-[200px] hidden md:block !w-[50px] !h-[200px] animates z-10"
+              className="absolute bottom-12 left-0 lg:!w-[65px] lg:!h-[200px] hidden md:block !w-[50px] !h-[200px] animates z-10"
             />
             <CommonTextArea
               heading="We help you win at work"
