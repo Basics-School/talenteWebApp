@@ -26,10 +26,18 @@ const navItemsAvatar = [
   { label: "Research", path: "/" },
   { label: "More", path: "/" },
 ];
-
-const Navbar = () => {
+interface StyleProps {
+  color?: string;
+  logo?: any;
+  scrollColor?: string;
+}
+const Navbar = ({
+  color = "var(--white-text)",
+  logo = TalenteLogo,
+  scrollColor = "var(--hover-nav-color)",
+}: StyleProps) => {
   const [mobileOpen, setMobileOpen] = useState(true);
-  const [scrolled, setScrolled] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -85,7 +93,8 @@ const Navbar = () => {
                       href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="Spartan-SemiBold text-white "
+                      className="Spartan-SemiBold "
+                      style={{ color }}
                       onClick={(event) => event.stopPropagation()}
                     >
                       {item.label}
@@ -114,7 +123,7 @@ const Navbar = () => {
         component="nav"
         sx={{
           transition: "all 0.3s ease-in-out",
-          background: scrolled ? "var(--hover-nav-color)" : "transparent",
+          background: scrolled ? scrollColor : "transparent",
           borderBottom: "linear-gradient(to right, transparent, var(--button-shadow), transparent)",
         }}
         className="!h-[72px] left-0 !shadow-none borderNav flex items-center justify-center"
@@ -129,10 +138,12 @@ const Navbar = () => {
               <Image
                 draggable="false"
                 alt="Logo"
-                src={TalenteLogo}
+                src={logo}
                 className="lg:ml-[-8px] !cursor-pointer tab:h-[146px] w-[146px]"
               />
-              <Box className="Spartan-light text-[12px] tab:mt-[10px]">Beta Live</Box>
+              <Box className="Spartan-light text-[12px] tab:mt-[10px]" style={{ color }}>
+                Beta Live
+              </Box>
             </Link>
             <Box
               sx={{ display: { xs: "flex", sm: "flex" } }}
@@ -149,6 +160,7 @@ const Navbar = () => {
                         href={item.url}
                         target="_blank"
                         rel="noopener noreferrer"
+                        style={{ color }}
                         className="Spartan-SemiBold !text-[18px] hover-underline-animation !w-fit !whitespace-nowrap !capitalize xl:!text-base !text-sm !leading-normal flex flex-row"
                       >
                         {item.label}
@@ -157,7 +169,7 @@ const Navbar = () => {
                       <Link
                         href={item.path}
                         key={item.label}
-                        style={{ color: "var(--white-text)" }}
+                        style={{ color }}
                         className="Spartan-SemiBold !text-[18px] hover-underline-animation !w-fit !whitespace-nowrap !capitalize xl:!text-base !text-sm !leading-normal flex flex-row"
                       >
                         {item.label}
