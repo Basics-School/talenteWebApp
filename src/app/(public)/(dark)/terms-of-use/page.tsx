@@ -1,7 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import space from "@/assets/svg/Space.svg";
 import Globe from "@/assets/svg/Globe.svg";
 import Image from "next/image";
 import Stack from "@mui/material/Stack";
@@ -11,21 +10,21 @@ import Link from "next/link";
 const TermsOfUse = () => {
   return (
     <Box
-      className="max-w-full flex flex-col min-h-screen justify-center items-center relative overflow-clip"
+      className="max-w-full flex flex-col min-h-screen justify-centnpm er items-center relative overflow-clip"
       sx={{
         // background: "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color))",
         background: "var(--black-color)",
       }}
     >
       {/* Background Space Image */}
-      <Box className=" absolute z-10 xl:!mt-36 lg:!mt-32 md:!mt-[10rem]">
+      {/* <Box className=" absolute z-10 xl:!mt-36 lg:!mt-32 md:!mt-[10rem]">
         <Image
           draggable="false"
           src={space}
           alt="space"
           className="xl:w-[600px] xl:h-[550px] lg:w-[600px] lg:h-[550px] md:w-[600px] md:h-[550px] sm:w-[300px] sm:h-[240px] w-[200px] h-[140px] "
         />
-      </Box>
+      </Box> */}
 
       {/* Main Content */}
       <Container className="max-w-[1380px] !mt-[10rem] mb-[6rem] md:mb-[4rem] !px-8 flex-1 sm:px-0 relative z-10">

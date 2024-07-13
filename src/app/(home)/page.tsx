@@ -19,7 +19,7 @@ export default function Home() {
             "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
         }}
       >
-        <Box className="xl:!mt-20 !mt-40 flex-1 mb-[0px] flex items-center">
+        <Box className="xl:!mt-20 !mt-20 flex-1 mb-[0px] flex items-center">
           <InfoSection />
         </Box>
         <Box className="absolute bottom-6 -left-8 md:!-left-7 lg-left-16 spinCircle z-10">
