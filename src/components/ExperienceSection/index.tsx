@@ -76,20 +76,15 @@ const ExperienceSection = () => {
               <ExperinceSectionCards
                 cardNum="#01"
                 points={points1}
-                text="Performance"
-                subText="Accelaration"
+                text="How it works: Personalized"
+                subText="HR & Career Support"
               />
-              <ExperinceSectionCards
-                cardNum="#02"
-                points={points2}
-                text="Compensation"
-                subText="Benchmarking"
-              />
+              <ExperinceSectionCards cardNum="#02" points={points2} text="Press" subText="" />
               <ExperinceSectionCards
                 cardNum="#03"
                 points={points3}
-                text="Career"
-                subText="Advancement"
+                text="Meet The Founder"
+                subText=""
               />
             </Box>
           </Box>

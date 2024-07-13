@@ -13,7 +13,7 @@ interface ActionButtonProps {
 }
 
 const GradientButton = styled(Button)({
-  border: "1px solid var(--button-border)",
+  border: "2px solid var(--button-border)",
   textTransform: "none",
   color: "var(--white-text)",
   borderRadius: "9999px",
@@ -22,16 +22,16 @@ const GradientButton = styled(Button)({
     "linear-gradient(270deg, var(--button-color), var(--black-color), var(--button-color))",
   backgroundSize: "600% 600%",
   animation: "gradient-flow 8s ease infinite, glow 1.5s infinite alternate",
-  boxShadow: "0px 0px 20px 5px rgba(236, 39, 182, 0.5)",
+  boxShadow: "0px 0px 10px 5px rgba(236, 39, 182, 0.3)",
   transition: "box-shadow 0.3s ease",
-  "@keyframes glow": {
-    "0%": {
-      boxShadow: "0px 0px 20px 5px rgba(236, 39, 182, 0.5)",
-    },
-    "100%": {
-      boxShadow: "0px 0px 30px 10px rgba(236, 39, 182, 1)",
-    },
-  },
+  // "@keyframes glow": {
+  //   "0%": {
+  //     boxShadow: "0px 0px 20px 5px rgba(236, 39, 182, 0.5)",
+  //   },
+  //   "100%": {
+  //     boxShadow: "0px 0px 30px 10px rgba(236, 39, 182, 1)",
+  //   },
+  // },
 });
 
 const ActionButton = ({ text, className, routeTo, openDialog }: ActionButtonProps) => {

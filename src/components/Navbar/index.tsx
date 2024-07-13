@@ -21,7 +21,7 @@ import Container from "@/components/Container";
 
 const navItemsAvatar = [
   { label: "Ask Tasha", path: "/ask-tasha" },
-  { label: "Career Hub", path: "/" },
+  { label: "Career Hub", path: "/", url: "https://community.mytalente.ai/" },
   { label: "Tools", path: "/" },
   { label: "Research", path: "/" },
   { label: "More", path: "/" },
@@ -88,7 +88,20 @@ const Navbar = ({
             >
               <Link className="Spartan-SemiBold" href={item.path}>
                 <ListItemButton className="Spartan-SemiBold" sx={{ textAlign: "center" }}>
-                  <ListItemText className="Spartan-SemiBold" primary={item.label} />
+                  {item.url ? (
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="Spartan-SemiBold "
+                      style={{ color }}
+                      onClick={(event) => event.stopPropagation()}
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <ListItemText className="Spartan-SemiBold" primary={item.label} />
+                  )}
                 </ListItemButton>
               </Link>
             </ListItem>
@@ -117,13 +130,20 @@ const Navbar = ({
       >
         <Container>
           <Toolbar className="m-auto w-full !px-0">
-            <Link href="/" className="cursor-pointer" draggable="false">
+            <Link
+              href="/"
+              className="cursor-pointer flex flex-col tab:flex-row tab:items-center"
+              draggable="false"
+            >
               <Image
                 draggable="false"
                 alt="Logo"
                 src={logo}
-                className="lg:ml-[-8px] !cursor-pointer h-[146px] w-[146px]"
+                className="lg:ml-[-8px] !cursor-pointer tab:h-[146px] w-[146px]"
               />
+              <Box className="Spartan-light text-[12px] tab:mt-[10px]" style={{ color }}>
+                Beta Live
+              </Box>
             </Link>
             <Box
               sx={{ display: { xs: "flex", sm: "flex" } }}
@@ -134,20 +154,39 @@ const Navbar = ({
                 className="sm:!flex hidden xl:!gap-[60px] !items-center"
               >
                 {navItemsAvatar.map((item) => (
-                  <Link
-                    href={item.path}
-                    key={item.label}
-                    style={{ color: `${color}` }}
-                    className="Spartan-SemiBold !text-[18px] hover-underline-animation !w-fit !whitespace-nowrap !capitalize xl:!text-base !text-sm !leading-normal flex flex-row"
-                  >
-                    {item.label}
-                  </Link>
+                  <React.Fragment key={item.label}>
+                    {item.url ? (
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color }}
+                        className="Spartan-SemiBold !text-[18px] hover-underline-animation !w-fit !whitespace-nowrap !capitalize xl:!text-base !text-sm !leading-normal flex flex-row"
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={item.path}
+                        key={item.label}
+                        style={{ color }}
+                        className="Spartan-SemiBold !text-[18px] hover-underline-animation !w-fit !whitespace-nowrap !capitalize xl:!text-base !text-sm !leading-normal flex flex-row"
+                      >
+                        {item.label}
+                      </Link>
+                    )}
+                  </React.Fragment>
                 ))}
               </Box>
             </Box>
             <ActionButton
               text="Log In"
-              className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-5 !py-1 xl:!text-base !text-sm"
+              className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-2 !py-1 xl:!text-base !text-[13px] tab:me-3 me-2"
+            />
+            <ActionButton
+              text="Sign Up"
+              className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-2 !py-1 xl:!text-base !text-[13px]"
+              openDialog
             />
             <Button
               onClick={handleDrawerToggle}

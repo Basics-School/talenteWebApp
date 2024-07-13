@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -71,9 +72,27 @@ const Footer = () => {
               />
               <Stack direction="row" spacing={2}>
                 {usefulLinks.map((link) => (
-                  <Link key={link.path} className="Spartan-Medium" href={link.path}>
-                    {link.label}
-                  </Link>
+                  <>
+                    {link.url ? (
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="Spartan-SemiBold text-white navList hover-underline-animation"
+                        onClick={(event) => event.stopPropagation()}
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        key={link.path}
+                        className="Spartan-Medium navList hover-underline-animation"
+                        href={link.path}
+                      >
+                        {link.label}
+                      </Link>
+                    )}
+                  </>
                 ))}
               </Stack>
             </Stack>
@@ -104,9 +123,31 @@ const Footer = () => {
           </Grid>
         </Grid>
 
-        <Typography className="mt-16 text-base Spartan-Regular text-center px-3">
+        <Typography className="mt-16 text-base Spartan-Regular text-center px-3 mb-[10px]">
           {appConfig.company.footerText}
         </Typography>
+        <Box className="border-t pt-[10px]">
+          <Box className="flex justify-center gap-2">
+            <Link
+              href="/"
+              className="Spartan-Medium navList hover-underline-animation mx-3 relative"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/terms-of-use"
+              className="Spartan-Medium navList hover-underline-animation mx-3 relative before:content-[''] before:absolute before:h-[10px] before:w-[1px] before:bg-white before:left-[-10px] before:top-1/2 before:-translate-y-1/2"
+            >
+              Terms of Use
+            </Link>
+            <Link
+              href="/legal-notice"
+              className="Spartan-Medium navList hover-underline-animation mx-3 relative before:content-[''] before:absolute before:h-[10px] before:w-[1px] before:bg-white before:left-[-10px] before:top-1/2 before:-translate-y-1/2"
+            >
+              Legal
+            </Link>
+          </Box>
+        </Box>
       </Container>
       <Box className="absolute right-[-150px] top-2">
         <Image

@@ -4,8 +4,8 @@ import Container from "@/components/Container";
 import Image from "next/image";
 import CommonTextArea from "@/common/CommonTextArea";
 import CareerGuideImage from "@/assets/images/CareerGuideImg2.svg";
-import GradientTextCommon from "@/common/GradientTextCommon";
 import DottedArrow from "@/assets/svg/DottedArrow.svg";
+import ArrowLeft from "@/assets/svg/arrow-left.svg";
 import PurpleCircle from "@/assets/svg/PurpleCircle.svg";
 import Stack from "@mui/material/Stack";
 
@@ -20,10 +20,10 @@ const CareerGuideSection = () => {
             justifyContent="center"
             alignItems="flex-start"
           >
-            <GradientTextCommon
-              text="We're your ultimate career guide"
+            {/* <GradientTextCommon
+              text="We help you win at work."
               className="!mb-1 !mx-auto xl:!text-[55px] lg:!text-5xl md:!text-4xl !text-2xl text-center"
-            />
+            /> */}
             <Image
               draggable="false"
               src={DottedArrow}
@@ -32,9 +32,15 @@ const CareerGuideSection = () => {
             />
           </Stack>
           <Box className="relative flex md:!flex-row !flex-col !w-full !justify-center lg:!gap-20 md:!gap-10 !gap-6 md:!px-8">
+            <Image
+              draggable="false"
+              src={ArrowLeft}
+              alt="Arrow Left"
+              className="absolute bottom-12 left-0 lg:!w-[50px] lg:!h-[200px] hidden md:block !w-[50px] !h-[200px] animates z-10"
+            />
             <CommonTextArea
               heading="We help you win at work"
-              content="As a member of the Talente community you get guidance on complex work-related issues, insights into marketable skills, the latest industry trend & updated, personalized guidance to maximize employer-sponsored benefited like employee assistance programs and 401Ks"
+              content="Get help with complex work-related issues, insights into marketable skills, the latest industry trend & updates, personalized guidance to maximize employer-sponsored benefits like Employee Assistance Programs and 401Ks"
               className="xl:!text-2xl lg:!text-xl !text-lg"
             />
             <Box className="relative flex-none xl:!w-[300px] xl:!h-[300px] xl:!mb-14 lg:!w-[270px] lg:!h-[270px]  lg:!mb-12 md:!w-[230px] md:!h-[230px] !mx-auto !w-[180px] !h-[180px] !mb-7">
