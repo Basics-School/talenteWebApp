@@ -20,7 +20,7 @@ const GradientText = styled(Typography)({
 const AnimatedGradientText = ({ text, className }: GradientProps) => {
   return (
     <GradientText
-      className={`Spartan-SemiBold lg:text-5xl lg:!leading-[3.7rem] sm:text-4xl md:!leading-[3.2rem] text-[25px] !text-center overflow-wrap break-words !mx-auto xl:!mt-4 !mt-3 px-[10px] ${className}`}
+      className={`Spartan-SemiBold lg:text-5xl lg:!leading-[2rem] mb-5 sm:text-4xl md:!leading-[2rem] text-[25px] !text-center overflow-wrap break-words !mx-auto xl:!mt-4 !mt-3 px-[10px] ${className}`}
     >
       <span className="text-gradient1">{text}</span>
     </GradientText>

@@ -28,15 +28,15 @@ const CareerGuideSection = () => {
               draggable="false"
               src={DottedArrow}
               alt="Customer Support Image"
-              className="lg:!w-[100px] !w-[70px] xl:ml-[-2rem]  lg:ml-[-3rem] md:ml-[1rem] sm:ml-[2rem] ml-4"
+              className="lg:!w-[100px] !w-[70px] xl:ml-[-2rem] lg:ml-[-3rem] md:ml-[1rem] sm:ml-[2rem] ml-4"
             />
           </Stack>
-          <Box className="relative flex md:!flex-row !flex-col-reverse !w-full !justify-center lg:!gap-20 md:!gap-10 !gap-6 md:!px-8">
+          <Box className="relative flex md:!flex-row !flex-col-reverse pb-0 md:pb-10 !w-full !justify-center lg:!gap-20 md:!gap-10 !gap-6 md:!px-8">
             <Image
               draggable="false"
               src={ArrowLeft}
               alt="Arrow Left"
-              className="absolute bottom-12 left-0 lg:!w-[65px] lg:!h-[200px] hidden md:block !w-[50px] !h-[200px] animates z-10"
+              className="absolute bottom-0 left-[-50px] lg:!w-[65px] lg:!h-[120px] hidden md:block !w-[50px] !h-[200px] animates z-10"
             />
             <CommonTextArea
               heading="We help you win at work"

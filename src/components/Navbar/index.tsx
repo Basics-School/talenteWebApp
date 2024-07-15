@@ -22,7 +22,7 @@ import Container from "@/components/Container";
 const navItemsAvatar = [
   { label: "Ask Tasha", path: "/ask-tasha" },
   { label: "Career Hub", path: "/", url: "https://community.mytalente.ai/" },
-  { label: "Tools", path: "/" },
+  // { label: "Tools", path: "/" },
   { label: "Research", path: "/" },
   { label: "More", path: "/" },
 ];
@@ -181,11 +181,11 @@ const Navbar = ({
             </Box>
             <ActionButton
               text="Log In"
-              className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-2 !py-1 xl:!text-base !text-[13px] tab:me-3 me-2 border--fix2"
+              className="Spartan-Medium xl:!px-9 xl:!py-2 lg:!px-9 lg:!py-1 !px-2 !py-1 text-[12px] md:text-[16px] tab:me-3 me-2 border--fix2"
             />
             <ActionButton
-              text="Sign Up"
-              className="Spartan-Medium xl:!px-8 xl:!py-2 lg:!px-5 lg:!py-1 !px-2 !py-1 xl:!text-base !text-[13px] border--fix2"
+              text="Sign Up 100% Free"
+              className="Spartan-Medium xl:!px-9 xl:!py-2 lg:!px-9 lg:!py-1 !px-2 !py-1 text-[12px] md:text-[16px] border--fix2"
               openDialog
             />
             <Button

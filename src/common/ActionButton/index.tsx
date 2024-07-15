@@ -22,7 +22,7 @@ const GradientButton = styled(Button)({
     "linear-gradient(270deg, var(--button-color), var(--black-color), var(--button-color))",
   backgroundSize: "600% 600%",
   animation: "gradient-flow 8s ease infinite, glow 1.5s infinite alternate",
-  boxShadow: "0px 0px 4px 2px rgba(236, 39, 182, 0.3)",
+  // boxShadow: "0px 0px 4px 2px rgba(236, 39, 182, 0.3)",
   transition: "box-shadow 0.3s ease",
   // "@keyframes glow": {
   //   "0%": {

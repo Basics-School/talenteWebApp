@@ -12,7 +12,7 @@ import Arrow from "@/assets/svg/Arrow.svg";
 const CareerSupportSection = () => {
   return (
     <>
-      <Box className={"relative pb-7 overflow-hidden"}>
+      <Box className={"relative pb-0 overflow-hidden"}>
         {/* <Image
           draggable="false"
           src={CareerSupportImage}
@@ -35,12 +35,12 @@ const CareerSupportSection = () => {
               text="We’re here to change that!"
               className="md:!mt-[0] !mt-1 xl:!text-[45px] lg:!text-5xl md:!text-4xl !text-2xl !leading-[1.7rem]"
             /> */}
-            <Box className="flex md:!flex-row !flex-col !mt-10 !px-8 md:!gap-0 !gap-4 relative">
+            <Box className="flex md:!flex-row !flex-col pb-0 md:pb-24 !mt-10 !px-8 md:!gap-0 !gap-4 relative">
               <Image
                 draggable="false"
                 src={ArrowRight}
                 alt="Arrow Right"
-                className="absolute bottom-0 right-0 lg:!w-[65px] hidden md:block lg:!h-[200px] !w-[50px] !h-[200px] animates z-10"
+                className="absolute bottom-0 right-[-50px] lg:!w-[65px] hidden md:block lg:!h-[150px] !w-[50px] !h-[200px] animates z-10"
               />
               <div className="borderImg">
                 <Image
