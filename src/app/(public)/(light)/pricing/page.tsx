@@ -14,6 +14,7 @@ import LeftDottedCircle from "@/assets/svg/LeftDotttedCircle.svg";
 import RightDottedCircle from "@/assets/svg/RightDottedCircle.svg";
 import Decoration from "@/assets/svg/Decoration.svg";
 import Container from "@/components/Container";
+import { Typography } from "@mui/material";
 
 const card1 = {
   title: "Basic",
@@ -28,6 +29,7 @@ const card1 = {
 };
 const card2 = {
   title: "Premium",
+  recommended: true,
   subtitle: "$49.99/mo",
   points: [
     "All Basic features plus",
@@ -38,25 +40,28 @@ const card2 = {
     "Interview Preparation",
   ],
 };
+
 const card3 = {
   title: "Elite",
   subtitle: "$59.99/mo",
   points: [
-    "All Premium features",
-    "Personalized Career Advancement tools",
-    "Access to exclusive masterclasses and webinars",
-    "Assistance with complex work-related issues",
+    "All Premium features plus",
+    "Industry Watch",
+    "Personalized Compensation Strategies",
+    "Exclusive Masterclasses and Webinars with Industry Experts",
+    "1-on-1 Assistance with Complex Work-Related Issues",
   ],
 };
 
 const card4 = {
-  title: "Ultimate",
-  subtitle: "$69.99/mo",
+  title: "Basic",
+  subtitle: "$0/mo",
   points: [
-    "All Elite features",
-    "Personalized Career Advancement tools",
-    "Access to exclusive masterclasses and webinars",
-    "Assistance with complex work-related issues",
+    "Basic Profile",
+    "Limited chat support",
+    "Access to Career Hub - Community Forums",
+    "Professional Networking",
+    "Peer-to-Peer Q&A",
   ],
 };
 
@@ -89,7 +94,7 @@ const Pricing = () => {
           />
         </div>
         <GradientTextCommon
-          text="Talente Pricing & Plan"
+          text="Pricing & Plans"
           className="md:!text-5xl !text-3xl !mx-auto !mt-28 !items-center !justify-center !mb-8"
         />
         <CommonTab
@@ -98,6 +103,17 @@ const Pricing = () => {
           selectedItem={selectedItem}
           setSelectedItem={setSelectedItem}
         />
+
+        <Typography className="Montserrat-Regular !mx-auto mb-0 mt-10 text-center !text-[--white-block] xl:text-[18px] lg:text-[18px] text-[16px] max-w-auto md:max-w-[1000px] ">
+          Choose a Plan to Take Charge of Your Career Today.
+        </Typography>
+        <Typography className="Montserrat-Regular !mx-auto mb-0 text-center !text-[--white-block] xl:text-[18px] lg:text-[18px] text-[16px] max-w-auto md:max-w-[1000px] ">
+          Free 3-Day Trial on Premium and Elite Plans. Monthly Subscription Starts After Trial Ends.
+        </Typography>
+        <Typography className="Montserrat-Regular !mx-auto mb-0 text-center !text-[--white-block] xl:text-[18px] lg:text-[18px] text-[16px] max-w-auto md:max-w-[1000px] ">
+          Cancel Anytime.
+        </Typography>
+
         <Box className="flex lg:!flex-row !flex-col !justify-between !items-center !mt-4 xl:!mb-0 !mb-10">
           <Box>
             <PricingInfoCard card={selectedItem === 1 ? card1 : card4} />

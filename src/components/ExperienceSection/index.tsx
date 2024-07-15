@@ -8,23 +8,28 @@ import Decor from "@/assets/svg/ExperienceSecetionDecor.svg";
 import DottedCircle from "@/assets/svg/DottedCircle.svg";
 import Globe from "@/assets/svg/Globe.svg";
 import Container from "@/components/Container";
+import { Typography } from "@mui/material";
+import OnBoard from "@/assets/svg/onboard.svg?svgr";
+import Optimize from "@/assets/svg/optimize.svg?svgr";
+import Integrate from "@/assets/svg/integrate.svg?svgr";
 
-const points1 = [
-  "Career Accelaration Master Classes",
-  "Personalized Career Coaching",
-  "Virtual Networking Events",
+const points1: string[] = [];
+
+const points2: string[] = [
+  "Job search",
+  "Resume Optimization",
+  "Interview Preparation",
+  "Company Research",
+  "Document Milestones",
+  "Emoloyment Law",
+  "Industry Watch",
 ];
 
-const points2 = [
-  "Compensation Analysis and Trends",
-  "Core Competency Assessment",
-  "Optimize Employer-Sponsored Benefits",
-];
-
-const points3 = [
-  "Job Search Assistance",
-  "Live Webinars from Industry Experts",
-  "Industry Trends Updates",
+const points3: string[] = [
+  "PTO and LOA requests",
+  "Payroll and Benefits",
+  "Learning and Development",
+  "Employee Relations",
 ];
 
 const ExperienceSection = () => {
@@ -69,22 +74,37 @@ const ExperienceSection = () => {
         <Container>
           <Box className="!text-center">
             <AnimatedGradientText
-              text="Experience The Talente Difference"
-              className="md:!pt-12 !pt-6 lg:!mb-0 md:!pb-10 !pb-10 !mt-0"
+              text="A single platform where everything works together."
+              className="md:!pt-12 !pt-6 lg:!mb-0 md:!pb-6 !pb-6 !mt-0"
             />
+            <Typography className="Montserrat-Regular !mx-auto mb-10 !text-[--white-text] xl:text-[20px] lg:text-[18px] text-[16px] max-w-auto md:max-w-[1000px] ">
+              Talente saves you time and effort so you can focus on what matters most—growing your
+              skills, improving your earning power, and taking your career forward.
+            </Typography>
             <Box className="grid tab:grid-cols-3 gap-4 justify-center !items-center">
               <ExperinceSectionCards
                 cardNum="#01"
                 points={points1}
-                text="How it works: Personalized"
-                subText="HR & Career Support"
+                text="Onboard"
+                subText="Create your profile"
+                icon={<OnBoard />}
+                detailText="Create your profile manually or with LinkedIn integration."
               />
-              <ExperinceSectionCards cardNum="#02" points={points2} text="Press" subText="" />
+              <ExperinceSectionCards
+                cardNum="#02"
+                points={points2}
+                text="Optimize"
+                subText="Manage Repetitive tasks"
+                icon={<Optimize />}
+                detailText="Automate career tasks like:"
+              />
               <ExperinceSectionCards
                 cardNum="#03"
                 points={points3}
-                text="Meet The Founder"
-                subText=""
+                text="Integrate"
+                subText="HRIS or ATS with API"
+                icon={<Integrate />}
+                detailText="API integration lets you maintain the flow of your career data. On-demand assistance for:"
               />
             </Box>
           </Box>

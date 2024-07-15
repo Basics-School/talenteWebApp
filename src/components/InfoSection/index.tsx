@@ -69,20 +69,20 @@ const InfoSection = () => {
     //     openDialog
     //   />
     // </Box>
-    <Box className="flex flex-col lg:!gap-10 !gap-8 !mx-auto mb-[-10px] w-full max-w-[1366px]">
+    <Box className="flex flex-col lg:!gap-10 mt-28 md:mt-20 !gap-8 !mx-auto mb-[-10px] w-full max-w-[1366px]">
       <Box>
         <Container>
           <Grid container className="space-y-10 md:space-y-0 items-center justify-between">
-            <Grid xs={12} md={7} className="max-w-[660px]">
-              <GradientTextButton className="Montserrat-Medium tracking-wide mb-10 ml-0 !normal-case flex justify-start text-gradient xl:!text-[20px] !text-sm bg-[linear-gradient(to_right,theme(colors.pink.400),theme(colors.pink.100),theme(colors.white),theme(colors.pink.400),theme(colors.white),theme(colors.pink.100),theme(colors.pink.400))] bg-[length:200%_auto] animate-gradient bg-clip-text">
+            <Grid xs={12} md={6} className="">
+              <GradientTextButton className="Montserrat-Medium tracking-wide mb-8 ml-0 !normal-case flex justify-start text-gradient xl:text-[20px] lg:text-[20px] text-sm bg-[linear-gradient(to_right,theme(colors.pink.400),theme(colors.pink.100),theme(colors.white),theme(colors.pink.400),theme(colors.white),theme(colors.pink.100),theme(colors.pink.400))] bg-[length:200%_auto] animate-gradient bg-clip-text">
                 AI-Powered Career Support
               </GradientTextButton>
-              <GradientText className="Spartan-SemiBold xl:!text-[55px] p-0 mb-4 xl:!leading-[4rem] lg:!text-5xl  lg:!leading-[3.7rem] sm:!text-4xl md:!leading-[3.2rem] !text-[25px] overflow-wrap break-words">
+              <GradientText className="Spartan-SemiBold xl:text-[75px] p-0 mb-4 xl:leading-[5rem] lg:text-[75px] lg:leading-[5rem] sm:text-4xl md:leading-[3.2rem] text-[25px] overflow-wrap break-words">
                 <span className="text-gradient1">Take control of your</span>
                 <span className="text-gradient2"> career with smart </span>
                 <span className="text-gradient3">automation.</span>
               </GradientText>
-              <Typography className="Montserrat-Regular !mx-auto mb-6 !text-[--white-text] xl:!text-lg !text-[13px]">
+              <Typography className="Montserrat-Regular !mx-auto mb-6 !text-[--white-text] xl:text-[18px] lg:text-[18px] text-[13px]">
                 On-demand HR and Career Services support. Through Talente. Right into an Applicant
                 Tracking System (ATS) or Human Resources Information System (HRIS).
                 {/* <span className="!text-[--button-border]">so you can focus on what really matters.</span> */}
@@ -98,12 +98,12 @@ const InfoSection = () => {
               </Typography>
             </Grid>
 
-            <Grid xs={12} md={5} className="z-20">
+            <Grid xs={12} md={6} className="z-20">
               <Image
                 src={BannerImg}
                 alt="Banner Image"
                 height={650}
-                className="mx-auto h-[400px] tab:!h-[460px] lg:!h-[700px] object-contain object-bottom"
+                className="mx-auto h-[400px] tab:!h-[460px] lg:!h-[650px] object-contain object-bottom"
               />
             </Grid>
           </Grid>

@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -8,6 +9,7 @@ interface Card {
   title: string;
   subtitle: string;
   points: string[];
+  recommended?: boolean;
 }
 
 interface PricingInfoCardProps {
@@ -17,9 +19,16 @@ interface PricingInfoCardProps {
 const PricingInfoCard = ({ card }: PricingInfoCardProps) => {
   return (
     <>
-      <Box className="flex !my-4">
-        <Box className="Montserrat-Bold !text-xl bgCircle xl:!w-40 xl:!h-40 md:!w-36 md:!h-36 !w-[8.7rem] !h-[8.7rem] !-mr-11 z-20 flex flex-col !text-center !justify-center">
-          {card.title}
+      <Box className="flex !my-4 pr- 0 md:pr-6">
+        <Box className="Montserrat-Bold !text-xl bgCircle xl:!w-44 xl:!h-44 md:!w-42 md:!h-42 !w-[11rem] !h-[11rem] !-mr-11 z-20 flex flex-col !text-center !justify-center">
+          {card?.recommended && (
+            <Box>
+              <Typography className="Montserrat-Medium border--fix2 linear-bg2 text-[14px] rounded-md w-36 mx-auto text-white">
+                Recommended
+              </Typography>
+            </Box>
+          )}
+          <span>{card.title}</span>
           <span className="Montserrat-SemiBold !text-base !mx-auto">{card.subtitle}</span>
         </Box>
         <Box className="bgCard !text-[--white-text] lg:!w-[750px] md:!w-[600px] sm:!w-[550px] !w-[300px] xl:!min-h-[130px] md:!min-h-[125px] !min-h-[135px] !my-auto !py-2 flex !items-center">
