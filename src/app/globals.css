@@ -374,6 +374,15 @@ body {
 .border--fix2{
   border-color: transparent;
 }
+.tasha-hand-img
+{
+  left:50%;
+  transform: translateX(-50%);
+}
+.tasha-phone-mobile
+{
+  bottom: 0;
+}
 @media only screen and (min-width: 900px) and (max-width: 1159px) {
   .borderImg {
     width: 250px !important;
@@ -483,5 +492,61 @@ body {
     border-bottom-color: transparent;
     background: transparent;
     transform: rotate(-45deg);
+  }
+}
+.animate-bounce
+{
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.animate-glow
+{
+  animation: glow 2s infinite ease-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+@keyframes glow {
+  0%{
+    transform:scale(1);
+  }
+  100%{
+    transform:scale(1.1);
+  }
+}
+.animate-y-move
+{
+  animation: animateYmove 5s alternate infinite linear;
+}
+.animate-yy-move
+{
+  animation: animateYYmove 5s alternate infinite linear;
+}
+@keyframes animateYmove
+{
+  0% {
+    transform: translateY(-15px);
+  }
+  
+  100% {
+    transform: translateY(15px);
+  }
+}
+@keyframes animateYYmove
+{
+  0% {
+    transform: translateY(15px);
+  }
+  
+  100% {
+    transform: translateY(-15px);
   }
 }

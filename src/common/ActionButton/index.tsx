@@ -13,7 +13,7 @@ interface ActionButtonProps {
 }
 
 const GradientButton = styled(Button)({
-  border: "2px solid var(--button-border)",
+  // border: "2px solid var(--button-border)",
   textTransform: "none",
   color: "var(--white-text)",
   borderRadius: "9999px",

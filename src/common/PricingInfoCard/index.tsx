@@ -23,9 +23,7 @@ const PricingInfoCard = ({ card }: PricingInfoCardProps) => {
         <Box className="Montserrat-Bold !text-xl bgCircle xl:!w-44 xl:!h-44 md:!w-42 md:!h-42 !w-[11rem] !h-[11rem] !-mr-11 z-20 flex flex-col !text-center !justify-center">
           {card?.recommended && (
             <Box>
-              <Typography className="Montserrat-Medium border--fix2 linear-bg2 text-[14px] rounded-md w-36 mx-auto text-white">
-                Recommended
-              </Typography>
+              <Typography className="Montserrat-Medium border--fix2 linear-bg2 text-[14px] rounded-md w-36 mx-auto text-white" />
             </Box>
           )}
           <span>{card.title}</span>

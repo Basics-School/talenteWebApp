@@ -67,7 +67,7 @@ const ExperinceSectionCards = ({ cardNum, points, text, subText, detailText, ico
                   primaryTypographyProps={{
                     fontSize: { xs: "20px", sm: "18px", md: "20px", lg: "22px" },
                   }}
-                  className="Spartan-Medium !text-[--white-text] tab:!text-center"
+                  className="Spartan-Medium !text-[--white-text]"
                 >
                   {value}
                 </ListItemText>
