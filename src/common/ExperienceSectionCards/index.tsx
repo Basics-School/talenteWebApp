@@ -37,7 +37,9 @@ const ExperinceSectionCards = ({
         }}
       >
         <Box
-          className={"Spartan-Medium text-[--white-text] lg:!text-4xl !text-2xl px-[20px] !mt-0"}
+          className={
+            "Spartan-Medium text-[--white-text] lg:!text-4xl !text-2xl px-[20px] !mt-0 !text-center !mb-3"
+          }
         >
           {cardNum}
         </Box>
