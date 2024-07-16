@@ -14,10 +14,10 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import Button from "@mui/material/Button";
-import MenuIcon from "@mui/icons-material/Menu";
 import Drawer from "@mui/material/Drawer";
 import CloseIcon from "@mui/icons-material/Close";
 import Container from "@/components/Container";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const navItemsAvatar = [
   { label: "Ask Tasha", path: "/ask-tasha" },
@@ -197,8 +197,8 @@ const Navbar = ({
               onClick={handleDrawerToggle}
               className="focus:outline-none text-center !min-w-[30px] !ml-5 sm:!hidden"
             >
-              {mobileOpen && <MenuIcon className={`!text-[${navColor}] !w-5 !h-5`} />}
-              {!mobileOpen && <CloseIcon className={`!text-[${navColor}] !w-5 !h-5`} />}
+              {!mobileOpen && <CloseIcon className={`text-[${navColor}] !w-5 !h-5`} />}
+              {mobileOpen && <MenuIcon className={`text-[${navColor}] !w-5 !h-5`} />}
             </Button>
           </Toolbar>
         </Container>
