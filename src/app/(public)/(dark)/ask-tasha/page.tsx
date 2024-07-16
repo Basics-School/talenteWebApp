@@ -5,10 +5,10 @@ import Image from "next/image";
 import SecondaryButton from "@/common/SecondaryButton";
 import BgPattern from "@/assets/images/AskTashaBgPattern.png";
 import TashaChat from "@/assets/images/tasha-hr-phone.png";
-import LetsCheck from "@/assets/svg/lets-check.svg";
-import FullTime from "@/assets/svg/fulltime-parttime.svg";
-import FMLA from "@/assets/svg/fmla.svg";
-import February from "@/assets/svg/first-day-february.svg";
+import ChatLeft from "@/assets/images/chat-left.png";
+import ChatLeft1 from "@/assets/images/chat-left.png";
+import ChatRight from "@/assets/images/chat-right.png";
+import ChatRight1 from "@/assets/images/chat-right.png";
 import BlueCircle from "@/assets/svg/BlueCircle.svg";
 import Stack from "@mui/material/Stack";
 import Container from "@/components/Container";
@@ -85,28 +85,48 @@ const AskTashaPage = () => {
                     <Image
                       src={TashaChat}
                       alt="Tasha image for Tasha page"
-                      className="z-20 lg:!w-[250px] md:h-[800px] h-[300px] object-contain object-bottom md:!w-[250px] sm:!w-[800px] !w-[250px] bottom-0 tasha-phone-mobile"
+                      className="z-20 lg:!w-[320px] md:h-[800px] h-[300px] object-contain object-bottom md:!w-[250px] sm:!w-[800px] !w-[250px] bottom-0 tasha-phone-mobile"
                     />
-                    <Image
-                      src={LetsCheck}
-                      alt=""
-                      className="z-20 w-[150px] h-[150px] md:w-[300px] md:h-[200px] left-[-20px] animate-yy-move top-20 object-contain object-bottom absolute hidden md:block"
-                    />
-                    <Image
-                      src={FullTime}
-                      alt=""
-                      className="z-20 w-[150px] h-[150px] md:w-[300px] md:h-[200px] left-[-20px] animate-yy-move bottom-30 object-contain object-bottom absolute hidden md:block"
-                    />
-                    <Image
-                      src={FMLA}
-                      alt=""
-                      className="z-20 w-[150px] h-[150px] md:w-[300px] md:h-[200px] right-0 animate-y-move top-20 object-contain object-bottom absolute hidden md:block"
-                    />
-                    <Image
-                      src={February}
-                      alt=""
-                      className="z-20 w-[150px] h-[150px] md:w-[300px] md:h-[200px] right-0 animate-yy-move bottom-30 object-contain object-bottom absolute hidden md:block"
-                    />
+                    <Box className="absolute top-40 left-[-50px]">
+                      <Image
+                        src={ChatLeft}
+                        alt=""
+                        className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain hidden md:block"
+                      />
+                      <Box className="z-20 w-[123px] h-[auto] md:w-[123px] md:h-[auto] whitespace-nowrap absolute top-7 left-4 animate-typing overflow-hidden hidden md:block">
+                        Let&apos;s check! When was the start date of your current role?
+                      </Box>
+                    </Box>
+                    <Box className="absolute bottom-64 left-[-50px]">
+                      <Image
+                        src={ChatLeft1}
+                        alt=""
+                        className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain hidden md:block"
+                      />
+                      <Box className="z-20 w-[123px] h-[100px] md:w-[123px] md:h-[100px] whitespace-nowrap animate-typing bottom-[-5px] left-4 overflow-hidden absolute hidden md:block">
+                        Do you work fulltime or parttime?
+                      </Box>
+                    </Box>
+                    <Box className="absolute top-40 right-0">
+                      <Image
+                        src={ChatRight}
+                        alt=""
+                        className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain hidden md:block"
+                      />
+                      <Box className="z-20 w-[123px] h-[100px] md:w-[123px] md:h-[100px] whitespace-nowrap animate-typing top-10 right-0 overflow-hidden absolute hidden md:block">
+                        Am I elegible for FMLA?
+                      </Box>
+                    </Box>
+                    <Box className="absolute bottom-64 right-0">
+                      <Image
+                        src={ChatRight1}
+                        alt=""
+                        className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain object-bottom hidden md:block"
+                      />
+                      <Box className="z-20 w-[123px] h-[100px] md:w-[123px] md:h-[100px] whitespace-nowrap animate-typing bottom-[-15px] right-0 overflow-hidden absolute hidden md:block">
+                        Sure. My first day was February 24, 2023
+                      </Box>
+                    </Box>
                   </Box>
                 </Box>
               </Grid>

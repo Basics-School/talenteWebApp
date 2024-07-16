@@ -4,7 +4,7 @@ import AnimatedGradientText from "../AnimatedGradientText";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
-import ActionButton from "../ActionButton";
+// import ActionButton from "../ActionButton";
 import { Typography } from "@mui/material";
 
 interface CardProps {
@@ -14,13 +14,22 @@ interface CardProps {
   subText: string;
   icon?: React.ReactNode;
   detailText?: string;
+  num?: number;
 }
 
-const ExperinceSectionCards = ({ cardNum, points, text, subText, detailText, icon }: CardProps) => {
+const ExperinceSectionCards = ({
+  cardNum,
+  points,
+  text,
+  subText,
+  detailText,
+  icon,
+  num,
+}: CardProps) => {
   return (
     <Box className="!h-full">
       <Box
-        className="border-[2px] border-solid border-[--white-text] !rounded-md min-h-auto md:min-h-[480px] !h-full overflow-visible !py-8 text-left tab:text-center"
+        className={`border-[0px] homecard${num} border-solid border-[--white-text] !rounded-md min-h-auto md:min-h-[480px] !h-full overflow-visible !py-8 text-left tab:text-center`}
         sx={{
           overflow: "auto",
           display: "flex",
@@ -75,12 +84,12 @@ const ExperinceSectionCards = ({ cardNum, points, text, subText, detailText, ico
             ))}
           </List>
         </Box>
-        <Box className="!mt-6 flex-shrink-0 text-center">
+        {/* <Box className="!mt-6 flex-shrink-0 text-center">
           <ActionButton
             text="Download E-Book"
             className="Montserrat-Regular xl:!px-8 xl:!py-3 lg:!px-6 lg:!py-3 !px-5 !py-2 xl:!text-base !text-sm mx-[20px] tab:mx-0"
           />
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );

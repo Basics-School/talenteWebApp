@@ -98,6 +98,7 @@ body {
   background: linear-gradient(to right, var(--bg-card), var(--bg-gradient-color));
   clip-path: polygon(0% 0%, 100% 0, 85% 99%, 0% 100%);
 }
+
 .bgCircle {
   border: 1px solid var(--bg-gradient-color);
   background: var(--section-color);
@@ -105,12 +106,10 @@ body {
 }
 
 .bgButton {
-  background: linear-gradient(
-    to right,
-    var(--button-color),
-    var(--black-color),
-    var(--button-color)
-  );
+  background: linear-gradient(to right,
+      var(--button-color),
+      var(--black-color),
+      var(--button-color));
 }
 
 .linear-bg2 {
@@ -232,7 +231,7 @@ body {
   background: transparent !important;
 }
 
-.MuiListItem-gutters > a {
+.MuiListItem-gutters>a {
   width: 100% !important;
   transition: background 0.4s ease;
 }
@@ -329,6 +328,7 @@ body {
   padding: 15px;
   flex: none;
 }
+
 .borderImg::before {
   content: "";
   position: absolute;
@@ -343,6 +343,7 @@ body {
   transform: rotate(315deg);
   z-index: 2;
 }
+
 .borderImg::after {
   content: "";
   position: absolute;
@@ -357,6 +358,7 @@ body {
   background: transparent;
   transform: rotate(-45deg);
 }
+
 .borderImg img {
   width: 100%;
   height: 100%;
@@ -365,29 +367,34 @@ body {
   position: relative;
   z-index: 1;
 }
+
 .border--fix {
   animation: none !important;
   border-color: transparent;
   box-shadow: none;
   background: #3533cb;
 }
-.border--fix2{
+
+.border--fix2 {
   border-color: transparent;
 }
-.tasha-hand-img
-{
-  left:50%;
+
+.tasha-hand-img {
+  left: 50%;
   transform: translateX(-50%);
 }
-.tasha-phone-mobile
-{
+
+.tasha-phone-mobile {
   bottom: 0;
 }
+
+
 @media only screen and (min-width: 900px) and (max-width: 1159px) {
   .borderImg {
     width: 250px !important;
     height: 250px !important;
   }
+
   .borderImg::before {
     content: "";
     position: absolute;
@@ -402,6 +409,7 @@ body {
     transform: rotate(315deg);
     z-index: 2;
   }
+
   .borderImg::after {
     content: "";
     position: absolute;
@@ -423,6 +431,7 @@ body {
     height: 200px !important;
     margin: 2rem auto !important;
   }
+
   .borderImg::before {
     content: "";
     position: absolute;
@@ -437,6 +446,7 @@ body {
     transform: rotate(315deg);
     z-index: 2;
   }
+
   .borderImg::after {
     content: "";
     position: absolute;
@@ -461,11 +471,13 @@ body {
       boxShadow: 0px 0px 20px 10px rgba(236, 39, 182, 1);
     } */
   }
+
   .borderImg {
     width: 180px !important;
     height: 180px !important;
     margin: 2rem auto !important;
   }
+
   .borderImg::before {
     content: "";
     position: absolute;
@@ -480,6 +492,7 @@ body {
     transform: rotate(315deg);
     z-index: 2;
   }
+
   .borderImg::after {
     content: "";
     position: absolute;
@@ -494,59 +507,88 @@ body {
     transform: rotate(-45deg);
   }
 }
-.animate-bounce
-{
+
+.animate-bounce {
   animation: bounce 1s infinite ease-in-out;
 }
 
-.animate-glow
-{
+.animate-glow {
   animation: glow 2s infinite ease-out;
 }
 
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(-5%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
+
   50% {
     transform: translateY(0);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
+
 @keyframes glow {
-  0%{
-    transform:scale(1);
+  0% {
+    transform: scale(1);
   }
-  100%{
-    transform:scale(1.1);
+
+  100% {
+    transform: scale(1.1);
   }
 }
-.animate-y-move
-{
+
+.animate-y-move {
   animation: animateYmove 5s alternate infinite linear;
 }
-.animate-yy-move
-{
+
+.animate-yy-move {
   animation: animateYYmove 5s alternate infinite linear;
 }
-@keyframes animateYmove
-{
+
+@keyframes animateYmove {
   0% {
     transform: translateY(-15px);
   }
-  
+
   100% {
     transform: translateY(15px);
   }
 }
-@keyframes animateYYmove
-{
+
+@keyframes animateYYmove {
   0% {
     transform: translateY(15px);
   }
-  
+
   100% {
     transform: translateY(-15px);
+  }
+}
+
+.animate-typing {
+  animation: typing 5s steps(20) infinite alternate, blink .7s infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: white;
   }
 }

@@ -89,11 +89,11 @@ const InfoSection = () => {
               </Typography>
               <ActionButton
                 text="Join Our Waitlist"
-                className="Montserrat-Medium !mb-5 xl:!text-[18px] !text-sm xl:!py-4 lg:!py-2 !px-8 border--fix2"
+                className="Montserrat-Medium !mb-1 xl:!text-[18px] !text-sm xl:!py-4 lg:!py-2 !px-8 border--fix2"
                 openDialog
               />
 
-              <Typography className="Montserrat-Regular !mx-auto mt-3 mb-6 !text-[--white-text] text-[14px]">
+              <Typography className="Montserrat-Regular mt-3 mb-6 !text-[--white-text] text-[14px]">
                 We will only use this to keep you in the loop. We hate spam too!
               </Typography>
             </Grid>

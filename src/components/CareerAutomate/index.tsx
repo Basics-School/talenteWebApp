@@ -45,7 +45,7 @@ const CareerAutomate = () => {
                 className="absolute xl:!w-[100px] lg:!w-[70px] !w-[50px] xl:!right-[8.75rem] md:!right-[8rem] !right-[3rem] xl:!mt-20 !-mt-2"
               />
               <CommonTextArea
-                className="pl-0 md:pl-10"
+                className="pl-0 md:pl-26"
                 heading="Automate your career management."
                 content="Repetitive career tasks like job search and resume writing has never been easier. Need a referral? Connect with other professionals in our Career Hub. Manage work-related issues, saving time and
 reducing stress. 
