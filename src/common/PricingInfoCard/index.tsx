@@ -1,25 +1,26 @@
-import { Typography } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
+import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import React from "react";
+import GradientTextCommon from "../GradientTextCommon";
 
 interface Card {
   title: string;
   subtitle: string;
+  price: string;
   points: string[];
   recommended?: boolean;
 }
 
 interface PricingInfoCardProps {
   card: Card;
+  classes?: string;
 }
 
 const PricingInfoCard = ({ card }: PricingInfoCardProps) => {
   return (
     <>
-      <Box className="flex !my-4 pr- 0 md:pr-6">
+      {/* <Box className="flex !my-4 pr- 0 md:pr-6">
         <Box className="Montserrat-Bold !text-xl bgCircle xl:!w-44 xl:!h-44 md:!w-42 md:!h-42 !w-[11rem] !h-[11rem] !-mr-11 z-20 flex flex-col !text-center !justify-center">
           {card?.recommended && (
             <Box>
@@ -60,6 +61,50 @@ const PricingInfoCard = ({ card }: PricingInfoCardProps) => {
               </ListItem>
             ))}
           </List>
+        </Box>
+      </Box> */}
+      <Box className={"w-full tab:w-1/3 p-3 relative z-10"}>
+        <Box
+          className={`border-2 border-[#ececec] !overflow-hidden rounded-xl p-12 px-7 h-full relative transition-transform hover:-translate-y-1 ${card.recommended ? "priceCard-recommend text-white" : "bg-white text-[#5c5c5c]"} text-center`}
+        >
+          {card?.recommended && (
+            <Box className="absolute w-[140px] top-0 left-1/2 -translate-x-1/2 bg-white text-[--bg-gradient-color] Spartan-SemiBold px-5 py-1 text-[14px] uppercase">
+              Recommended
+            </Box>
+          )}
+          <Typography variant="h4" className="Spartan-SemiBold text-[20px]">
+            {card?.title}
+          </Typography>
+          {!card?.recommended && (
+            <GradientTextCommon
+              text={card?.price}
+              className="!Spartan-Bold text-[45px] justify-center"
+            />
+          )}
+          {card?.recommended && (
+            <Typography variant="h3" className="Spartan-Bold text-[45px] mt-3 mb-2">
+              {card?.price}
+            </Typography>
+          )}
+          {/* <Typography variant="h3" className="Spartan-Bold text-[45px] mt-3 mb-2">{card?.price}</Typography> */}
+          <Typography className="Spartan-Medium text-[16px]">{card?.subtitle}</Typography>
+          <Divider className={`my-4 ${card.recommended ? "border-[#fff]" : "border-[#5c5c5c]"}`} />
+          <Box className="text-left">
+            <Box className="Spartan-Medium text-[14px]">
+              {card?.points.map((point, index) => (
+                <Box key={index} className="flex mb-2">
+                  <Box className="mr-3">
+                    <CheckBoxIcon
+                      className={`${card.recommended ? "text-white" : "text-[--bg-gradient-color]"}`}
+                    />
+                  </Box>
+                  <Typography className="Spartan-Medium text-[18px] leading-[1.5]">
+                    {point}
+                  </Typography>
+                </Box>
+              ))}
+            </Box>
+          </Box>
         </Box>
       </Box>
     </>

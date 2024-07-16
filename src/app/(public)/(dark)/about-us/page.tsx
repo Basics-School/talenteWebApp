@@ -11,19 +11,53 @@ import LinkedIn from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Button } from "@mui/material";
 import GradientTextReverse from "@/common/GradientTextReverse";
+import CoreValueCard from "@/common/CoreValueCard";
+import OnBoard from "@/assets/svg/onboard.svg";
 
 const AboutUs = () => {
+  const coreValues = [
+    {
+      icon: OnBoard,
+      title: "Employee-Centricity",
+      description:
+        "We empower employees at every stage of their career journey, whether they are employed or looking for their next opportunity",
+    },
+    {
+      icon: OnBoard,
+      title: "Purpose-Driven Disruptors",
+      description:
+        "We believe change in traditional HR tactics is necessary. We speak up for what we believe in: Diversity, Equity, and Inclusion fuels our mission.",
+    },
+    {
+      icon: OnBoard,
+      title: "Do More With Less",
+      description:
+        "We built a smart platform so we could do more with less. We use innovation thoughtfully to navigate productivity.",
+    },
+    {
+      icon: OnBoard,
+      title: "Build Meaningful Relationships",
+      description:
+        "We are intentional about building lasting connections. We’re redefining the art of professional networking.",
+    },
+    {
+      icon: OnBoard,
+      title: "Empower Others",
+      description:
+        "We set the stage for others to be the best version of themselves: career professionals, jobseekers, and everyone in between.",
+    },
+  ];
   return (
     <>
       <Box
-        className="!h-[100vh] flex justify-center relative sm:!overflow-hidden overflow-x-hidden"
+        className="flex justify-center relative overflow-hidden"
         sx={{
           background:
             "linear-gradient(to bottom, var( --black-color), var(--bg-gradient-color)) !important",
         }}
       >
         <Box
-          className="flex text-[var(--white-text)] items-center gap-7 relative w-full px-2 sm:px-0"
+          className="flex text-[var(--white-text)] items-center gap-7 relative w-full pt-[150px] pb-[70px] xl:py-[200px] xl:pb-[100px] px-2 sm:px-0"
           sx={{
             background: `url(${BgPattern.src})`,
             backgroundSize: "cover",
@@ -38,8 +72,8 @@ const AboutUs = () => {
               className="xl:!w-[80px] xl:!h-[80px] lg:!w-[67px] lg:!h-[61px] !w-[80px] !h-[80px] spinGlobe"
             />
           </Box>
-          <Container className="sm:!justify-between sm:!flex items-center lg:!mt-0 sm:!mb-0 !mb-32">
-            <Box className="max-w-full relative z-30 flex justify-center w-full tab:w-1/2 lg:w-auto">
+          <Container className="sm:!justify-between sm:!flex flex-col lg:flex-row items-center">
+            <Box className="max-w-full relative z-30 flex justify-center w-full lg:w-1/2 xl:w-auto">
               <Stack
                 direction="column"
                 alignItems="center"
@@ -82,7 +116,7 @@ const AboutUs = () => {
                 </Stack>
               </Stack>
             </Box>
-            <Box className="w-full tab:w-1/2 lg:w-auto">
+            <Box className="w-full lg:w-1/2 xl:w-auto">
               <Box className="relative flex-none xl:!w-[300px] xl:!h-[300px] lg:!w-[270px] lg:!h-[270px]  lg:!mb-10 md:!w-[230px] md:!h-[230px] !mx-auto !w-[180px] !h-[180px] !mb-7">
                 <Image
                   draggable="false"
@@ -117,7 +151,7 @@ const AboutUs = () => {
       </Box>
 
       <Box
-        className="flex justify-center relative sm:!overflow-hidden overflow-x-hidden py-10"
+        className="flex justify-center relative sm:!overflow-hidden overflow-x-hidden tab:py-10 bg-[--section-color]"
         sx={{
           background: "#FFF",
         }}
@@ -130,41 +164,22 @@ const AboutUs = () => {
             className="xl:!w-[80px] xl:!h-[80px] lg:!w-[67px] lg:!h-[61px] !w-[80px] !h-[80px] spinGlobe"
           />
         </Box>
-        <Container className="sm:!flex lg:!mt-0 sm:!mb-0 !mb-32">
-          {/* <Box className="max-w-full relative z-30 flex">
-            <Stack
-              direction="column"
-              alignItems="center"
-              justifyContent="center"
-              className="h-full">
-              <Stack direction="column">
-                <Typography className="Spartan-Regular text-[var(--black-text)] text-lg mb-4">
-                  With almost 20 years of HR mastery, Maureen Simmons isn&apos;t your
-                  run-of-the-mill executive. She&apos;s a seasoned pro with a fierce dedication to
-                  seeing people win.
-                </Typography>
-
-                <Typography className="Spartan-Regular text-[var(--black-text)] text-lg mb-4">
-                  She holds a Bachelor&apos;s degree from UC Berkeley and dual MBAs from Cornell
-                  University SC Johnson School of Management and Queen&apos;s University Smith
-                  School of Business.
-                </Typography>
-
-                <Typography className="Spartan-Regular text-[var(--black-text)] text-lg mb-4">
-                  A Chicago native now living in Oakland, CA, Maureen is a powerhouse, but it&apos;s
-                  her relentless passion for leveling the playing field that truly sets her apart.
-                </Typography>
-              </Stack>
-            </Stack>
-          </Box> */}
+        <Container className="sm:!flex flex-wrap lg:!mt-0 max-w-[1150px] mx-auto py-10">
           <Box className="w-full">
             <GradientTextReverse text="Our Core Values" className="xl:!mb-1 z-20 justify-center" />
+          </Box>
+          <Box className="grid tab:grid-cols-2 mt-10">
+            {coreValues.map((item, index) => (
+              <Box key={index} className="w-full p-2 hover:-translate-y-1 transition-transform">
+                <CoreValueCard key={index} card={item} />
+              </Box>
+            ))}
           </Box>
         </Container>
         <Image
           src={BlueCircle}
           alt="BlueCircle image"
-          className="w-[110px] absolute bottom-36 right-[-2.4rem] z-0 spinGlobe"
+          className="w-[110px] absolute top-36 right-[-2.4rem] z-0 spinGlobe"
         />
       </Box>
     </>

@@ -1,8 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Globe from "@/assets/svg/Globe.svg";
-import Image from "next/image";
 import Stack from "@mui/material/Stack";
 import Container from "@mui/material/Container";
 import Link from "next/link";
@@ -1045,14 +1043,14 @@ const TermsOfUse = () => {
       </Container>
 
       {/* Globe */}
-      <Box className="absolute z-10 lg:-bottom-16 md:-bottom-10 -bottom-5 xl:-right-[8.5rem] lg:-right-20 md:-right-20 -right-20">
+      {/* <Box className="absolute z-10 lg:-bottom-16 md:-bottom-10 -bottom-5 xl:-right-[8.5rem] lg:-right-20 md:-right-20 -right-20">
         <Image
           draggable="false"
           src={Globe}
           alt="Globe"
           className="xl:w-[450px] xl:h-[250px] lg:w-[300px] lg:h-[250px] md:w-[250px] md:h-[200px] sm:w-[200px] sm:h-[200px] w-[200px] h-[140px] overflow-hidden"
         />
-      </Box>
+      </Box> */}
     </Box>
   );
 };

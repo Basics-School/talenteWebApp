@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
@@ -13,12 +14,13 @@ import BlueCircle from "@/assets/svg/BlueCircle.svg";
 import Stack from "@mui/material/Stack";
 import Container from "@/components/Container";
 import { Grid } from "@mui/material";
+import TypingEffect from "@/common/TypingEffect";
 
 const AskTashaPage = () => {
   return (
     <>
       <Box
-        className="h-auto pt-32 md:h-[100vh] flex justify-center relative sm:!overflow-hidden overflow-x-hidden"
+        className="h-auto pt-28 lg:pt-12 flex justify-center relative sm:!overflow-hidden overflow-x-hidden"
         sx={{
           background:
             "linear-gradient(to bottom, var( --black-color), var(--bg-gradient-color)) !important",
@@ -93,8 +95,12 @@ const AskTashaPage = () => {
                         alt=""
                         className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain hidden md:block"
                       />
-                      <Box className="z-20 w-[123px] h-[auto] md:w-[123px] md:h-[auto] whitespace-nowrap absolute top-7 left-4 animate-typing overflow-hidden hidden md:block">
-                        Let&apos;s check! When was the start date of your current role?
+                      <Box className="z-20 h-[auto] absolute top-7 left-4 pr-4 overflow-hidden hidden md:block">
+                        <TypingEffect
+                          text="Let's check! When was the start date of your current role?"
+                          speed={100}
+                          deleteSpeed={30}
+                        />
                       </Box>
                     </Box>
                     <Box className="absolute bottom-64 left-[-50px]">
@@ -103,8 +109,12 @@ const AskTashaPage = () => {
                         alt=""
                         className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain hidden md:block"
                       />
-                      <Box className="z-20 w-[123px] h-[100px] md:w-[123px] md:h-[100px] whitespace-nowrap animate-typing bottom-[-5px] left-4 overflow-hidden absolute hidden md:block">
-                        Do you work fulltime or parttime?
+                      <Box className="z-20 h-[auto] top-10 left-4 pr-4 overflow-hidden absolute hidden md:block">
+                        <TypingEffect
+                          text="Do you work fulltime or parttime?"
+                          speed={100}
+                          deleteSpeed={30}
+                        />
                       </Box>
                     </Box>
                     <Box className="absolute top-40 right-0">
@@ -113,8 +123,12 @@ const AskTashaPage = () => {
                         alt=""
                         className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain hidden md:block"
                       />
-                      <Box className="z-20 w-[123px] h-[100px] md:w-[123px] md:h-[100px] whitespace-nowrap animate-typing top-10 right-0 overflow-hidden absolute hidden md:block">
-                        Am I elegible for FMLA?
+                      <Box className="z-20 h-[auto] top-10 left-4 pr-4 overflow-hidden absolute hidden md:block">
+                        <TypingEffect
+                          text="Am I eligible for an FMLA?"
+                          speed={100}
+                          deleteSpeed={30}
+                        />
                       </Box>
                     </Box>
                     <Box className="absolute bottom-64 right-0">
@@ -123,8 +137,12 @@ const AskTashaPage = () => {
                         alt=""
                         className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain object-bottom hidden md:block"
                       />
-                      <Box className="z-20 w-[123px] h-[100px] md:w-[123px] md:h-[100px] whitespace-nowrap animate-typing bottom-[-15px] right-0 overflow-hidden absolute hidden md:block">
-                        Sure. My first day was February 24, 2023
+                      <Box className="z-20 h-[auto] top-10 left-4 pr-4 overflow-hidden absolute hidden md:block">
+                        <TypingEffect
+                          text="Sure. My first day was February 24, 2023"
+                          speed={100}
+                          deleteSpeed={30}
+                        />
                       </Box>
                     </Box>
                   </Box>

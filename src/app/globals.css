@@ -254,6 +254,12 @@ body {
   background-size: 200% 200%;
   animation: backgroundAnimation 8s ease infinite;
 }
+.priceCard-recommend, .gradient-bg-theme{
+  background: linear-gradient(to right, var(--bg-card), var(--bg-gradient-color)) !important;
+}
+.gradient-bg-bottom{
+  background: linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color))!important;
+}
 
 @keyframes backgroundAnimation {
   0% {

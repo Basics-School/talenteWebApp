@@ -4,7 +4,7 @@ import React from "react";
 import ExperinceSectionCards from "@/common/ExperienceSectionCards";
 import AnimatedGradientText from "@/common/AnimatedGradientText";
 import Image from "next/image";
-// import Decor from "@/assets/svg/ExperienceSecetionDecor.svg";
+import Decor from "@/assets/svg/ExperienceSecetionDecor.svg";
 import DottedCircle from "@/assets/svg/DottedCircle.svg";
 import Globe from "@/assets/svg/Globe.svg";
 import Container from "@/components/Container";
@@ -58,12 +58,12 @@ const ExperienceSection = () => {
           className="absolute md:!top-24 lg:!right-48 sm:!right-32 !top-16 !right-16 lg:!w-[70px] lg:!h-[70px] md:!w-[55px] md:!h-[55px] !w-[45px] !h-[45px]"
         /> */}
         {/* Decor Image */}
-        {/* <Image
+        <Image
           draggable="false"
           src={Decor}
           alt="Decor"
           className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 xl:!h-[800px] sm:!h-[670px] !h-[1000px]"
-        /> */}
+        />
         {/* Right Arrow */}
         {/* <Image
           draggable="false"
