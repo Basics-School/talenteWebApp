@@ -5,6 +5,7 @@ import NotistackProvider from "@/utils/Notistack/NotiStackProvider";
 
 import "react-international-phone/style.css";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         <NotistackProvider>
           <CssBaseline />
           {children}
+          <Footer />
         </NotistackProvider>
       </body>
     </html>

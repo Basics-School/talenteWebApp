@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
@@ -5,20 +6,21 @@ import Image from "next/image";
 import SecondaryButton from "@/common/SecondaryButton";
 import BgPattern from "@/assets/images/AskTashaBgPattern.png";
 import TashaChat from "@/assets/images/tasha-hr-phone.png";
-import LetsCheck from "@/assets/svg/lets-check.svg";
-import FullTime from "@/assets/svg/fulltime-parttime.svg";
-import FMLA from "@/assets/svg/fmla.svg";
-import February from "@/assets/svg/first-day-february.svg";
+import ChatLeft from "@/assets/images/chat-left.png";
+import ChatLeft1 from "@/assets/images/chat-left.png";
+import ChatRight from "@/assets/images/chat-right.png";
+import ChatRight1 from "@/assets/images/chat-right.png";
 import BlueCircle from "@/assets/svg/BlueCircle.svg";
 import Stack from "@mui/material/Stack";
 import Container from "@/components/Container";
 import { Grid } from "@mui/material";
+import TypingEffect from "@/common/TypingEffect";
 
 const AskTashaPage = () => {
   return (
     <>
       <Box
-        className="h-auto pt-32 md:h-[100vh] flex justify-center relative sm:!overflow-hidden overflow-x-hidden"
+        className="h-auto pt-28 lg:pt-12 flex justify-center relative sm:!overflow-hidden overflow-x-hidden"
         sx={{
           background:
             "linear-gradient(to bottom, var( --black-color), var(--bg-gradient-color)) !important",
@@ -85,28 +87,64 @@ const AskTashaPage = () => {
                     <Image
                       src={TashaChat}
                       alt="Tasha image for Tasha page"
-                      className="z-20 lg:!w-[250px] md:h-[800px] h-[300px] object-contain object-bottom md:!w-[250px] sm:!w-[800px] !w-[250px] bottom-0 tasha-phone-mobile"
+                      className="z-20 lg:!w-[320px] md:h-[800px] h-[300px] object-contain object-bottom md:!w-[250px] sm:!w-[800px] !w-[250px] bottom-0 tasha-phone-mobile"
                     />
-                    <Image
-                      src={LetsCheck}
-                      alt=""
-                      className="z-20 w-[150px] h-[150px] md:w-[300px] md:h-[200px] left-[-20px] animate-yy-move top-20 object-contain object-bottom absolute hidden md:block"
-                    />
-                    <Image
-                      src={FullTime}
-                      alt=""
-                      className="z-20 w-[150px] h-[150px] md:w-[300px] md:h-[200px] left-[-20px] animate-yy-move bottom-30 object-contain object-bottom absolute hidden md:block"
-                    />
-                    <Image
-                      src={FMLA}
-                      alt=""
-                      className="z-20 w-[150px] h-[150px] md:w-[300px] md:h-[200px] right-0 animate-y-move top-20 object-contain object-bottom absolute hidden md:block"
-                    />
-                    <Image
-                      src={February}
-                      alt=""
-                      className="z-20 w-[150px] h-[150px] md:w-[300px] md:h-[200px] right-0 animate-yy-move bottom-30 object-contain object-bottom absolute hidden md:block"
-                    />
+                    <Box className="absolute top-40 left-[-50px]">
+                      <Image
+                        src={ChatLeft}
+                        alt=""
+                        className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain hidden md:block"
+                      />
+                      <Box className="z-20 h-[auto] absolute top-7 left-4 pr-4 overflow-hidden hidden md:block">
+                        <TypingEffect
+                          text="Let's check! When was the start date of your current role?"
+                          speed={100}
+                          deleteSpeed={30}
+                        />
+                      </Box>
+                    </Box>
+                    <Box className="absolute bottom-64 left-[-50px]">
+                      <Image
+                        src={ChatLeft1}
+                        alt=""
+                        className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain hidden md:block"
+                      />
+                      <Box className="z-20 h-[auto] top-10 left-4 pr-4 overflow-hidden absolute hidden md:block">
+                        <TypingEffect
+                          text="Do you work fulltime or parttime?"
+                          speed={100}
+                          deleteSpeed={30}
+                        />
+                      </Box>
+                    </Box>
+                    <Box className="absolute top-40 right-0">
+                      <Image
+                        src={ChatRight}
+                        alt=""
+                        className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain hidden md:block"
+                      />
+                      <Box className="z-20 h-[auto] top-10 left-4 pr-4 overflow-hidden absolute hidden md:block">
+                        <TypingEffect
+                          text="Am I eligible for an FMLA?"
+                          speed={100}
+                          deleteSpeed={30}
+                        />
+                      </Box>
+                    </Box>
+                    <Box className="absolute bottom-64 right-0">
+                      <Image
+                        src={ChatRight1}
+                        alt=""
+                        className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain object-bottom hidden md:block"
+                      />
+                      <Box className="z-20 h-[auto] top-10 left-4 pr-4 overflow-hidden absolute hidden md:block">
+                        <TypingEffect
+                          text="Sure. My first day was February 24, 2023"
+                          speed={100}
+                          deleteSpeed={30}
+                        />
+                      </Box>
+                    </Box>
                   </Box>
                 </Box>
               </Grid>

@@ -23,18 +23,20 @@ const navItemsAvatar = [
   { label: "Ask Tasha", path: "/ask-tasha" },
   { label: "Career Hub", path: "/", url: "https://community.mytalente.ai/" },
   { label: "Subscription", path: "/pricing" },
-  { label: "Research", path: "/" },
+  { label: "Research", path: "" },
   { label: "More", path: "/" },
 ];
 interface StyleProps {
   color?: string;
   logo?: any;
   scrollColor?: string;
+  navColor?: string;
 }
 const Navbar = ({
   color = "var(--white-text)",
   logo = TalenteLogo,
   scrollColor = "var(--hover-nav-color)",
+  navColor = "var(--black-color)",
 }: StyleProps) => {
   const [mobileOpen, setMobileOpen] = useState(true);
   const [scrolled, setScrolled] = useState(false);
@@ -71,7 +73,7 @@ const Navbar = ({
       onClick={handleDrawerToggle}
       sx={{
         textAlign: "center",
-        background: "#171717",
+        background: `${scrollColor}`,
       }}
       className="Spartan-SemiBold !py-0"
     >
@@ -84,9 +86,9 @@ const Navbar = ({
             <ListItem
               key={item.label}
               disablePadding
-              className={`Spartan-SemiBold navList !flex${index === navItemsAvatar.length - 1 ? " last-child-no-border" : ""}`} // Check if it's the last item
+              className={`Spartan-SemiBold navList !text-[${navColor}] !flex${index === navItemsAvatar.length - 1 ? " last-child-no-border" : ""}`} // Check if it's the last item
             >
-              <Link className="Spartan-SemiBold" href={item.path}>
+              <Link className={`Spartan-SemiBold !text-[${navColor}]`} href={item.path}>
                 <ListItemButton className="Spartan-SemiBold" sx={{ textAlign: "center" }}>
                   {item.url ? (
                     <a
@@ -100,7 +102,10 @@ const Navbar = ({
                       {item.label}
                     </a>
                   ) : (
-                    <ListItemText className="Spartan-SemiBold" primary={item.label} />
+                    <ListItemText
+                      className={`Spartan-SemiBold !text-[${navColor}]`}
+                      primary={item.label}
+                    />
                   )}
                 </ListItemButton>
               </Link>
@@ -192,8 +197,8 @@ const Navbar = ({
               onClick={handleDrawerToggle}
               className="focus:outline-none text-center !min-w-[30px] !ml-5 sm:!hidden"
             >
-              {mobileOpen && <MenuIcon className="text-[--white-text] !w-5 !h-5" />}
-              {!mobileOpen && <CloseIcon className="text-[--white-text] !w-5 !h-5" />}
+              {mobileOpen && <MenuIcon className={`!text-[${navColor}] !w-5 !h-5`} />}
+              {!mobileOpen && <CloseIcon className={`!text-[${navColor}] !w-5 !h-5`} />}
             </Button>
           </Toolbar>
         </Container>

@@ -89,6 +89,7 @@ const ExperienceSection = () => {
                 subText="Create your profile"
                 icon={<OnBoard />}
                 detailText="Create your profile manually or with LinkedIn integration."
+                num={1}
               />
               <ExperinceSectionCards
                 cardNum="#02"
@@ -97,6 +98,7 @@ const ExperienceSection = () => {
                 subText="Manage Repetitive tasks"
                 icon={<Optimize />}
                 detailText="Automate career tasks like:"
+                num={2}
               />
               <ExperinceSectionCards
                 cardNum="#03"
@@ -105,6 +107,7 @@ const ExperienceSection = () => {
                 subText="HRIS or ATS with API"
                 icon={<Integrate />}
                 detailText="API integration lets you maintain the flow of your career data. On-demand assistance for:"
+                num={3}
               />
             </Box>
           </Box>

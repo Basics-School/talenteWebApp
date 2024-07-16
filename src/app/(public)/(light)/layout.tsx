@@ -13,6 +13,7 @@ export default function RootLayout({
         color="var(--black-color)"
         logo={BlackTalenteLogo}
         scrollColor={"var(--section-color)"}
+        navColor="var(--black-color)"
       />
       {children}
     </>

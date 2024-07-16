@@ -5,9 +5,7 @@ import PricingInfoCard from "@/common/PricingInfoCard";
 import Box from "@mui/material/Box";
 import Image from "next/image";
 import React, { useState } from "react";
-import PricingSectionImg from "@/assets/images/PricingImg.png";
 import "./pricingStyles.css";
-import Button from "@mui/material/Button";
 import RightCirclePricing from "@/assets/svg/RightCirclePricing.svg";
 import LeftCirclePricing from "@/assets/svg/LeftCirclePricing.svg";
 import LeftDottedCircle from "@/assets/svg/LeftDotttedCircle.svg";
@@ -18,7 +16,8 @@ import { Typography } from "@mui/material";
 
 const card1 = {
   title: "Basic",
-  subtitle: "$0/mo",
+  price: "$0",
+  subtitle: "For One Month",
   points: [
     "Basic Profile",
     "Limited chat support",
@@ -28,9 +27,10 @@ const card1 = {
   ],
 };
 const card2 = {
-  title: "Premium",
   recommended: true,
-  subtitle: "$49.99/mo",
+  title: "Premium",
+  price: "$49.99",
+  subtitle: "For One Month",
   points: [
     "All Basic features plus",
     "Tasha: AI HR & Career Assistant",
@@ -43,7 +43,8 @@ const card2 = {
 
 const card3 = {
   title: "Elite",
-  subtitle: "$59.99/mo",
+  price: "$59.99",
+  subtitle: "For One Month",
   points: [
     "All Premium features plus",
     "Industry Watch",
@@ -55,13 +56,40 @@ const card3 = {
 
 const card4 = {
   title: "Basic",
-  subtitle: "$0/mo",
+  price: "$0",
+  subtitle: "Month On Annual Plan",
   points: [
     "Basic Profile",
     "Limited chat support",
     "Access to Career Hub - Community Forums",
     "Professional Networking",
     "Peer-to-Peer Q&A",
+  ],
+};
+const card5 = {
+  recommended: true,
+  title: "Premium",
+  price: "$44.99",
+  subtitle: "Month On Annual Plan",
+  points: [
+    "All Basic features plus",
+    "Tasha: AI HR & Career Assistant",
+    "Personalized Career Dashboard",
+    "Job Search",
+    "Resume Optimization",
+    "Interview Preparation",
+  ],
+};
+const card6 = {
+  title: "Elite",
+  price: "$54.99",
+  subtitle: "Month On Annual Plan",
+  points: [
+    "All Premium features plus",
+    "Industry Watch",
+    "Personalized Compensation Strategies",
+    "Exclusive Masterclasses and Webinars with Industry Experts",
+    "1-on-1 Assistance with Complex Work-Related Issues",
   ],
 };
 
@@ -114,7 +142,7 @@ const Pricing = () => {
           Cancel Anytime.
         </Typography>
 
-        <Box className="flex lg:!flex-row !flex-col !justify-between !items-center !mt-4 xl:!mb-0 !mb-10">
+        {/* <Box className="flex lg:!flex-row !flex-col !justify-between !items-center !mt-4 xl:!mb-0 !mb-10">
           <Box>
             <PricingInfoCard card={selectedItem === 1 ? card1 : card4} />
             <PricingInfoCard card={card2} />
@@ -135,6 +163,11 @@ const Pricing = () => {
               JOIN WAITLIST
             </Button>
           </Box>
+        </Box> */}
+        <Box className={"flex flex-wrap my-10 gap-y-3 tab:gap-0"}>
+          <PricingInfoCard card={selectedItem === 1 ? card1 : card4} />
+          <PricingInfoCard card={selectedItem === 1 ? card2 : card5} />
+          <PricingInfoCard card={selectedItem === 1 ? card3 : card6} />
         </Box>
         <div className="absolute !my-auto right-0 top-1/4">
           <Image
@@ -152,7 +185,7 @@ const Pricing = () => {
             className="!w-[220px] !h-[220px]"
           />
         </div>
-        <div className="absolute !my-auto bottom-0 xl:!right-1/3 !right-1/4">
+        <div className="absolute !my-auto bottom-0 xl:!right-2/3 !right-1/4">
           <Image
             draggable="false"
             src={Decoration}
