@@ -4,14 +4,14 @@ import React from "react";
 import ExperinceSectionCards from "@/common/ExperienceSectionCards";
 import AnimatedGradientText from "@/common/AnimatedGradientText";
 import Image from "next/image";
-import Decor from "@/assets/svg/ExperienceSecetionDecor.svg";
 import DottedCircle from "@/assets/svg/DottedCircle.svg";
-import Globe from "@/assets/svg/Globe.svg";
 import Container from "@/components/Container";
 import { Typography } from "@mui/material";
 import OnBoard from "@/assets/svg/onboard.svg?svgr";
 import Optimize from "@/assets/svg/optimize.svg?svgr";
 import Integrate from "@/assets/svg/integrate.svg?svgr";
+import SingleArrow from "@/assets/images/Single_Arrow90.png";
+import DoubleArrow from "@/assets/images/Double_Arrow90.png";
 
 const points1: string[] = [];
 
@@ -58,12 +58,12 @@ const ExperienceSection = () => {
           className="absolute md:!top-24 lg:!right-48 sm:!right-32 !top-16 !right-16 lg:!w-[70px] lg:!h-[70px] md:!w-[55px] md:!h-[55px] !w-[45px] !h-[45px]"
         /> */}
         {/* Decor Image */}
-        <Image
+        {/* <Image
           draggable="false"
           src={Decor}
           alt="Decor"
           className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 xl:!h-[800px] sm:!h-[670px] !h-[1000px]"
-        />
+        /> */}
         {/* Right Arrow */}
         {/* <Image
           draggable="false"
@@ -75,15 +75,15 @@ const ExperienceSection = () => {
           <Box className="!text-center">
             <AnimatedGradientText
               text="A single platform where everything works together."
-              className="md:!pt-12 !pt-6 lg:!mb-0 md:!pb-6 !pb-6 !mt-0"
+              className="md:!pt-12 !pt-6 lg:!mb-0 md:!pb-6 !pb-6 !mt-0 lg:text-5xl"
             />
             <Typography className="Montserrat-Regular !mx-auto mb-10 !text-[--white-text] xl:text-[20px] lg:text-[18px] text-[16px] max-w-auto md:max-w-[1000px] ">
               Talente saves you time and effort so you can focus on what matters most—growing your
               skills, improving your earning power, and taking your career forward.
             </Typography>
-            <Box className="grid tab:grid-cols-3 gap-4 justify-center !items-center">
+            <Box className="grid tab:grid-cols-3 gap-4 justify-center !items-center relative">
               <ExperinceSectionCards
-                cardNum="#01"
+                cardNum="1"
                 points={points1}
                 text="Onboard"
                 subText="Create your profile"
@@ -91,8 +91,15 @@ const ExperienceSection = () => {
                 detailText="Create your profile manually or with LinkedIn integration."
                 num={1}
               />
+              <Box className="absolute left-1/3 top-16 -translate-x-1/2 w-[70px] hidden tab:block">
+                <Image src={SingleArrow} alt="Single Arrow" className="w-full" />
+              </Box>
+              <Box className="absolute left-2/3 top-16 -translate-x-1/2 w-[70px] hidden tab:block">
+                <Image src={DoubleArrow} alt="Double Arrow" className="w-full" />
+              </Box>
+
               <ExperinceSectionCards
-                cardNum="#02"
+                cardNum="2"
                 points={points2}
                 text="Optimize"
                 subText="Manage Repetitive tasks"
@@ -101,7 +108,7 @@ const ExperienceSection = () => {
                 num={2}
               />
               <ExperinceSectionCards
-                cardNum="#03"
+                cardNum="3"
                 points={points3}
                 text="Integrate"
                 subText="HRIS or ATS with API"
@@ -115,14 +122,14 @@ const ExperienceSection = () => {
       </Box>
 
       {/* Globe */}
-      <Box className="absolute lg:!-bottom-40 lg:!-left-36 md:!-bottom-20 md:!-left-52 !-bottom-10 !-left-24 z-10">
+      {/* <Box className="absolute lg:!-bottom-40 lg:!-left-36 md:!-bottom-20 md:!-left-52 !-bottom-10 !-left-24 z-10">
         <Image
           draggable="false"
           src={Globe}
           alt="Globe"
           className="lg:!w-[380px] lg:!h-[410px] !w-[200px] !h-[250px] spinGlobe"
         />
-      </Box>
+      </Box> */}
     </Box>
   );
 };

@@ -63,7 +63,7 @@ const PricingInfoCard = ({ card }: PricingInfoCardProps) => {
           </List>
         </Box>
       </Box> */}
-      <Box className={"w-full tab:w-1/3 p-3 relative z-10"}>
+      <Box className={"w-full tab:w-1/2 md:w-1/3 p-3 relative z-10"}>
         <Box
           className={`border-2 border-[#ececec] !overflow-hidden rounded-xl p-12 px-7 h-full relative transition-transform hover:-translate-y-1 ${card.recommended ? "priceCard-recommend text-white" : "bg-white text-[#5c5c5c]"} text-center`}
         >

@@ -8,8 +8,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Container from "@/components/Container";
-import CircularShape from "@/assets/svg/CircularShape.svg";
-import Globe from "@/assets/svg/Globe.svg";
 import TalenteLogo from "@/assets/svg/TalenteLogo.svg";
 import FacebookCircularIcon from "@/assets/svg/FacebookCircularLogo.svg?svgr";
 import InstagramCircularIcon from "@/assets/svg/InstagramCircularLogo.svg?svgr";
@@ -31,14 +29,14 @@ const Footer = () => {
         position: "relative",
       }}
     >
-      <Box className="absolute sm:left-[-40px] md:left-[-150px] bottom-[-30px] scale-[.75] rotate-[0deg]">
+      {/* <Box className="absolute sm:left-[-40px] md:left-[-150px] bottom-[-30px] scale-[.75] rotate-[0deg]">
         <Image
           draggable="false"
           src={CircularShape}
           alt="CircularShape"
           className="w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] md:w-[450px] md:h-[300px]"
         />
-      </Box>
+      </Box> */}
       <Container>
         <Grid container className="space-y-10 md:space-y-0">
           <Grid xs={12} md={3}>
@@ -149,14 +147,14 @@ const Footer = () => {
           </Box>
         </Box>
       </Container>
-      <Box className="absolute right-[-150px] top-2">
+      {/* <Box className="absolute right-[-150px] top-2">
         <Image
           draggable="false"
           src={Globe}
           alt="Globe"
           className="w-[300px] h-[200px] sm:h-[300px]"
         />
-      </Box>
+      </Box> */}
     </Box>
   );
 };

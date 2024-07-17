@@ -164,7 +164,7 @@ const Pricing = () => {
             </Button>
           </Box>
         </Box> */}
-        <Box className={"flex flex-wrap my-10 gap-y-3 tab:gap-0"}>
+        <Box className={"pricing-Cards-wrapper flex flex-wrap my-10 gap-y-3 tab:gap-0"}>
           <PricingInfoCard card={selectedItem === 1 ? card1 : card4} />
           <PricingInfoCard card={selectedItem === 1 ? card2 : card5} />
           <PricingInfoCard card={selectedItem === 1 ? card3 : card6} />

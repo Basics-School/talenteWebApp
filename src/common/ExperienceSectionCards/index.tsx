@@ -4,7 +4,6 @@ import AnimatedGradientText from "../AnimatedGradientText";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
-// import ActionButton from "../ActionButton";
 import { Typography } from "@mui/material";
 
 interface CardProps {
@@ -36,29 +35,37 @@ const ExperinceSectionCards = ({
           flexDirection: "column",
         }}
       >
-        <Box
+        {/* <Box
           className={
             "Spartan-Medium text-[--white-text] lg:!text-4xl !text-2xl px-[20px] !mt-0 !text-center !mb-3"
           }
         >
           {cardNum}
+        </Box> */}
+        <Box className="mb-4 tab:text-center">
+          <Box
+            component="span"
+            className="Spartan-Light text-[--white-text] inline-grid place-items-center w-[35px] h-[35px] border rounded-full !text-[16px] leading-[2.2]"
+          >
+            {cardNum}
+          </Box>
         </Box>
-        {icon && <Box className="w-16 h-16 mx-auto my-4">{icon}</Box>}
-        <Box className="Spartan-Medium text-[--white-text] lg:!text-3xl !text-2xl px-[20px] !mb-0">
+        {icon && <Box className="w-16 h-16 tab:!mx-auto my-4 ml-0">{icon}</Box>}
+        <Box className="Spartan-Medium text-[--white-text] lg:!text-3xl !text-2xl tab:px-[20px] !mb-0 tab:text-center">
           {text}
         </Box>
         <AnimatedGradientText
           text={subText}
-          className="lg:!text-3xl !text-2xl !ml-0 tab:!mx-auto px-[20px] tab:!px-[10px]"
+          className="lg:!text-[30px] !text-2xl !ml-0 tab:!mx-auto !px-[0px] tab:!px-[10px]"
         />
 
         <Box>
-          <Typography className="Spartan-Medium text-[22px] text-white text-center !mx-auto px-[10px] mb-5">
+          <Typography className="Spartan-Medium text-[20px] text-white tab:text-center !mx-auto !px-0 tab:px-[10px] mb-5">
             {detailText}
           </Typography>
         </Box>
 
-        <Box className="flex flex-col gap-3 lg:!pl-12 pl-[40px] tab:!pl-10 !pr-4 flex-grow tab:text-center">
+        <Box className="flex flex-col gap-3 lg:!pl-12 pl-[20px] tab:!pl-10 !pr-4 flex-grow tab:text-center">
           <List
             sx={{
               listStyleType: "disc",
@@ -76,7 +83,7 @@ const ExperinceSectionCards = ({
               >
                 <ListItemText
                   primaryTypographyProps={{
-                    fontSize: { xs: "20px", sm: "18px", md: "20px", lg: "22px" },
+                    fontSize: { xs: "20px", sm: "18px", md: "20px" },
                   }}
                   className="Spartan-Medium !text-[--white-text]"
                 >

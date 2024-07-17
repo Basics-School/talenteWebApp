@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import Image from "next/image";
 import SecondaryButton from "@/common/SecondaryButton";
 import BgPattern from "@/assets/images/AskTashaBgPattern.png";
-import TashaChat from "@/assets/images/tasha-hr-phone.png";
+import TashaChat from "@/assets/images/Frame 5434.png";
 import ChatLeft from "@/assets/images/chat-left.png";
 import ChatLeft1 from "@/assets/images/chat-left.png";
 import ChatRight from "@/assets/images/chat-right.png";
@@ -43,7 +43,7 @@ const AskTashaPage = () => {
             />
           </Box>
           <Container className="sm:!justify-between sm:!flex lg:!mt-0 sm:!mb-0 mb-0">
-            <Grid container className="space-y-10 md:space-y-0 items-center justify-between">
+            <Grid container className="space-y-16 md:space-y-0 items-center justify-between">
               <Grid xs={12} md={5}>
                 <Box className="max-w-full sm:max-w-lg relative z-30 flex justify-center">
                   <Stack
@@ -87,15 +87,15 @@ const AskTashaPage = () => {
                     <Image
                       src={TashaChat}
                       alt="Tasha image for Tasha page"
-                      className="z-20 lg:!w-[320px] md:h-[800px] h-[300px] object-contain object-bottom md:!w-[250px] sm:!w-[800px] !w-[250px] bottom-0 tasha-phone-mobile"
+                      className="z-20 tab:w-[460px] md:w-[330px] lg:w-[460px] lg:h-[800px] tab:-mr-16 tab:h-[500px] h-[400px] object-contain object-bottom sm:!w-[800px] !w-[440px] bottom-0 tasha-phone-mobile"
                     />
-                    <Box className="absolute top-40 left-[-50px]">
+                    <Box className="absolute top-0 lg:top-40 xl:left-[-50px] left-0 hidden tab:block">
                       <Image
                         src={ChatLeft}
                         alt=""
-                        className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain hidden md:block"
+                        className="z-20 w-[240px] h-[123px] xl:w-[300px] object-contain"
                       />
-                      <Box className="z-20 h-[auto] absolute top-7 left-4 pr-4 overflow-hidden hidden md:block">
+                      <Box className="Spartan-Medium xl:text-[16px] text-[14px] z-20 h-[auto] absolute top-[30px] left-4 pr-4 overflow-hidden">
                         <TypingEffect
                           text="Let's check! When was the start date of your current role?"
                           speed={100}
@@ -103,13 +103,13 @@ const AskTashaPage = () => {
                         />
                       </Box>
                     </Box>
-                    <Box className="absolute bottom-64 left-[-50px]">
+                    <Box className="absolute top-[6rem] lg:top-[initial] lg:bottom-64 xl:left-[-50px] -left-[20px] hidden tab:block">
                       <Image
                         src={ChatLeft1}
                         alt=""
-                        className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain hidden md:block"
+                        className="z-20 w-[240px] h-[123px] xl:w-[300px] object-contain"
                       />
-                      <Box className="z-20 h-[auto] top-10 left-4 pr-4 overflow-hidden absolute hidden md:block">
+                      <Box className="Spartan-Medium xl:text-[16px] text-[14px] z-20 h-[auto] top-[30px] left-4 pr-4 overflow-hidden absolute">
                         <TypingEffect
                           text="Do you work fulltime or parttime?"
                           speed={100}
@@ -117,13 +117,13 @@ const AskTashaPage = () => {
                         />
                       </Box>
                     </Box>
-                    <Box className="absolute top-40 right-0">
+                    <Box className="absolute top-0 lg:top-40 right-0 hidden tab:block">
                       <Image
                         src={ChatRight}
                         alt=""
-                        className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain hidden md:block"
+                        className="z-20 w-[240px] h-[123px] xl:w-[300px] object-contain"
                       />
-                      <Box className="z-20 h-[auto] top-10 left-4 pr-4 overflow-hidden absolute hidden md:block">
+                      <Box className="Spartan-Medium xl:text-[16px] text-[14px] z-20 h-[auto] top-[30px] left-4 pr-4 overflow-hidden absolute">
                         <TypingEffect
                           text="Am I eligible for an FMLA?"
                           speed={100}
@@ -131,13 +131,13 @@ const AskTashaPage = () => {
                         />
                       </Box>
                     </Box>
-                    <Box className="absolute bottom-64 right-0">
+                    <Box className="absolute top-[6rem] lg:top-[initial] lg:bottom-64 right-0 hidden tab:block">
                       <Image
                         src={ChatRight1}
                         alt=""
-                        className="z-20 w-[150px] h-[123px] md:w-[300px] md:h-[123px] object-contain object-bottom hidden md:block"
+                        className="z-20 w-[240px] h-[100px] lg:h-[100px] xl:w-[300px] object-contain object-bottom"
                       />
-                      <Box className="z-20 h-[auto] top-10 left-4 pr-4 overflow-hidden absolute hidden md:block">
+                      <Box className="Spartan-Medium xl:text-[16px] text-[14px] z-20 h-[auto] top-[30px] left-4 pr-4 overflow-hidden absolute">
                         <TypingEffect
                           text="Sure. My first day was February 24, 2023"
                           speed={100}

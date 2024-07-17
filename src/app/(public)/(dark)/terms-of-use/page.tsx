@@ -25,7 +25,7 @@ const TermsOfUse = () => {
       </Box> */}
 
       {/* Main Content */}
-      <Container className="max-w-[1380px] !mt-[10rem] mb-[6rem] md:mb-[4rem] !px-8 flex-1 sm:px-0 relative z-10">
+      <Container className="max-w-[1366px] px-6 !mt-[10rem] mb-[6rem] md:mb-[4rem] flex-1 relative z-10">
         <Typography
           variant="h1"
           className="Spartan-SemiBold text-white xl:text-[50px] xl:leading-[71px] lg:text-[40px]  lg:leading-[3rem] md:text-[40px] md:leading-[3.5rem] sm:text-[40px] sm:leading-[3.5rem] text-[27px] overflow-wrap break-words"

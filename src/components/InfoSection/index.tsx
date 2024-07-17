@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import ActionButton from "@/common/ActionButton";
-import BannerImg from "@/assets/images/reading-chat-in-phone.png";
+import BannerImg from "@/assets/images/HomeHero.png";
 import { Grid } from "@mui/material";
 import Container from "@/components/Container";
 
@@ -89,7 +89,7 @@ const InfoSection = () => {
               </Typography>
               <ActionButton
                 text="Join Our Waitlist"
-                className="Montserrat-Medium !mb-1 xl:!text-[18px] !text-sm xl:!py-4 lg:!py-2 !px-8 border--fix2"
+                className="Montserrat-Medium !mb-1 xl:!text-[14px] !text-sm xl:!py-3 xl:!px-6 lg:!py-2 !px-8 border--fix2"
                 openDialog
               />
 
