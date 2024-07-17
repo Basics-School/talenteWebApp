@@ -9,8 +9,9 @@
 }
 
 .Spartan-Black {
-  font-family: var(--league-spartan-black);
+  font-family: var(--league-spartan-black) !important;
 }
+
 @font-face {
   font-family: "Spartan-Bold";
   font-style: normal;
@@ -20,7 +21,7 @@
 }
 
 .Spartan-Bold {
-  font-family: var(--league-spartan-bold);
+  font-family: var(--league-spartan-bold) !important;
 }
 
 @font-face {
@@ -32,7 +33,7 @@
 }
 
 .Spartan-Extra-Bold {
-  font-family: var(--league-spartan-extra-bold);
+  font-family: var(--league-spartan-extra-bold) !important;
 }
 
 @font-face {
@@ -44,7 +45,7 @@
 }
 
 .Spartan-Extra-Light {
-  font-family: var(--league-spartan-extra-light);
+  font-family: var(--league-spartan-extra-light) !important;
 }
 
 @font-face {
@@ -56,7 +57,7 @@
 }
 
 .Spartan-Light {
-  font-family: var(--league-spartan-light);
+  font-family: var(--league-spartan-light) !important;
 }
 
 @font-face {
@@ -68,7 +69,7 @@
 }
 
 .Spartan-Medium {
-  font-family: var(--league-spartan-medium);
+  font-family: var(--league-spartan-medium) !important;
 }
 
 @font-face {
@@ -80,7 +81,7 @@
 }
 
 .Spartan-Regular {
-  font-family: var(--league-spartan-regular);
+  font-family: var(--league-spartan-regular) !important;
 }
 
 @font-face {
@@ -92,7 +93,7 @@
 }
 
 .Spartan-SemiBold {
-  font-family: var(--league-spartan-semi-bold);
+  font-family: var(--league-spartan-semi-bold) !important;
 }
 
 @font-face {
@@ -104,7 +105,7 @@
 }
 
 .Spartan-Thin {
-  font-family: var(--league-spartan-thin);
+  font-family: var(--league-spartan-thin) !important;
 }
 
 /* Montserrat */
@@ -118,8 +119,9 @@
 }
 
 .Montserrat-Black {
-  font-family: var(--montserrat-black);
+  font-family: var(--montserrat-black) !important;
 }
+
 @font-face {
   font-family: "Montserrat-Bold";
   font-style: normal;
@@ -129,7 +131,7 @@
 }
 
 .Montserrat-Bold {
-  font-family: var(--montserrat-bold);
+  font-family: var(--montserrat-bold) !important;
 }
 
 @font-face {
@@ -141,7 +143,7 @@
 }
 
 .Montserrat-Extra-Bold {
-  font-family: var(--montserrat-extra-bold);
+  font-family: var(--montserrat-extra-bold) !important;
 }
 
 @font-face {
@@ -153,7 +155,7 @@
 }
 
 .Montserrat-Extra-Light {
-  font-family: var(--montserrat-extra-light);
+  font-family: var(--montserrat-extra-light) !important;
 }
 
 @font-face {
@@ -165,7 +167,7 @@
 }
 
 .Montserrat-Light {
-  font-family: var(--montserrat-light);
+  font-family: var(--montserrat-light) !important;
 }
 
 @font-face {
@@ -177,7 +179,7 @@
 }
 
 .Montserrat-Medium {
-  font-family: var(--montserrat-medium);
+  font-family: var(--montserrat-medium) !important;
 }
 
 @font-face {
@@ -189,7 +191,7 @@
 }
 
 .Montserrat-Regular {
-  font-family: var(--montserrat-regular);
+  font-family: var(--montserrat-regular) !important;
 }
 
 @font-face {
@@ -201,7 +203,7 @@
 }
 
 .Montserrat-SemiBold {
-  font-family: var(--montserrat-bold);
+  font-family: var(--montserrat-bold) !important;
 }
 
 @font-face {
@@ -213,5 +215,5 @@
 }
 
 .Montserrat-Thin {
-  font-family: var(--montserrat-thin);
+  font-family: var(--montserrat-thin) !important;
 }
