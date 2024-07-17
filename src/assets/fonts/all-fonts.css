@@ -11,6 +11,7 @@
 .Spartan-Black {
   font-family: var(--league-spartan-black);
 }
+
 @font-face {
   font-family: "Spartan-Bold";
   font-style: normal;
@@ -120,6 +121,7 @@
 .Montserrat-Black {
   font-family: var(--montserrat-black);
 }
+
 @font-face {
   font-family: "Montserrat-Bold";
   font-style: normal;

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import CssBaseline from "@mui/material/CssBaseline";
 import { Inter } from "next/font/google";
-import NotistackProvider from "@/utils/Notistack/NotiStackProvider";
+import MUIThemeProvider from "@/providers/ThemeProvider";
+import CacheProvider from "@/providers/CacheProvider";
+import NotiStackProvider from "@/providers/NotiStackProvider";
+import Footer from "@/components/Footer";
 
 import "react-international-phone/style.css";
 import "./globals.css";
-import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,11 +26,14 @@ export default function RootLayout({
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <link rel="icon" type="image/png" href="/favicon.png" />
       <body className={inter.className}>
-        <NotistackProvider>
-          <CssBaseline />
-          {children}
-          <Footer />
-        </NotistackProvider>
+        <CacheProvider>
+          <MUIThemeProvider>
+            <NotiStackProvider>
+              {children}
+              <Footer />
+            </NotiStackProvider>
+          </MUIThemeProvider>
+        </CacheProvider>
       </body>
     </html>
   );
