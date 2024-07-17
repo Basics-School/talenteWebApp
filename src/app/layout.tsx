@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import MUIThemeProvider from "@/providers/ThemeProvider";
 import CacheProvider from "@/providers/CacheProvider";
 import NotiStackProvider from "@/providers/NotiStackProvider";
@@ -7,8 +6,6 @@ import Footer from "@/components/Footer";
 
 import "react-international-phone/style.css";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title:
@@ -25,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <link rel="icon" type="image/png" href="/favicon.png" />
-      <body className={inter.className}>
+      <body>
         <CacheProvider>
           <MUIThemeProvider>
             <NotiStackProvider>
