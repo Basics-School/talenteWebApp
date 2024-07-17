@@ -35,7 +35,7 @@ const CareerSupportSection = () => {
               text="We’re here to change that!"
               className="md:!mt-[0] !mt-1 xl:!text-[45px] lg:!text-5xl md:!text-4xl !text-2xl !leading-[1.7rem]"
             /> */}
-            <Box className="flex md:!flex-row !flex-col pb-0 md:pb-24 !mt-10 !px-8 md:!gap-0 !gap-4 relative">
+            <Box className="flex md:!flex-row !flex-col pb-0 md:pb-24 !mt-10 !px-8 lg:!gap-20 md:!gap-10 !gap-6 relative">
               <Image
                 draggable="false"
                 src={ArrowRight}

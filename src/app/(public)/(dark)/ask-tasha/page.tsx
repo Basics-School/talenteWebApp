@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import Image from "next/image";
 import SecondaryButton from "@/common/SecondaryButton";
 import BgPattern from "@/assets/images/AskTashaBgPattern.png";
-import TashaChat from "@/assets/images/tasha-hr-phone.png";
+import TashaChat from "@/assets/images/Frame 5434.png";
 import ChatLeft from "@/assets/images/chat-left.png";
 import ChatLeft1 from "@/assets/images/chat-left.png";
 import ChatRight from "@/assets/images/chat-right.png";
@@ -87,7 +87,7 @@ const AskTashaPage = () => {
                     <Image
                       src={TashaChat}
                       alt="Tasha image for Tasha page"
-                      className="z-20 lg:!w-[320px] md:h-[800px] h-[300px] object-contain object-bottom md:!w-[250px] sm:!w-[800px] !w-[250px] bottom-0 tasha-phone-mobile"
+                      className="z-20 lg:!w-[440px] md:h-[800px] h-[300px] object-contain object-bottom md:!w-[250px] sm:!w-[800px] !w-[250px] bottom-0 tasha-phone-mobile"
                     />
                     <Box className="absolute top-40 left-[-50px]">
                       <Image
