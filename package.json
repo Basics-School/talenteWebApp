@@ -18,6 +18,7 @@
     "@hubspot/api-client": "^11.1.0",
     "@mui/icons-material": "^5.15.20",
     "@mui/material": "^5.15.20",
+    "@mui/material-nextjs": "^5.16.4",
     "@svgr/webpack": "^8.1.0",
     "axios": "^1.7.2",
     "clsx": "^2.1.1",
