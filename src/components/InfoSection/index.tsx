@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import ActionButton from "@/common/ActionButton";
-import BannerImg from "@/assets/images/reading-chat-in-phone.png";
+import BannerImg from "@/assets/images/HomeHero.png";
 import { Grid } from "@mui/material";
 import Container from "@/components/Container";
 

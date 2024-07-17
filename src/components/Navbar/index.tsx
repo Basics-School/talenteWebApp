@@ -146,7 +146,7 @@ const Navbar = ({
                 src={logo}
                 className="lg:ml-[-8px] !cursor-pointer tab:h-[146px] w-[146px]"
               />
-              <Box className="Spartan-light text-[12px] tab:mt-[10px]" style={{ color }}>
+              <Box className="Spartan-Medium text-[12px] tab:mt-[10px]" style={{ color }}>
                 Beta Live
               </Box>
             </Link>

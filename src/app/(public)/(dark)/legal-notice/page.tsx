@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 const LegalNotice = () => {
   return (
     <Box
-      className="max-w-full flex flex-col min-h-screen justify-center items-center relative overflow-clip"
+      className="max-w-full flex flex-col justify-center items-center relative overflow-clip"
       sx={{
         background: "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color))",
       }}
@@ -26,7 +26,7 @@ const LegalNotice = () => {
       </Box>
 
       {/* Main Content */}
-      <Container className="max-w-[1380px] !mt-[10rem] !px-8 flex-1 sm:px-0">
+      <Container className="max-w-[1366px] px-6 !my-[10rem] flex-1">
         <Typography
           variant="h1"
           className="Spartan-SemiBold text-white xl:text-[50px] xl:leading-[71px] lg:text-[40px]  lg:leading-[3rem] md:text-[40px] md:leading-[3.5rem] sm:text-[40px] sm:leading-[3.5rem] text-[27px] overflow-wrap break-words"

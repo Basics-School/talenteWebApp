@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Image from "next/image";
+import DottedCircle from "@/assets/svg/DottedCircle.svg";
 import BgPattern from "@/assets/images/AskTashaBgPattern.png";
 import FounderImg from "@/assets/images/founder.png";
 import BlueCircle from "@/assets/svg/BlueCircle.svg";
@@ -10,38 +11,49 @@ import Container from "@/components/Container";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Button } from "@mui/material";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
 import GradientTextReverse from "@/common/GradientTextReverse";
 import CoreValueCard from "@/common/CoreValueCard";
-import OnBoard from "@/assets/svg/onboard.svg";
+import EmployeeCentricity from "@/assets/svg/company-employee.svg?svgr";
+import DoMoreLessTime from "@/assets/svg/do-more-less-time.svg?svgr";
+import PurposeDriven from "@/assets/svg/purpose-driven-disruptors.svg?svgr";
+import RelationShip from "@/assets/svg/relationship.svg?svgr";
+import Empower from "@/assets/svg/empower.svg?svgr";
+import AnimatedGradientText from "@/common/AnimatedGradientText";
+import CareerSingle from "@/assets/images/career-single-left.png";
+import CareerDoubleTop from "@/assets/images/career-right-top.png";
+import CareerDoubleBottom from "@/assets/images/career-right-bottom.png";
 
 const AboutUs = () => {
   const coreValues = [
     {
-      icon: OnBoard,
+      icon: <EmployeeCentricity />,
       title: "Employee-Centricity",
       description:
         "We empower employees at every stage of their career journey, whether they are employed or looking for their next opportunity",
     },
     {
-      icon: OnBoard,
+      icon: <PurposeDriven />,
       title: "Purpose-Driven Disruptors",
       description:
         "We believe change in traditional HR tactics is necessary. We speak up for what we believe in: Diversity, Equity, and Inclusion fuels our mission.",
     },
     {
-      icon: OnBoard,
+      icon: <DoMoreLessTime />,
       title: "Do More With Less",
       description:
         "We built a smart platform so we could do more with less. We use innovation thoughtfully to navigate productivity.",
     },
     {
-      icon: OnBoard,
+      icon: <RelationShip />,
       title: "Build Meaningful Relationships",
       description:
         "We are intentional about building lasting connections. We’re redefining the art of professional networking.",
     },
     {
-      icon: OnBoard,
+      icon: <Empower />,
       title: "Empower Others",
       description:
         "We set the stage for others to be the best version of themselves: career professionals, jobseekers, and everyone in between.",
@@ -181,6 +193,131 @@ const AboutUs = () => {
           alt="BlueCircle image"
           className="w-[110px] absolute top-36 right-[-2.4rem] z-0 spinGlobe"
         />
+      </Box>
+
+      <Box
+        sx={{
+          background:
+            "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
+          position: "relative",
+          overflow: "hidden",
+          paddingBottom: "3rem",
+        }}
+      >
+        <Box className="relative">
+          <Image
+            draggable="false"
+            src={DottedCircle}
+            alt="Dotted Circle"
+            className="absolute left-0 -top-8 lg:!w-[250px] lg:!h-[250px] sm:!w-[200px] sm:!h-[200px] !w-[150px] !h-[150px] animates"
+          />
+          <Container>
+            <Box className="!text-center flex flex-wrap">
+              <Box className="w-full mb-10">
+                <AnimatedGradientText
+                  text="Gain a competitive advantage by making data-driven career decisions."
+                  className="md:!pt-12 !pt-6 lg:!mb-0 md:!pb-6 !pb-6 !mt-0 lg:text-[3rem]"
+                />
+              </Box>
+              <Box className="w-full tab:w-[40%]">
+                <Typography
+                  variant="h3"
+                  className="Spartan-SemiBold text-[28px] leading-[1.3] text-left text-white mb-3"
+                >
+                  Realtime Insights and Predictions To Optimize Your Career.
+                </Typography>
+                <Typography
+                  variant="body1"
+                  className="Spartan-Light text-white text-[18px] text-left"
+                >
+                  Talente is your one-stop shop for career data management, with instant, automated
+                  feedback and insights, and in-depth analytics to inform your career decisions and
+                  keep you competitive
+                </Typography>
+
+                <Box className="mt-6">
+                  <List
+                    sx={{
+                      listStyleType: "disc",
+                    }}
+                  >
+                    <ListItem
+                      sx={{
+                        display: "list-item",
+                        color: "#fff",
+                        padding: "1px 0px !important",
+                        marginLeft: "1.5rem",
+                      }}
+                      disablePadding
+                    >
+                      <ListItemText className="Spartan-Light text-white mb-2">
+                        Employment Records
+                      </ListItemText>
+                    </ListItem>
+                    <ListItem
+                      sx={{
+                        display: "list-item",
+                        color: "#fff",
+                        padding: "1px 0px !important",
+                        marginLeft: "1.5rem",
+                      }}
+                      disablePadding
+                    >
+                      <ListItemText className="Spartan-Light text-white mb-2">
+                        Automated Reporting
+                      </ListItemText>
+                    </ListItem>
+                    <ListItem
+                      sx={{
+                        display: "list-item",
+                        color: "#fff",
+                        padding: "1px 0px !important",
+                        marginLeft: "1.5rem",
+                      }}
+                      disablePadding
+                    >
+                      <ListItemText className="Spartan-Light text-white mb-2">
+                        Industry Insights and Trends
+                      </ListItemText>
+                    </ListItem>
+                    <ListItem
+                      sx={{
+                        display: "list-item",
+                        color: "#fff",
+                        padding: "1px 0px !important",
+                        marginLeft: "1.5rem",
+                      }}
+                      disablePadding
+                    >
+                      <ListItemText className="Spartan-Light text-white mb-2">
+                        Mobile App - iOS and Android
+                      </ListItemText>
+                    </ListItem>
+                  </List>
+                </Box>
+              </Box>
+              <Box className="w-full tab:w-[60%]">
+                <Box className="flex">
+                  <Box className="w-[40%] p-2 tab:p-4">
+                    <Image
+                      src={CareerSingle}
+                      alt="Left Single Image"
+                      className="w-full xl:h-[490px]"
+                    />
+                  </Box>
+                  <Box className="w-[60%] p-2 tab:p-4 flex flex-col gap-4 tab:gap-6">
+                    <Box className="">
+                      <Image src={CareerDoubleTop} alt="Right Double Image" className="w-full" />
+                    </Box>
+                    <Box className="pb-0">
+                      <Image src={CareerDoubleBottom} alt="Right Double Image" className="w-full" />
+                    </Box>
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+          </Container>
+        </Box>
       </Box>
     </>
   );

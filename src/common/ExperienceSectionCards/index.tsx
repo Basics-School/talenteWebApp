@@ -4,7 +4,6 @@ import AnimatedGradientText from "../AnimatedGradientText";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
-// import ActionButton from "../ActionButton";
 import { Typography } from "@mui/material";
 
 interface CardProps {
@@ -57,7 +56,7 @@ const ExperinceSectionCards = ({
         </Box>
         <AnimatedGradientText
           text={subText}
-          className="lg:!text-3xl !text-2xl !ml-0 tab:!mx-auto !px-[0px] tab:!px-[10px]"
+          className="lg:!text-[30px] !text-2xl !ml-0 tab:!mx-auto !px-[0px] tab:!px-[10px]"
         />
 
         <Box>
