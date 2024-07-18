@@ -41,6 +41,8 @@
   --montserrat-regular: "Montserrat-Regular";
   --montserrat-semi-bold: "Montserrat-SemiBold";
   --montserrat-thin: "Montserrat-Thin";
+
+  --toploader-z-index: 2000;
 }
 
 body {
@@ -55,10 +57,11 @@ body {
   background: linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important;
 } */
 
-li.MuiListItem-root span{
+li.MuiListItem-root span {
   font-family: inherit !important;
 }
-.coreValueCard svg{
+
+.coreValueCard svg {
   width: 100%;
   height: 100%;
 }
@@ -262,11 +265,14 @@ li.MuiListItem-root span{
   background-size: 200% 200%;
   animation: backgroundAnimation 8s ease infinite;
 }
-.priceCard-recommend, .gradient-bg-theme{
+
+.priceCard-recommend,
+.gradient-bg-theme {
   background: linear-gradient(to right, var(--bg-card), var(--bg-gradient-color)) !important;
 }
-.gradient-bg-bottom{
-  background: linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color))!important;
+
+.gradient-bg-bottom {
+  background: linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important;
 }
 
 @keyframes backgroundAnimation {
@@ -521,12 +527,14 @@ li.MuiListItem-root span{
     transform: rotate(-45deg);
   }
 }
-@media (min-width: 768px) and (max-width: 900px){
+
+@media (min-width: 768px) and (max-width: 900px) {
   .pricing-Cards-wrapper>div:nth-child(2) {
     order: -1;
     width: 100% !important;
   }
 }
+
 .animate-bounce {
   animation: bounce 1s infinite ease-in-out;
 }
