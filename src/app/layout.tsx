@@ -7,6 +7,7 @@ import TopLoader from "@/providers/TopLoader";
 
 import "react-international-phone/style.css";
 import "./globals.css";
+import { appConfig } from "@/appConfig";
 
 export const metadata: Metadata = {
   title:
@@ -24,7 +25,7 @@ export default function RootLayout({
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <link rel="icon" type="image/png" href="/favicon.png" />
       <body>
-        <TopLoader />
+        {appConfig.topLoader.show && <TopLoader />}
         <CacheProvider>
           <MUIThemeProvider>
             <NotiStackProvider>

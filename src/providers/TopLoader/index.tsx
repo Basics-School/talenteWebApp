@@ -11,7 +11,7 @@ const TopLoader = () => {
       showSpinner={true}
       easing="ease"
       speed={200}
-      zIndex={1600}
+      zIndex="var(--toploader-z-index)"
       showAtBottom={false}
     />
   );

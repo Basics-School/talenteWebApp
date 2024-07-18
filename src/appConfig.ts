@@ -8,4 +8,7 @@ export const appConfig = {
     this website are the property of their respective owners. Use of this website signifies
     your acceptance of the Terms of Service and Privacy Policy.`,
   },
+  topLoader: {
+    show: true,
+  },
 };

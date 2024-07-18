@@ -63,7 +63,7 @@ export type NextTopLoaderProps = {
    * @default 1600
    *
    */
-  zIndex?: number;
+  zIndex?: number | string;
   /**
    * To show the TopLoader at bottom.
    * @default false
