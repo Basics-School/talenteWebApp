@@ -4,10 +4,10 @@ import CacheProvider from "@/providers/CacheProvider";
 import NotiStackProvider from "@/providers/NotiStackProvider";
 import Footer from "@/components/Footer";
 import TopLoader from "@/providers/TopLoader";
+import { appConfig } from "@/appConfig";
 
 import "react-international-phone/style.css";
 import "./globals.css";
-import { appConfig } from "@/appConfig";
 
 export const metadata: Metadata = {
   title:
