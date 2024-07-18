@@ -3,6 +3,7 @@ import MUIThemeProvider from "@/providers/ThemeProvider";
 import CacheProvider from "@/providers/CacheProvider";
 import NotiStackProvider from "@/providers/NotiStackProvider";
 import Footer from "@/components/Footer";
+import TopLoader from "@/providers/TopLoader";
 
 import "react-international-phone/style.css";
 import "./globals.css";
@@ -23,6 +24,7 @@ export default function RootLayout({
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <link rel="icon" type="image/png" href="/favicon.png" />
       <body>
+        <TopLoader />
         <CacheProvider>
           <MUIThemeProvider>
             <NotiStackProvider>
