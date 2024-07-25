@@ -275,6 +275,14 @@ li.MuiListItem-root span {
   background: linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important;
 }
 
+.gradient-blue-black {
+  background-image: linear-gradient(to right, #000, #3533cd);
+}
+
+.bg-card-fold {
+  background-image: url("/images/core-values/values-card-bg.png");
+}
+
 @keyframes backgroundAnimation {
   0% {
     background-position: 0% 50%;

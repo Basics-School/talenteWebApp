@@ -8,6 +8,7 @@ import CareerGuideSection from "@/components/CareerGuideSection";
 import Decoration from "@/assets/svg/Decoration.svg";
 import ExperienceSection from "@/components/ExperienceSection";
 import CareerAutomate from "@/components/CareerAutomate";
+import CoreValuesSection from "@/components/CoreValuesSection";
 
 export default function Home() {
   return (
@@ -55,6 +56,9 @@ export default function Home() {
       </Box>
       <Box style={{ background: "var(--section-color)" }}>
         <CareerAutomate />
+      </Box>
+      <Box className="gradient-blue-black">
+        <CoreValuesSection />
       </Box>
       <ExperienceSection />
     </Box>
