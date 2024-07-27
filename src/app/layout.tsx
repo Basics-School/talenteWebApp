@@ -7,7 +7,7 @@ import TopLoader from "@/providers/TopLoader";
 import { appConfig } from "@/appConfig";
 
 import "react-international-phone/style.css";
-import "./globals.css";
+import "../styles/globals.scss";
 
 export const metadata: Metadata = {
   title:

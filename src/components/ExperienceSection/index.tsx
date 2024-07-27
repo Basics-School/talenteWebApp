@@ -4,7 +4,7 @@ import React from "react";
 import ExperinceSectionCards from "@/common/ExperienceSectionCards";
 import AnimatedGradientText from "@/common/AnimatedGradientText";
 import Image from "next/image";
-import DottedCircle from "@/assets/svg/DottedCircle.svg";
+// import DottedCircle from "@/assets/svg/DottedCircle.svg";
 import Container from "@/components/Container";
 import { Typography } from "@mui/material";
 import OnBoard from "@/assets/svg/onboard.svg?svgr";
@@ -36,20 +36,21 @@ const ExperienceSection = () => {
   return (
     <Box
       sx={{
-        background:
-          "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
+        // background:
+        // "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
         position: "relative",
         overflow: "hidden",
         paddingBottom: "3rem",
+        paddingTop: "5rem",
       }}
     >
       <Box className="relative">
-        <Image
+        {/* <Image
           draggable="false"
           src={DottedCircle}
           alt="Dotted Circle"
           className="absolute left-0 -top-8 lg:!w-[250px] lg:!h-[250px] sm:!w-[200px] sm:!h-[200px] !w-[150px] !h-[150px] animates"
-        />
+        /> */}
         {/* Left Arrow */}
         {/* <Image
           draggable="false"

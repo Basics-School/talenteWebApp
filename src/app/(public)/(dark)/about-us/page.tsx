@@ -1,8 +1,6 @@
 import React from "react";
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Image from "next/image";
-import DottedCircle from "@/assets/svg/DottedCircle.svg";
 import BgPattern from "@/assets/images/AskTashaBgPattern.png";
 import FounderImg from "@/assets/images/founder.png";
 import BlueCircle from "@/assets/svg/BlueCircle.svg";
@@ -11,9 +9,6 @@ import Container from "@/components/Container";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Button } from "@mui/material";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
 import GradientTextReverse from "@/common/GradientTextReverse";
 import CoreValueCard from "@/common/CoreValueCard";
 import EmployeeCentricity from "@/assets/svg/company-employee.svg?svgr";
@@ -21,10 +16,6 @@ import DoMoreLessTime from "@/assets/svg/do-more-less-time.svg?svgr";
 import PurposeDriven from "@/assets/svg/purpose-driven-disruptors.svg?svgr";
 import RelationShip from "@/assets/svg/relationship.svg?svgr";
 import Empower from "@/assets/svg/empower.svg?svgr";
-import AnimatedGradientText from "@/common/AnimatedGradientText";
-import CareerSingle from "@/assets/images/career-single-left.png";
-import CareerDoubleTop from "@/assets/images/career-right-top.png";
-import CareerDoubleBottom from "@/assets/images/career-right-bottom.png";
 
 const AboutUs = () => {
   const coreValues = [
@@ -84,8 +75,8 @@ const AboutUs = () => {
               className="xl:!w-[80px] xl:!h-[80px] lg:!w-[67px] lg:!h-[61px] !w-[80px] !h-[80px] spinGlobe"
             />
           </Box>
-          <Container className="sm:!justify-between sm:!flex flex-col lg:flex-row items-center">
-            <Box className="max-w-full relative z-30 flex justify-center w-full lg:w-1/2 xl:w-auto">
+          <Container className="sm:!justify-between sm:!flex flex-col lg:flex-row items-center gap-10">
+            <Box className="max-w-full relative z-30 flex justify-center w-full xl:w-auto">
               <Stack
                 direction="column"
                 alignItems="center"
@@ -93,42 +84,40 @@ const AboutUs = () => {
                 className="h-full"
               >
                 <Stack direction="column">
-                  <Typography className="Spartan-SemiBold uppercase text-[var(--white-text)] sm:!text-2xl md:!text-3xl lg:!text-4xl !text-4xl">
-                    Our Story
-                  </Typography>
-                  <Typography className="Spartan-Regular text-[var(--white-text)] text-lg italic mb-4">
+                  <h2 className="Spartan-SemiBold uppercase text-[var(--white-text)]">Our Story</h2>
+                  <p className="Spartan-Regular text-[var(--white-text)] xl:text-xl italic mb-5">
                     Maureen Simmons
-                  </Typography>
+                  </p>
 
-                  <Typography className="Spartan-Regular text-[var(--white-text)] text-xl mb-4">
+                  <p className="Spartan-Regular text-[var(--white-text)] mb-4">
                     During my almost 20 year tenure in human resources leadership, I witnessed
                     firsthand the increasing weaponization of HR against employees often leaving me
                     helpless to provide the kind of direct support employees truly needed. This
                     realization forced me to leave the corporate world and create a company
                     dedicated to offering the direct support employees have longed for but
                     didn&apos;t think existed.
-                  </Typography>
+                  </p>
 
-                  <Typography className="Spartan-Regular text-[var(--white-text)] text-xl mb-4">
+                  <p className="Spartan-Regular text-[var(--white-text)] mb-4">
                     I created Talente to disrupt the traditional HR department. No more pleading
                     with corporate leadership for fair and impartial treatment. Our goal is to
                     eliminate the middleman and put HR expertise directly into the hands of every
                     employee, everywhere providing them with actionable insights anytime, anywhere
                     they need them.
-                  </Typography>
+                  </p>
 
-                  <Typography className="Spartan-Regular text-[var(--white-text)] text-xl mb-4">
+                  <p className="Spartan-Regular text-[var(--white-text)] mb-4">
                     Our platform will empower career professionals and jobseekers with the resources
                     and guidance they deserve, to transform the way they experience their careers.
-                  </Typography>
+                  </p>
 
-                  <Typography className="Spartan-Regular text-[var(--white-text)] text-xl mb-4">
+                  <p className="Spartan-Regular text-[var(--white-text)] mb-4">
                     We&apos;re here to shake stuff up!{" "}
-                  </Typography>
+                  </p>
                 </Stack>
               </Stack>
             </Box>
-            <Box className="w-full lg:w-1/2 xl:w-auto">
+            <Box className="xl:w-auto">
               <Box className="relative flex-none xl:!w-[300px] xl:!h-[300px] lg:!w-[270px] lg:!h-[270px]  lg:!mb-10 md:!w-[230px] md:!h-[230px] !mx-auto !w-[180px] !h-[180px] !mb-7">
                 <Image
                   draggable="false"
@@ -178,7 +167,11 @@ const AboutUs = () => {
         </Box>
         <Container className="sm:!flex flex-wrap lg:!mt-0 max-w-[1150px] mx-auto py-10">
           <Box className="w-full">
-            <GradientTextReverse text="Our Core Values" className="xl:!mb-1 z-20 justify-center" />
+            <GradientTextReverse
+              text="Our Core Values"
+              className="xl:!mb-1 z-20 justify-center"
+              as="h2"
+            />
           </Box>
           <Box className="grid tab:grid-cols-2 mt-10">
             {coreValues.map((item, index) => (
@@ -195,7 +188,7 @@ const AboutUs = () => {
         />
       </Box>
 
-      <Box
+      {/* <Box
         sx={{
           background:
             "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
@@ -318,7 +311,7 @@ const AboutUs = () => {
             </Box>
           </Container>
         </Box>
-      </Box>
+      </Box> */}
     </>
   );
 };

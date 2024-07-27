@@ -25,10 +25,7 @@ const CoreValueCard = ({ card }: CoreValueCardProps) => {
           {" "}
           {card.title}{" "}
         </Typography>
-        <Typography variant="body1" className="Spartan-Regular">
-          {" "}
-          {card.description}{" "}
-        </Typography>
+        <p className="Spartan-Regular"> {card.description} </p>
         <Box>
           {/* eslint-disable-next-line */}
           <img

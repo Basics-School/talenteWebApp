@@ -1,9 +1,10 @@
-@import url(../assets/fonts/all-fonts.css);
-@import url(../styles/international-phone-input.css);
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url(../assets/fonts/all-fonts.css);
+@import url(../styles/international-phone-input.css);
+@import url(./typography.css);
 
 :root {
   --scroller: #dfdfdf;
@@ -41,7 +42,6 @@
   --montserrat-regular: "Montserrat-Regular";
   --montserrat-semi-bold: "Montserrat-SemiBold";
   --montserrat-thin: "Montserrat-Thin";
-
   --toploader-z-index: 2000;
 }
 
