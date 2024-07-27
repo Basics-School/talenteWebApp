@@ -23,8 +23,7 @@ const navItemsAvatar = [
   { label: "Ask Tasha", path: "/ask-tasha" },
   { label: "Career Hub", path: "/", url: "https://community.mytalente.ai/" },
   { label: "Subscription", path: "/pricing" },
-  { label: "Research", path: "" },
-  { label: "More", path: "/" },
+  { label: "Company", path: "/about-us" },
 ];
 interface StyleProps {
   color?: string;
@@ -88,27 +87,27 @@ const Navbar = ({
               disablePadding
               className={`Spartan-SemiBold navList !text-[${navColor}] !flex${index === navItemsAvatar.length - 1 ? " last-child-no-border" : ""}`} // Check if it's the last item
             >
-              <Link className={`Spartan-SemiBold !text-[${navColor}]`} href={item.path}>
-                <ListItemButton className="Spartan-SemiBold" sx={{ textAlign: "center" }}>
-                  {item.url ? (
-                    <a
-                      href={item.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="Spartan-SemiBold "
-                      style={{ color }}
-                      onClick={(event) => event.stopPropagation()}
-                    >
-                      {item.label}
-                    </a>
-                  ) : (
+              {item.url ? (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="Spartan-SemiBold "
+                  style={{ color }}
+                  onClick={(event) => event.stopPropagation()}
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link className={`Spartan-SemiBold !text-[${navColor}]`} href={item.path}>
+                  <ListItemButton className="Spartan-SemiBold" sx={{ textAlign: "center" }}>
                     <ListItemText
                       className={`Spartan-SemiBold !text-[${navColor}]`}
                       primary={item.label}
                     />
-                  )}
-                </ListItemButton>
-              </Link>
+                  </ListItemButton>
+                </Link>
+              )}
             </ListItem>
           ),
         )}
@@ -156,7 +155,7 @@ const Navbar = ({
             >
               <Box
                 sx={{ display: "flex", gap: 3, alignItems: "center" }}
-                className="sm:!flex hidden xl:!gap-[60px] !items-center"
+                className="md:flex hidden xl:!gap-[60px] !items-center"
               >
                 {navItemsAvatar.map((item) => (
                   <React.Fragment key={item.label}>
@@ -195,7 +194,7 @@ const Navbar = ({
             />
             <Button
               onClick={handleDrawerToggle}
-              className="focus:outline-none text-center !min-w-[30px] !ml-5 sm:!hidden"
+              className="focus:outline-none text-center !min-w-[30px] !ml-5 md:hidden"
             >
               {!mobileOpen && <CloseIcon className={`text-[${navColor}] !w-5 !h-5`} />}
               {mobileOpen && <MenuIcon className={`text-[${navColor}] !w-5 !h-5`} />}

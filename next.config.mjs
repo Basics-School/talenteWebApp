@@ -1,3 +1,5 @@
+import path from 'path';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -9,6 +11,9 @@ const nextConfig = {
       },
     ],
   },
+  // sassOptions: {
+  //   includePaths: [path.join(__dirname, 'styles')],
+  // },
   async headers() {
     return [
       {

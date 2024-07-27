@@ -12,7 +12,7 @@ import Arrow from "@/assets/svg/Arrow.svg";
 const CareerSupportSection = () => {
   return (
     <>
-      <Box className={"relative pb-0 overflow-hidden"}>
+      <Box className={"relative pt-20 pb-0 overflow-hidden"}>
         {/* <Image
           draggable="false"
           src={CareerSupportImage}
@@ -29,7 +29,8 @@ const CareerSupportSection = () => {
           <Box className="flex flex-col justify-center items-center !pt-16 max-w-[950px] mx-auto">
             <GradientTextReverse
               text="Why Talente is the smarter choice."
-              className="xl:!mb-1 z-20"
+              as="h2"
+              className="xl:!mb-1 z-20 xl:!text-[45px] lg:!text-5xl md:!text-4xl !text-2xl !leading-[1.7rem]"
             />
             {/* <GradientTextCommon
               text="We’re here to change that!"

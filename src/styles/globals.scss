@@ -1,9 +1,10 @@
-@import url(../assets/fonts/all-fonts.css);
-@import url(../styles/international-phone-input.css);
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url(../assets/fonts/all-fonts.css);
+@import url(../styles/international-phone-input.css);
+@import url(./typography.css);
 
 :root {
   --scroller: #dfdfdf;
@@ -41,7 +42,6 @@
   --montserrat-regular: "Montserrat-Regular";
   --montserrat-semi-bold: "Montserrat-SemiBold";
   --montserrat-thin: "Montserrat-Thin";
-
   --toploader-z-index: 2000;
 }
 
@@ -273,6 +273,14 @@ li.MuiListItem-root span {
 
 .gradient-bg-bottom {
   background: linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important;
+}
+
+.gradient-blue-black {
+  background-image: linear-gradient(to right, #000, #3533cd);
+}
+
+.bg-card-fold {
+  background-image: url("/images/core-values/values-card-bg.png");
 }
 
 @keyframes backgroundAnimation {
