@@ -6,18 +6,19 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Link from "next/link";
 import Image from "next/image";
-import TalenteLogo from "@/assets/svg/TalenteLogo.svg";
-import ActionButton from "@/common/ActionButton";
+// import TalenteLogo from "@/assets/svg/TalenteLogo.svg";
+// import ActionButton from "@/common/ActionButton";
 import DottedCircle from "@/assets/svg/DottedCircle.svg";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import Button from "@mui/material/Button";
+import { default as MuiButton } from "@mui/material/Button";
 import Drawer from "@mui/material/Drawer";
 import CloseIcon from "@mui/icons-material/Close";
 import Container from "@/components/Container";
 import MenuIcon from "@mui/icons-material/Menu";
+import Button from "../Button";
 
 const navItemsAvatar = [
   { label: "Ask Tasha", path: "/ask-tasha" },
@@ -30,12 +31,14 @@ interface StyleProps {
   logo?: any;
   scrollColor?: string;
   navColor?: string;
+  theme?: "light" | "dark";
 }
 const Navbar = ({
   color = "var(--white-text)",
-  logo = TalenteLogo,
+  // logo = TalenteLogo,
   scrollColor = "var(--hover-nav-color)",
   navColor = "var(--black-color)",
+  theme = "dark",
 }: StyleProps) => {
   const [mobileOpen, setMobileOpen] = useState(true);
   const [scrolled, setScrolled] = useState(false);
@@ -96,7 +99,12 @@ const Navbar = ({
                   style={{ color }}
                   onClick={(event) => event.stopPropagation()}
                 >
-                  {item.label}
+                  <ListItemButton className="Spartan-SemiBold" sx={{ textAlign: "center" }}>
+                    <ListItemText
+                      className={`Spartan-SemiBold !text-[${navColor}]`}
+                      primary={item.label}
+                    />
+                  </ListItemButton>
                 </a>
               ) : (
                 <Link className={`Spartan-SemiBold !text-[${navColor}]`} href={item.path}>
@@ -112,6 +120,19 @@ const Navbar = ({
           ),
         )}
       </List>
+      <div className="flex flex-col items-start gap-2 px-4 py-2">
+        <Button
+          className={`${theme === "dark" ? "text-white" : "text-black"} font-extrabold text-sm lg:text-base py-2 px-5 text-white w-[100px] tab:hidden`}
+        >
+          Log In
+        </Button>
+        <Button
+          openDialog
+          className={`${theme === "dark" ? "bg-white text-black" : "bg-black text-white"} font-extrabold text-sm lg:text-base py-2 px-5 w-[100px] tab:hidden`}
+        >
+          Sign Up
+        </Button>
+      </div>
     </Box>
   );
 
@@ -130,22 +151,23 @@ const Navbar = ({
           background: scrolled ? scrollColor : "transparent",
           borderBottom: "linear-gradient(to right, transparent, var(--button-shadow), transparent)",
         }}
-        className="!h-[72px] left-0 !shadow-none borderNav flex items-center justify-center"
+        className="!h-[92px] left-0 !shadow-none borderNav flex items-center justify-center"
       >
         <Container>
           <Toolbar className="m-auto w-full !px-0">
-            <Link
-              href="/"
-              className="cursor-pointer flex flex-col tab:flex-row tab:items-center"
-              draggable="false"
-            >
+            <Link href="/" className="cursor-pointer flex items-center relative" draggable="false">
               <Image
                 draggable="false"
                 alt="Logo"
-                src={logo}
-                className="lg:ml-[-8px] !cursor-pointer tab:h-[146px] w-[146px]"
+                width={125}
+                height={125}
+                src="/images/brand.png"
+                className="lg:ml-[-8px] !cursor-pointer tab:max-h-[146px] w-[146px]"
               />
-              <Box className="Spartan-Medium text-[12px] tab:mt-[10px]" style={{ color }}>
+              <Box
+                className="Spartan-Medium text-[12px] -ml-2 mt-5 tab:mt-[10px]"
+                style={{ color }}
+              >
                 Beta Live
               </Box>
             </Link>
@@ -155,7 +177,7 @@ const Navbar = ({
             >
               <Box
                 sx={{ display: "flex", gap: 3, alignItems: "center" }}
-                className="md:flex hidden xl:!gap-[60px] !items-center"
+                className="min-[1024px]:flex hidden xl:!gap-[60px] !items-center"
               >
                 {navItemsAvatar.map((item) => (
                   <React.Fragment key={item.label}>
@@ -165,7 +187,7 @@ const Navbar = ({
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ color }}
-                        className="Spartan-SemiBold !text-[18px] hover-underline-animation !w-fit !whitespace-nowrap !capitalize xl:!text-base !text-sm !leading-normal flex flex-row"
+                        className="Spartan-SemiBold hover-underline-animation !w-fit !whitespace-nowrap !capitalize !leading-normal flex flex-row text-lg"
                       >
                         {item.label}
                       </a>
@@ -174,7 +196,7 @@ const Navbar = ({
                         href={item.path}
                         key={item.label}
                         style={{ color }}
-                        className="Spartan-SemiBold !text-[18px] hover-underline-animation !w-fit !whitespace-nowrap !capitalize xl:!text-base !text-sm !leading-normal flex flex-row"
+                        className="Spartan-SemiBold hover-underline-animation !w-fit !whitespace-nowrap !capitalize !leading-normal flex flex-row text-lg"
                       >
                         {item.label}
                       </Link>
@@ -183,22 +205,22 @@ const Navbar = ({
                 ))}
               </Box>
             </Box>
-            <ActionButton
-              text="Log In"
-              className="Spartan-Medium xl:!px-7 xl:!py-2 lg:!px-7 lg:!py-1 !px-2 !py-1 text-[12px] md:text-[16px] tab:me-4 me-3 border--fix2"
-            />
-            <ActionButton
-              text="Sign Up"
-              className="Spartan-Medium xl:!px-7 xl:!py-2 lg:!px-7 lg:!py-1 !px-2 !py-1 text-[12px] md:text-[16px] border--fix2"
-              openDialog
-            />
+            <Button className="font-extrabold text-sm lg:text-base py-2 px-5 hidden tab:inline">
+              Log In
+            </Button>
             <Button
+              openDialog
+              className="ml-3 bg-white text-black font-extrabold text-sm lg:text-base py-2 px-5 hidden tab:inline"
+            >
+              Sign Up
+            </Button>
+            <MuiButton
               onClick={handleDrawerToggle}
-              className="focus:outline-none text-center !min-w-[30px] !ml-5 md:hidden"
+              className="focus:outline-none text-center !min-w-[30px] !ml-5 min-[1024px]:hidden"
             >
               {!mobileOpen && <CloseIcon className={`text-[${navColor}] !w-5 !h-5`} />}
               {mobileOpen && <MenuIcon className={`text-[${navColor}] !w-5 !h-5`} />}
-            </Button>
+            </MuiButton>
           </Toolbar>
         </Container>
       </AppBar>

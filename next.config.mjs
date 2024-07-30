@@ -11,9 +11,6 @@ const nextConfig = {
       },
     ],
   },
-  // sassOptions: {
-  //   includePaths: [path.join(__dirname, 'styles')],
-  // },
   async headers() {
     return [
       {

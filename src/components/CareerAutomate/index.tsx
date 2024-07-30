@@ -18,19 +18,19 @@ const CareerAutomate = () => {
           className="absolute xl:!w-[400px] lg:!w-[200px] !w-[150px]"
         /> */}
         <Container>
-          <Box className="flex flex-col justify-center items-center !pt-16 max-w-[950px] mx-auto">
+          <Box className="flex relative flex-col mt-10 md:mt-0 justify-center xl:!px-0 tab:!px-8 max-w-[1280px] mx-auto">
             {/* <GradientTextCommon
               text="We’re here to change that!"
               className="md:!mt-[0] !mt-1 xl:!text-[45px] lg:!text-5xl md:!text-4xl !text-2xl !leading-[1.7rem]"
             /> */}
-            <Box className="flex md:!flex-row !flex-col items-center !mt-4 pb-0 md:pb-20 !px-8 lg:!gap-20 md:!gap-10 !gap-6 relative">
+            <Box className="flex md:!flex-row !flex-col items-center pb-0 md:pb-20 lg:!gap-20 md:!gap-10 !gap-6 relative">
               <Image
                 draggable="false"
                 src={ArrowRight}
                 alt="Arrow Right"
                 className="absolute bottom-0 right-[-50px] lg:!w-[65px] lg:!h-[120px] !w-[50px] hidden md:block !h-[200px] animates z-10"
               />
-              <div className="borderImg">
+              <div className="borderImg my-10">
                 <Image
                   draggable="false"
                   src={AutomateImg}
@@ -42,7 +42,7 @@ const CareerAutomate = () => {
                 draggable="false"
                 src={Arrow}
                 alt="Blue Circle"
-                className="absolute xl:!w-[100px] lg:!w-[70px] !w-[50px] xl:!right-[8.75rem] md:!right-[8rem] !right-[3rem] xl:!mt-20 !-mt-2"
+                className="absolute xl:!w-[100px] lg:!w-[70px] !w-[50px] xl:!right-[8.75rem] md:!right-[8rem] !right-[3rem]"
               />
               <CommonTextArea
                 className="pl-0 md:pl-26"

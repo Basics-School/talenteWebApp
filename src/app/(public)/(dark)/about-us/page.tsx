@@ -75,67 +75,80 @@ const AboutUs = () => {
               className="xl:!w-[80px] xl:!h-[80px] lg:!w-[67px] lg:!h-[61px] !w-[80px] !h-[80px] spinGlobe"
             />
           </Box>
-          <Container className="sm:!justify-between sm:!flex flex-col lg:flex-row items-center gap-10">
-            <Box className="max-w-full relative z-30 flex justify-center w-full xl:w-auto">
-              <Stack
-                direction="column"
-                alignItems="center"
-                justifyContent="center"
-                className="h-full"
-              >
-                <Stack direction="column">
-                  <h2 className="Spartan-SemiBold uppercase text-[var(--white-text)]">Our Story</h2>
-                  <p className="Spartan-Regular text-[var(--white-text)] xl:text-xl italic mb-5">
-                    Maureen Simmons
-                  </p>
+          <Container>
+            <h2 className="Spartan-SemiBold uppercase text-[var(--white-text)] mb-10 text-center md:text-left">
+              Our Story
+            </h2>
+            <div className="justify-between flex flex-col md:flex-row items-start gap-10">
+              <Box className="order-2 md:order-1 max-w-full relative z-30 flex justify-center w-full xl:w-auto">
+                <Stack
+                  direction="column"
+                  alignItems="center"
+                  justifyContent="center"
+                  className="h-full"
+                >
+                  <Stack direction="column">
+                    <h3 className="Spartan-Regular text-center md:text-left text-[var(--white-text)] xl:text-3xl font-bold italic mb-5">
+                      Maureen Simmons
+                    </h3>
 
-                  <p className="Spartan-Regular text-[var(--white-text)] mb-4">
-                    During my almost 20 year tenure in human resources leadership, I witnessed
-                    firsthand the increasing weaponization of HR against employees often leaving me
-                    helpless to provide the kind of direct support employees truly needed. This
-                    realization forced me to leave the corporate world and create a company
-                    dedicated to offering the direct support employees have longed for but
-                    didn&apos;t think existed.
-                  </p>
+                    <p className="Montserrat-Regular text-[var(--white-text)] mb-7">
+                      During my almost 20 year tenure in human resources leadership, I witnessed
+                      firsthand the increasing weaponization of HR against employees often leaving
+                      me helpless to provide the kind of direct support employees truly needed. This
+                      realization forced me to leave the corporate world and create a company
+                      dedicated to offering the direct support employees have longed for but
+                      didn&apos;t think existed.
+                    </p>
 
-                  <p className="Spartan-Regular text-[var(--white-text)] mb-4">
-                    I created Talente to disrupt the traditional HR department. No more pleading
-                    with corporate leadership for fair and impartial treatment. Our goal is to
-                    eliminate the middleman and put HR expertise directly into the hands of every
-                    employee, everywhere providing them with actionable insights anytime, anywhere
-                    they need them.
-                  </p>
+                    <p className="Montserrat-Regular text-[var(--white-text)] mb-7">
+                      I created Talente to disrupt the traditional HR department. No more pleading
+                      with corporate leadership for fair and impartial treatment. Our goal is to
+                      eliminate the middleman and put HR expertise directly into the hands of every
+                      employee, everywhere providing them with actionable insights anytime, anywhere
+                      they need them.
+                    </p>
 
-                  <p className="Spartan-Regular text-[var(--white-text)] mb-4">
-                    Our platform will empower career professionals and jobseekers with the resources
-                    and guidance they deserve, to transform the way they experience their careers.
-                  </p>
+                    <p className="Montserrat-Regular text-[var(--white-text)] mb-7">
+                      Our platform will empower career professionals and jobseekers with the
+                      resources and guidance they deserve, to transform the way they experience
+                      their careers.
+                    </p>
 
-                  <p className="Spartan-Regular text-[var(--white-text)] mb-4">
-                    We&apos;re here to shake stuff up!{" "}
-                  </p>
+                    <p className="Montserrat-Regular text-[var(--white-text)] mb-7">
+                      We&apos;re here to shake stuff up!{" "}
+                    </p>
+                  </Stack>
                 </Stack>
-              </Stack>
-            </Box>
-            <Box className="xl:w-auto">
-              <Box className="relative flex-none xl:!w-[300px] xl:!h-[300px] lg:!w-[270px] lg:!h-[270px]  lg:!mb-10 md:!w-[230px] md:!h-[230px] !mx-auto !w-[180px] !h-[180px] !mb-7">
-                <Image
-                  draggable="false"
-                  src={FounderImg}
-                  alt="Founder Image"
-                  className="!bg-[var(--section-color)] !relative z-10 border-[8px] border-[--white-text] !rounded-full xl:!w-[300px] xl:!h-[300px] xl:!mb-24 xl:!border-[15px] lg:!w-[270px] lg:!h-[270px] lg:!border-[13px] lg:!mb-12 md:!w-[230px] md:!h-[230px] md:!border-[9px] md:!mb-4  !mx-auto !w-[180px] !h-[180px]"
-                />
-                <Box className="!absolute z-2 !bg-[--bg-gradient-color] !rounded-full xl:!w-[285px] xl:!h-[285px] xl:!left-[0px] xl:!top-[29px] lg:!w-[255px] lg:!h-[255px] lg:!left-[-16px] lg:!top-[24px] !left-[-10px] !top-[16px]  md:!left-[-12px] md:top-[25px] md:!w-[215px] md:!h-[215px] !mx-auto !w-[170px] !h-[170px]" />
               </Box>
-              <Box className={"flex justify-center"}>
-                <Button href="#linkedIn_URL" className="min-w-[fit-content]">
-                  <LinkedIn className="text-[var(--white-text)] w-9 h-9" />
-                </Button>
-                <Button href="#Instagram_URL" className="min-w-[fit-content]">
-                  <InstagramIcon className="text-[var(--white-text)] w-9 h-9" />
-                </Button>
+              <Box className="order-1 md:order-2 xl:w-auto mx-auto">
+                <Box className="relative flex-none xl:!w-[300px] xl:!h-[300px] lg:!w-[270px] lg:!h-[270px]  lg:!mb-10 md:!w-[230px] md:!h-[230px] !mx-auto !w-[180px] !h-[180px] !mb-7">
+                  <Image
+                    draggable="false"
+                    src={FounderImg}
+                    alt="Founder Image"
+                    className="!bg-[var(--section-color)] !relative z-10 border-[8px] border-[--white-text] !rounded-full xl:!w-[300px] xl:!h-[300px] xl:!mb-24 xl:!border-[15px] lg:!w-[270px] lg:!h-[270px] lg:!border-[13px] lg:!mb-12 md:!w-[230px] md:!h-[230px] md:!border-[9px] md:!mb-4  !mx-auto !w-[180px] !h-[180px]"
+                  />
+                  <Box className="!absolute z-2 !bg-[--bg-gradient-color] !rounded-full xl:!w-[285px] xl:!h-[285px] xl:!left-[0px] xl:!top-[29px] lg:!w-[255px] lg:!h-[255px] lg:!left-[-16px] lg:!top-[24px] !left-[-10px] !top-[16px]  md:!left-[-12px] md:top-[25px] md:!w-[215px] md:!h-[215px] !mx-auto !w-[170px] !h-[170px]" />
+                </Box>
+                <Box className={"flex justify-center"}>
+                  <Button
+                    target="_blank"
+                    href="https://www.linkedin.com/in/simmonsmaureen"
+                    className="min-w-[fit-content]"
+                  >
+                    <LinkedIn className="text-[var(--white-text)] w-9 h-9" />
+                  </Button>
+                  <Button
+                    target="_blank"
+                    href="https://www.instagram.com/maureensimmons_"
+                    className="min-w-[fit-content]"
+                  >
+                    <InstagramIcon className="text-[var(--white-text)] w-9 h-9" />
+                  </Button>
+                </Box>
               </Box>
-            </Box>
+            </div>
             {/* <Grid container>
               <Grid xs={12} md={4}>
                 

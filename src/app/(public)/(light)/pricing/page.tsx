@@ -1,6 +1,6 @@
 "use client";
 import CommonTab from "@/common/CommonTab";
-import GradientTextCommon from "@/common/GradientTextCommon";
+// import GradientTextCommon from "@/common/GradientTextCommon";
 import PricingInfoCard from "@/common/PricingInfoCard";
 import Box from "@mui/material/Box";
 import Image from "next/image";
@@ -13,6 +13,8 @@ import RightDottedCircle from "@/assets/svg/RightDottedCircle.svg";
 import Decoration from "@/assets/svg/Decoration.svg";
 import Container from "@/components/Container";
 import { Typography } from "@mui/material";
+// import GradientTextReverse from "@/common/GradientTextReverse";
+import AnimatedGradientText from "@/common/AnimatedGradientText";
 
 const card1 = {
   title: "Basic",
@@ -98,11 +100,10 @@ const Pricing = () => {
   return (
     <Box
       style={{
-        background: "var(--section-color)",
-        minHeight: "100vh",
-        position: "relative",
-        overflow: "hidden",
+        background:
+          "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
       }}
+      className="overflow-hidden relative min-h-[100vh] pt-40 pb-10"
     >
       <Container>
         <div className="absolute !my-auto !left-0 bottom-1/3">
@@ -121,10 +122,7 @@ const Pricing = () => {
             className="!w-[220px] !h-[220px]"
           />
         </div>
-        <GradientTextCommon
-          text="Pricing & Plans"
-          className="md:!text-5xl !text-3xl !mx-auto !mt-28 !items-center !justify-center !mb-8"
-        />
+        <AnimatedGradientText text="Pricing & Plans" as="h2" className="mb-10" />
         <CommonTab
           tab1="Monthly"
           tab2="Anually"
@@ -132,13 +130,13 @@ const Pricing = () => {
           setSelectedItem={setSelectedItem}
         />
 
-        <Typography className="Montserrat-Regular !mx-auto mb-0 mt-10 text-center !text-[--white-block] xl:text-[18px] lg:text-[18px] text-[16px] max-w-auto md:max-w-[1000px] ">
+        <Typography className="text-white Montserrat-Regular !mx-auto mb-0 mt-10 text-center xl:text-[18px] max-w-auto md:max-w-[1000px] ">
           Choose a Plan to Take Charge of Your Career Today.
         </Typography>
-        <Typography className="Montserrat-Regular !mx-auto mb-0 text-center !text-[--white-block] xl:text-[18px] lg:text-[18px] text-[16px] max-w-auto md:max-w-[1000px] ">
+        <Typography className="text-white Montserrat-Regular !mx-auto mb-0 text-center xl:text-[18px] max-w-auto md:max-w-[1000px] ">
           Free 3-Day Trial on Premium and Elite Plans. Monthly Subscription Starts After Trial Ends.
         </Typography>
-        <Typography className="Montserrat-Regular !mx-auto mb-0 text-center !text-[--white-block] xl:text-[18px] lg:text-[18px] text-[16px] max-w-auto md:max-w-[1000px] ">
+        <Typography className="text-white Montserrat-Regular !mx-auto mb-0 text-center xl:text-[18px] max-w-auto md:max-w-[1000px] ">
           Cancel Anytime.
         </Typography>
 

@@ -22,7 +22,7 @@ const AnimatedGradientText = ({ text, className, as }: GradientProps) => {
   return (
     <GradientText
       as={as}
-      className={`Spartan-SemiBold mb-5 sm:text-4xl md:!leading-[1.4] text-[25px] !text-center overflow-wrap break-words !mx-auto xl:!mt-4 !mt-3 px-[10px] ${className}`}
+      className={`Spartan-SemiBold mb-5 !text-center overflow-wrap break-words !mx-auto xl:!mt-4 !mt-3 px-[10px] ${className}`}
     >
       <span className="text-gradient1">{text}</span>
     </GradientText>
