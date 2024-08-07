@@ -29,7 +29,13 @@ export default function RootLayout({
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <link rel="icon" type="image/png" href="/favicon.png" />
-      {/* <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/46356167.js"></script> */}
+      <script
+        type="text/javascript"
+        id="hs-script-loader"
+        async
+        defer
+        src="//js.hs-scripts.com/46356167.js"
+      />
       <body>
         {appConfig.topLoader.show && <TopLoader />}
         <CacheProvider>
