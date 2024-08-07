@@ -11,7 +11,6 @@ import ChatLeft1 from "@/assets/images/chat-left.png";
 import ChatRight from "@/assets/images/chat-right.png";
 import ChatRight1 from "@/assets/images/chat-right.png";
 import BlueCircle from "@/assets/svg/BlueCircle.svg";
-// import Stack from "@mui/material/Stack";
 import Container from "@/components/Container";
 import { Grid, styled } from "@mui/material";
 import TypingEffect from "@/common/TypingEffect";
