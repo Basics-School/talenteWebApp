@@ -23,7 +23,7 @@ const GradientTextReverse = ({ text, className, as }: GradientTextReverseProps) 
     <>
       <GradientText
         as={as}
-        className={`Spartan-SemiBold tracking-wide !normal-case flex text-gradient ${className}`}
+        className={`Spartan-Bold tracking-wide !normal-case flex text-gradient ${className}`}
       >
         {text}
       </GradientText>

@@ -2,13 +2,15 @@
 import React from "react";
 import Image from "next/image";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
+import { default as MuiButton } from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
-import ActionButton from "@/common/ActionButton";
+// import ActionButton from "@/common/ActionButton";
 import BannerImg from "@/assets/images/HomeHero.png";
 import { Grid } from "@mui/material";
 import Container from "@/components/Container";
+// import WaitlistModal from "../WaitlistModal";
+import Button from "../Button";
 
 const GradientText = styled(Typography)({
   background: "linear-gradient(45deg, var(--button-shadow), var(--white-text))",
@@ -21,7 +23,7 @@ const GradientText = styled(Typography)({
   paddingRight: "20px",
 });
 
-const GradientTextButton = styled(Button)(({}) => ({
+const GradientTextButton = styled(MuiButton)(({}) => ({
   textTransform: "none",
   margin: "0 auto",
   display: "flex",
@@ -50,30 +52,11 @@ const GradientTextButton = styled(Button)(({}) => ({
 
 const InfoSection = () => {
   return (
-    // <Box className="flex flex-col lg:!gap-10 !gap-8 !mx-auto !text-center items-center">
-    //   <GradientTextButton className="Montserrat-Medium tracking-wide !normal-case flex text-gradient xl:!text-[20px] !text-sm bg-[linear-gradient(to_right,theme(colors.pink.400),theme(colors.pink.100),theme(colors.white),theme(colors.pink.400),theme(colors.white),theme(colors.pink.100),theme(colors.pink.400))] bg-[length:200%_auto] animate-gradient bg-clip-text">
-    //     AI-Powered Career Support
-    //   </GradientTextButton>
-    //   <GradientText className="Spartan-SemiBold xl:!text-[55px] xl:!leading-[4.3rem] lg:!text-5xl  lg:!leading-[3.7rem] sm:!text-4xl md:!leading-[3.2rem] !text-[25px] !text-center overflow-wrap break-words">
-    //     <span className="text-gradient1"> Fast, confidential, and personalized support</span>
-    //     <span className="text-gradient2"> whenever you need it, helping you find better </span>
-    //     <span className="text-gradient3">career opportunities.</span>
-    //   </GradientText>
-    //   <Typography className="Montserrat-Regular !mx-auto !text-[--white-text] xl:!text-lg !text-[13px]">
-    //     Talente automates your career journey <br />
-    //     <span className="!text-[--button-border]">so you can focus on what really matters.</span>
-    //   </Typography>
-    //   <ActionButton
-    //     text="Sign Up - It's 100% free"
-    //     className="Montserrat-Medium !mb-5 xl:!text-[18px] !text-sm xl:!py-4 lg:!py-2 !px-8"
-    //     openDialog
-    //   />
-    // </Box>
     <Box className="flex flex-col lg:!gap-10 mt-28 md:mt-20 !gap-8 !mx-auto mb-[-10px] w-full max-w-[1366px]">
       <Box>
         <Container>
           <Grid container className="space-y-10 md:space-y-0 items-center justify-between">
-            <Grid xs={12} md={7} className="">
+            <Grid xs={12} md={7} className="md:mb-20">
               <GradientTextButton className="Montserrat-Medium tracking-wide mb-8 ml-0 !normal-case flex justify-start text-gradient xl:text-[20px] lg:text-[20px] text-sm bg-[linear-gradient(to_right,theme(colors.pink.400),theme(colors.pink.100),theme(colors.white),theme(colors.pink.400),theme(colors.white),theme(colors.pink.100),theme(colors.pink.400))] bg-[length:200%_auto] animate-gradient bg-clip-text">
                 AI-Powered Career Support
               </GradientTextButton>
@@ -90,11 +73,20 @@ const InfoSection = () => {
                 Tracking System (ATS) or Human Resources Information System (HRIS).
                 {/* <span className="!text-[--button-border]">so you can focus on what really matters.</span> */}
               </p>
-              <ActionButton
+              {/* <ActionButton
                 text="Join Our Waitlist"
                 className="Montserrat-Medium !mb-1 xl:!text-[14px] !text-sm xl:!py-3 xl:!px-6 lg:!py-2 !px-8 border--fix2"
                 openDialog
-              />
+              /> */}
+              {/* <GradientTextButton className="Montserrat-Medium tracking-wide mb-8 ml-0 !normal-case flex justify-start text-gradient xl:text-[20px] lg:text-[20px] text-sm bg-[linear-gradient(to_right,theme(colors.pink.400),theme(colors.pink.100),theme(colors.white),theme(colors.pink.400),theme(colors.white),theme(colors.pink.100),theme(colors.pink.400))] bg-[length:200%_auto] animate-gradient bg-clip-text" onClick={handleClick}>
+                Join Our Waitlist
+              </GradientTextButton> */}
+              <Button
+                className="lg:text-xl bg-white text-purple-800 font-extrabold px-5 py-1 relative z-20"
+                openDialog
+              >
+                Join Our Waitlist
+              </Button>
 
               <Typography className="Montserrat-Regular mt-6 !text-[--white-text] text-[14px] lg:text-[16px]">
                 We will only use this to keep you in the loop. We hate spam too!
@@ -112,25 +104,6 @@ const InfoSection = () => {
           </Grid>
         </Container>
       </Box>
-      {/* <Box>
-        <GradientTextButton className="Montserrat-Medium tracking-wide !normal-case flex text-gradient xl:!text-[20px] !text-sm bg-[linear-gradient(to_right,theme(colors.pink.400),theme(colors.pink.100),theme(colors.white),theme(colors.pink.400),theme(colors.white),theme(colors.pink.100),theme(colors.pink.400))] bg-[length:200%_auto] animate-gradient bg-clip-text">
-          AI-Powered Career Support
-        </GradientTextButton>
-        <GradientText className="Spartan-SemiBold xl:!text-[55px] xl:!leading-[4.3rem] lg:!text-5xl  lg:!leading-[3.7rem] sm:!text-4xl md:!leading-[3.2rem] !text-[25px] !text-center overflow-wrap break-words">
-          <span className="text-gradient1"> Fast, confidential, and personalized support</span>
-          <span className="text-gradient2"> whenever you need it, helping you find better </span>
-          <span className="text-gradient3">career opportunities.</span>
-        </GradientText>
-        <Typography className="Montserrat-Regular !mx-auto !text-[--white-text] xl:!text-lg !text-[13px]">
-          Talente automates your career journey <br />
-          <span className="!text-[--button-border]">so you can focus on what really matters.</span>
-        </Typography>
-        <ActionButton
-          text="Sign Up - It's 100% free"
-          className="Montserrat-Medium !mb-5 xl:!text-[18px] !text-sm xl:!py-4 lg:!py-2 !px-8"
-          openDialog
-        />
-      </Box> */}
     </Box>
   );
 };

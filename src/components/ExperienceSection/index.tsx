@@ -7,9 +7,6 @@ import Image from "next/image";
 // import DottedCircle from "@/assets/svg/DottedCircle.svg";
 import Container from "@/components/Container";
 import { Typography } from "@mui/material";
-import OnBoard from "@/assets/svg/onboard.svg?svgr";
-import Optimize from "@/assets/svg/optimize.svg?svgr";
-import Integrate from "@/assets/svg/integrate.svg?svgr";
 import SingleArrow from "@/assets/images/Single_Arrow90.png";
 import DoubleArrow from "@/assets/images/Double_Arrow90.png";
 
@@ -75,8 +72,9 @@ const ExperienceSection = () => {
         <Container>
           <Box className="!text-center">
             <AnimatedGradientText
+              as="h2"
               text="A single platform where everything works together."
-              className="md:!pt-12 !pt-6 lg:!mb-0 md:!pb-6 !pb-6 !mt-0 lg:text-5xl"
+              className="md:!pt-12 !pt-6 lg:!mb-0 md:!pb-6 !pb-6 !mt-0"
             />
             <Typography className="Montserrat-Regular !mx-auto mb-10 !text-[--white-text] xl:text-[20px] lg:text-[18px] text-[16px] max-w-auto md:max-w-[1000px] ">
               Talente saves you time and effort so you can focus on what matters most—growing your
@@ -88,7 +86,7 @@ const ExperienceSection = () => {
                 points={points1}
                 text="Onboard"
                 subText="Create your profile"
-                icon={<OnBoard />}
+                img={"/images/platform/onboard.png"}
                 detailText="Create your profile manually or with LinkedIn integration."
                 num={1}
               />
@@ -104,7 +102,7 @@ const ExperienceSection = () => {
                 points={points2}
                 text="Optimize"
                 subText="Manage Repetitive tasks"
-                icon={<Optimize />}
+                img={"/images/platform/optimize.png"}
                 detailText="Automate career tasks like:"
                 num={2}
               />
@@ -113,7 +111,7 @@ const ExperienceSection = () => {
                 points={points3}
                 text="Integrate"
                 subText="HRIS or ATS with API"
-                icon={<Integrate />}
+                img={"/images/platform/integrate.png"}
                 detailText="API integration lets you maintain the flow of your career data. On-demand assistance for:"
                 num={3}
               />

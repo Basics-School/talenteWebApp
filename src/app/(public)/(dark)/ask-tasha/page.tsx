@@ -11,10 +11,21 @@ import ChatLeft1 from "@/assets/images/chat-left.png";
 import ChatRight from "@/assets/images/chat-right.png";
 import ChatRight1 from "@/assets/images/chat-right.png";
 import BlueCircle from "@/assets/svg/BlueCircle.svg";
-import Stack from "@mui/material/Stack";
+// import Stack from "@mui/material/Stack";
 import Container from "@/components/Container";
-import { Grid } from "@mui/material";
+import { Grid, styled } from "@mui/material";
 import TypingEffect from "@/common/TypingEffect";
+
+const GradientText = styled(Typography)({
+  background: "linear-gradient(45deg, var(--button-shadow), var(--white-text))",
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+  backgroundClip: "text",
+  textFillColor: "transparent",
+  maxWidth: "1200px",
+  paddingLeft: "20px",
+  paddingRight: "20px",
+});
 
 const AskTashaPage = () => {
   return (
@@ -44,58 +55,40 @@ const AskTashaPage = () => {
           </Box>
           <Container className="sm:!justify-between sm:!flex lg:!mt-0 sm:!mb-0 mb-0">
             <Grid container className="space-y-16 md:space-y-0 items-center justify-between">
-              <Grid xs={12} md={5}>
-                <Box className="max-w-full sm:max-w-lg relative z-30 flex justify-center">
-                  <Stack
-                    direction="column"
-                    alignItems="center"
-                    justifyContent="center"
-                    className="h-full"
+              <Grid xs={12} lg={6}>
+                <div>
+                  <GradientText
+                    as="h1"
+                    className="Spartan-SemiBold p-0 mb-6 overflow-wrap break-words flex flex-wrap"
                   >
-                    <Stack direction="column">
-                      <Typography className="Spartan-SemiBold text-gradient1 text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-7xl !text-4xl">
-                        Tired of
-                      </Typography>
-                      <Typography className="Spartan-SemiBold text-gradient1 text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-7xl !mb-1 !text-4xl">
-                        company-centric
-                      </Typography>
-                      <Typography className="Spartan-SemiBold text-gradient1 text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-7xl !mb-1 !text-4xl">
-                        HR Support?
-                      </Typography>
-                      <Typography className="Spartan-SemiBold text-gradient1 text-[var(--white-text)] sm:!text-4xl md:!text-5xl lg:!text-7xl !mb-1 !text-4xl">
-                        So are we.
-                      </Typography>
-                      <Typography className="text-[var(--white-text)] !mb-6">
-                        <Typography className="Montserrat-Regular text-[20px]">
-                          With Talente you control your career. Get as
-                        </Typography>
-                        <Typography className="Montserrat-Regular  text-[20px]">
-                          little or as much HR and Career support as
-                        </Typography>
-                        <Typography className="Montserrat-Regular  text-[20px]">
-                          you want. You decide.
-                        </Typography>
-                      </Typography>
-                      <SecondaryButton text="Get Started" color="#FBCC3E" />
-                    </Stack>
-                  </Stack>
-                </Box>
+                    <span className="text-gradient1">
+                      Tired of <br /> company-centric <br /> HR Support?
+                      <br />
+                      So are we.
+                    </span>
+                  </GradientText>
+                  <p className="Montserrat-Regular text-white mb-6 lg:max-w-[600px] w-full">
+                    With Talente you control your career. Get as little or as much HR and Career
+                    support as you want. You decide.
+                  </p>
+                  <SecondaryButton text="Get Started" color="#FBCC3E" />
+                </div>
               </Grid>
-              <Grid xs={12} md={7} className="relative">
-                <Box className="">
+              <Grid xs={12} lg={6} className="relative">
+                <Box className="max-w-[600px] lg:max-w-full mx-auto relative">
                   <Box className="flex justify-center items-center">
                     <Image
                       src={TashaChat}
                       alt="Tasha image for Tasha page"
                       className="z-20 tab:w-[460px] md:w-[330px] lg:w-[460px] lg:h-[800px] tab:-mr-16 tab:h-[500px] h-[400px] object-contain object-bottom sm:!w-[800px] !w-[440px] bottom-0 tasha-phone-mobile"
                     />
-                    <Box className="absolute top-0 lg:top-40 xl:left-[-50px] left-0 hidden tab:block">
+                    <Box className="absolute top-[100px] lg:top-[250px] xl:left-[-50px] -left-10 lg:-left-[40px] hidden tab:block">
                       <Image
                         src={ChatLeft}
                         alt=""
-                        className="z-20 w-[240px] h-[123px] xl:w-[300px] object-contain"
+                        className="z-20 max-w-[250px] h-[123px] object-contain"
                       />
-                      <Box className="Spartan-Medium xl:text-[16px] text-[14px] z-20 h-[auto] absolute top-[30px] left-4 pr-4 overflow-hidden">
+                      <Box className="Spartan-Medium xl:text-[16px] text-[14px] z-20 h-[auto] absolute top-[30px] left-4 pr-4 overflow-hidden w-full">
                         <TypingEffect
                           text="Let's check! When was the start date of your current role?"
                           speed={100}
@@ -103,11 +96,11 @@ const AskTashaPage = () => {
                         />
                       </Box>
                     </Box>
-                    <Box className="absolute top-[6rem] lg:top-[initial] lg:bottom-64 xl:left-[-50px] -left-[20px] hidden tab:block">
+                    <Box className="absolute top-[250px] lg:top-[470px] lg:bottom-64 xl:left-[-50px] -left-10 lg:-left-[40px] hidden tab:block">
                       <Image
                         src={ChatLeft1}
                         alt=""
-                        className="z-20 w-[240px] h-[123px] xl:w-[300px] object-contain"
+                        className="z-20 max-w-[250px] h-[123px] object-contain"
                       />
                       <Box className="Spartan-Medium xl:text-[16px] text-[14px] z-20 h-[auto] top-[30px] left-4 pr-4 overflow-hidden absolute">
                         <TypingEffect
@@ -117,11 +110,11 @@ const AskTashaPage = () => {
                         />
                       </Box>
                     </Box>
-                    <Box className="absolute top-0 lg:top-40 right-0 hidden tab:block">
+                    <Box className="absolute top-10 lg:top-[200px] -right-10 hidden tab:block">
                       <Image
                         src={ChatRight}
                         alt=""
-                        className="z-20 w-[240px] h-[123px] xl:w-[300px] object-contain"
+                        className="z-20 max-w-[250px] h-[123px] object-contain"
                       />
                       <Box className="Spartan-Medium xl:text-[16px] text-[14px] z-20 h-[auto] top-[30px] left-4 pr-4 overflow-hidden absolute">
                         <TypingEffect
@@ -131,11 +124,11 @@ const AskTashaPage = () => {
                         />
                       </Box>
                     </Box>
-                    <Box className="absolute top-[6rem] lg:top-[initial] lg:bottom-64 right-0 hidden tab:block">
+                    <Box className="absolute top-[200px] lg:top-[400px] lg:bottom-64 -right-10 hidden tab:block">
                       <Image
                         src={ChatRight1}
                         alt=""
-                        className="z-20 w-[240px] h-[100px] lg:h-[100px] xl:w-[300px] object-contain object-bottom"
+                        className="z-20 max-w-[250px] h-[100px] lg:h-[100px] object-contain object-bottom"
                       />
                       <Box className="Spartan-Medium xl:text-[16px] text-[14px] z-20 h-[auto] top-[30px] left-4 pr-4 overflow-hidden absolute">
                         <TypingEffect

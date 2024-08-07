@@ -5,13 +5,14 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import { Typography } from "@mui/material";
+import Image from "next/image";
 
 interface CardProps {
   cardNum: string;
   points: string[];
   text: string;
   subText: string;
-  icon?: React.ReactNode;
+  img?: string;
   detailText?: string;
   num?: number;
 }
@@ -22,7 +23,7 @@ const ExperinceSectionCards = ({
   text,
   subText,
   detailText,
-  icon,
+  img,
   num,
 }: CardProps) => {
   return (
@@ -50,20 +51,24 @@ const ExperinceSectionCards = ({
             {cardNum}
           </Box>
         </Box>
-        {icon && <Box className="w-16 h-16 tab:!mx-auto my-4 ml-0">{icon}</Box>}
-        <Box className="Spartan-Medium text-[--white-text] lg:!text-3xl !text-2xl tab:px-[20px] !mb-0 tab:text-center">
+        {img && (
+          <div className="relative w-16 h-16 tab:!mx-auto my-4 ml-0">
+            <Image src={img} alt="icon" layout="fill" />
+          </div>
+        )}
+        <h3 className="Spartan-Medium text-[--white-text] tab:px-[20px] my-5 tab:text-center">
           {text}
-        </Box>
+        </h3>
         <AnimatedGradientText
           text={subText}
           className="lg:!text-[30px] !text-2xl !ml-0 tab:!mx-auto !px-[0px] tab:!px-[10px]"
         />
 
-        <Box>
-          <Typography className="Spartan-Medium text-[20px] text-white tab:text-center !mx-auto !px-0 tab:px-[10px] mb-5">
+        <div className="mb-7">
+          <Typography className="Montserrat-Regular text-[20px] text-white tab:text-center !mx-auto !px-0 tab:px-[10px]">
             {detailText}
           </Typography>
-        </Box>
+        </div>
 
         <Box className="flex flex-col gap-3 lg:!pl-12 pl-[20px] tab:!pl-10 !pr-4 flex-grow tab:text-center">
           <List
@@ -78,14 +83,14 @@ const ExperinceSectionCards = ({
                 sx={{
                   display: "list-item",
                   color: "#fff",
-                  padding: "1px 0px !important",
+                  padding: "5px 0px !important",
                 }}
               >
                 <ListItemText
                   primaryTypographyProps={{
                     fontSize: { xs: "20px", sm: "18px", md: "20px" },
                   }}
-                  className="Spartan-Medium !text-[--white-text]"
+                  className="Montserrat-Regular !text-[--white-text]"
                 >
                   {value}
                 </ListItemText>

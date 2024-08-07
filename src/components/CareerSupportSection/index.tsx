@@ -12,7 +12,7 @@ import Arrow from "@/assets/svg/Arrow.svg";
 const CareerSupportSection = () => {
   return (
     <>
-      <Box className={"relative pt-20 pb-0 overflow-hidden"}>
+      <Box className={"relative pt-10 lg:pt-20 pb-0"}>
         {/* <Image
           draggable="false"
           src={CareerSupportImage}
@@ -26,24 +26,24 @@ const CareerSupportSection = () => {
           className="absolute top-0 left-0 lg:!w-[250px] lg:!h-[250px] !w-[150px] !h-[150px] animates z-10"
         />
         <Container>
-          <Box className="flex flex-col justify-center items-center !pt-16 max-w-[950px] mx-auto">
+          <Box className="flex relative flex-col justify-center lg:!mt-10 md:!mt-12 mt-5 xl:!px-0 tab:!px-8 max-w-[1280px] mx-auto">
             <GradientTextReverse
               text="Why Talente is the smarter choice."
               as="h2"
-              className="xl:!mb-1 z-20 xl:!text-[45px] lg:!text-5xl md:!text-4xl !text-2xl !leading-[1.7rem]"
+              className="xl:!mb-1 z-20 mx-auto text-center"
             />
             {/* <GradientTextCommon
               text="We’re here to change that!"
               className="md:!mt-[0] !mt-1 xl:!text-[45px] lg:!text-5xl md:!text-4xl !text-2xl !leading-[1.7rem]"
             /> */}
-            <Box className="flex md:!flex-row !flex-col pb-0 md:pb-24 !mt-10 !px-8 lg:!gap-20 md:!gap-10 !gap-6 relative">
+            <Box className="flex md:!flex-row !flex-col items-center pb-0 mt-5 tab:!mt-10 lg:!gap-20 md:!gap-10 !gap-6 relative">
               <Image
                 draggable="false"
                 src={ArrowRight}
                 alt="Arrow Right"
-                className="absolute bottom-0 right-[-50px] lg:!w-[65px] hidden md:block lg:!h-[150px] !w-[50px] !h-[200px] animates z-10"
+                className="absolute -bottom-14 right-[-50px] lg:!w-[65px] hidden md:block lg:!h-[150px] !w-[50px] !h-[200px] animates z-10"
               />
-              <div className="borderImg">
+              <div className="borderImg my-10 mx-auto">
                 <Image
                   draggable="false"
                   src={CustomerSupporttImg}

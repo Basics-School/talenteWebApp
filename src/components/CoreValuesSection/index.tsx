@@ -4,7 +4,7 @@ const CoreValuesSection = () => {
   return (
     <Box className={"relative pb-10 overflow-hidden"}>
       <Container>
-        <Box className="flex flex-col justify-center items-center !pt-16 max-w-[950px] mx-auto">
+        <Box className="flex flex-col justify-center items-center !pt-16 max-w-[1280px] mx-auto">
           <h2 className="Spartan-Bold xl:!text-[2.5rem] text-white lg:!text-3xl !text-2xl !mb-2 text-center uppercase">
             Our Core Values
           </h2>
