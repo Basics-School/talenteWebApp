@@ -6,9 +6,10 @@ import { styled } from "@mui/material/styles";
 interface GradientTextReverseProps {
   text: string;
   className?: string;
+  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span";
 }
 
-const GradientTextReverse = ({ text, className }: GradientTextReverseProps) => {
+const GradientTextReverse = ({ text, className, as }: GradientTextReverseProps) => {
   const GradientText = styled(Typography)({
     background: "linear-gradient(to right, var(--bg-gradient-color), var(--black-color))",
     WebkitBackgroundClip: "text",
@@ -21,7 +22,8 @@ const GradientTextReverse = ({ text, className }: GradientTextReverseProps) => {
   return (
     <>
       <GradientText
-        className={`Spartan-SemiBold tracking-wide !normal-case flex text-gradient xl:!text-[45px] lg:!text-5xl md:!text-4xl !text-2xl !leading-[1.7rem] ${className}`}
+        as={as}
+        className={`Spartan-Bold tracking-wide !normal-case flex text-gradient ${className}`}
       >
         {text}
       </GradientText>

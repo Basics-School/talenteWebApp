@@ -12,9 +12,14 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-blue-black": "linear-gradient(from right, #000, #3533cd )",
       },
       skew: {
         "20": "20deg",
+      },
+      colors: {
+        orange: "#FFB54D",
+        grey: "#F0F0F0",
       },
     },
     animation: {

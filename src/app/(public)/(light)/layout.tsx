@@ -9,12 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <Navbar
-        color="var(--black-color)"
-        logo={BlackTalenteLogo}
-        scrollColor={"var(--section-color)"}
-        navColor="var(--black-color)"
-      />
+      <Navbar logo={BlackTalenteLogo} navColor="var(--white-text)" />
       {children}
     </>
   );

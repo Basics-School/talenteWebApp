@@ -13,7 +13,7 @@ const CareerGuideSection = () => {
   return (
     <Box className="relative">
       <Container>
-        <Box className="flex relative flex-col justify-center lg:!mt-10 md:!mt-12 !mt-8 xl:!px-0 !px-8 max-w-[950px] mx-auto">
+        <Box className="flex relative flex-col mt-10 md:mt-0 justify-center xl:!px-0 tab:!px-8 max-w-[1280px] mx-auto">
           <Stack
             className="max-w-4xl mx-auto"
             direction="column"
@@ -28,10 +28,10 @@ const CareerGuideSection = () => {
               draggable="false"
               src={DottedArrow}
               alt="Customer Support Image"
-              className="lg:!w-[100px] !w-[70px] xl:ml-[-2rem] lg:ml-[-3rem] md:ml-[1rem] sm:ml-[2rem] ml-4"
+              className="lg:!w-[100px] !w-[70px] xl:ml-[-2rem] lg:ml-[-3rem] md:ml-[1rem] sm:ml-[2rem] ml-4 relative mb-2 md:-bottom-10"
             />
           </Stack>
-          <Box className="relative flex md:!flex-row !flex-col-reverse pb-0 md:pb-10 !w-full !justify-center lg:!gap-20 md:!gap-10 !gap-6 md:!px-8">
+          <Box className="relative flex md:!flex-row !flex-col-reverse items-center pb-0 md:pb-10 !w-full !justify-center lg:!gap-20 md:!gap-10 !gap-6 md:!px-8">
             <Image
               draggable="false"
               src={ArrowLeft}
@@ -41,16 +41,16 @@ const CareerGuideSection = () => {
             <CommonTextArea
               heading="We help you win at work"
               content="Get help with complex work-related issues, insights into marketable skills, the latest industry trend & updates, personalized guidance to maximize employer-sponsored benefits like Employee Assistance Programs and 401Ks"
-              className="xl:!text-2xl lg:!text-xl !text-lg"
+              className="pl-0 md:pl-5"
             />
-            <Box className="relative flex-none xl:!w-[300px] xl:!h-[300px] xl:!mb-14 lg:!w-[270px] lg:!h-[270px]  lg:!mb-12 md:!w-[230px] md:!h-[230px] !mx-auto !w-[180px] !h-[180px] !mb-7">
+            <Box className="relative flex-none xl:!mb-14 lg:!mb-12 !mx-auto !mb-7 borderlessImg">
               <Image
                 draggable="false"
                 src={CareerGuideImage}
                 alt="Customer Support Image"
-                className="!bg-[var(--section-color)] !relative z-10 border-[8px] border-[--white-text] !rounded-full xl:!w-[300px] xl:!h-[300px] xl:!mb-24 xl:!border-[15px] lg:!w-[270px] lg:!h-[270px] lg:!border-[13px] lg:!mb-12 md:!w-[230px] md:!h-[230px] md:!border-[9px] md:!mb-4  !mx-auto !w-[180px] !h-[180px]"
+                className="!bg-[var(--section-color)] !relative z-10 border-[8px] border-[--white-text] !rounded-full xl:!mb-24 xl:!border-[15px] lg:!border-[13px] lg:!mb-12 md:!border-[9px] md:!mb-4 !mx-auto"
               />
-              <Box className="!absolute z-2 !bg-[--bg-gradient-color] !rounded-full xl:!w-[285px] xl:!h-[285px] xl:!left-[-18px] xl:!top-[29px] lg:!w-[255px] lg:!h-[255px] lg:!left-[-16px] lg:!top-[24px] !left-[-10px] !top-[16px]  md:!left-[-12px] md:top-[25px] md:!w-[215px] md:!h-[215px] !mx-auto !w-[170px] !h-[170px]" />
+              <Box className="!absolute z-2 !bg-[--bg-gradient-color] !rounded-full min-[1440px]:w-[380px] min-[1440px]:h-[380px] xl:!left-[-18px] xl:!top-[29px] lg:!w-[275px] lg:!h-[275px] lg:!left-[-16px] lg:!top-[34px] min-[1024px]:w-[230px] min-[1024px]:h-[230px] !left-[-10px] !top-[16px]  md:!left-[-12px] tab:top-[25px] tab:!w-[180px] tab:!h-[180px] !mx-auto !w-[190px] !h-[190px]" />
             </Box>
           </Box>
         </Box>

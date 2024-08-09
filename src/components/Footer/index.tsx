@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Container from "@/components/Container";
-import TalenteLogo from "@/assets/svg/TalenteLogo.svg";
+// import TalenteLogo from "@/assets/svg/TalenteLogo.svg";
 import FacebookCircularIcon from "@/assets/svg/FacebookCircularLogo.svg?svgr";
 import InstagramCircularIcon from "@/assets/svg/InstagramCircularLogo.svg?svgr";
 import TwitterCircularIcon from "@/assets/svg/TwitterCircularLogo.svg?svgr";
@@ -45,16 +45,26 @@ const Footer = () => {
                 <Image
                   draggable="false"
                   alt="Logo"
-                  src={TalenteLogo}
-                  className="w-[125px] cursor-pointer"
+                  width={160}
+                  height={40}
+                  src="/images/brand.png"
+                  className="cursor-pointer max-h-[40px] object-cover"
                 />
               </Link>
-              <Box className="w-[150px]">
+              <Box>
                 <Stack direction="row" justifyContent="center" alignItems="center" spacing={2}>
-                  <FacebookCircularIcon className="h-5 w-5" />
-                  <InstagramCircularIcon className="h-5 w-5" />
-                  <TwitterCircularIcon className="h-5 w-5" />
-                  <LinkedInCircularIcon className="h-5 w-5" />
+                  <a href="https://www.facebook.com/profile.php?id=61559613423456" target="_blank">
+                    <FacebookCircularIcon className="h-8 w-8" />
+                  </a>
+                  <a href="https://www.instagram.com/mytalente/" target="_blank">
+                    <InstagramCircularIcon className="h-8 w-8" />
+                  </a>
+                  <a href="https://x.com/mytalente_" target="_blank">
+                    <TwitterCircularIcon className="h-8 w-8" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/talente-inc" target="_blank">
+                    <LinkedInCircularIcon className="h-8 w-8" />
+                  </a>
                 </Stack>
               </Box>
             </Stack>
@@ -76,7 +86,7 @@ const Footer = () => {
                         href={link.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="Spartan-SemiBold text-white navList hover-underline-animation"
+                        className="Spartan-SemiBold text-white navList hover-underline-animation text-lg"
                         onClick={(event) => event.stopPropagation()}
                       >
                         {link.label}
@@ -84,7 +94,7 @@ const Footer = () => {
                     ) : (
                       <Link
                         key={link.path}
-                        className="Spartan-Medium navList hover-underline-animation"
+                        className="Spartan-Medium navList hover-underline-animation text-lg"
                         href={link.path}
                       >
                         {link.label}
@@ -112,7 +122,7 @@ const Footer = () => {
                 </a>
               </Stack>
               <Stack direction="row" alignItems="flex-start" spacing={1.5}>
-                <LocationIcon className="h-7 w-7" />
+                <LocationIcon className="h-5 w-5 lg:h-7 lg:w-7" />
                 <Typography className="text-lg Spartan-Medium">
                   {appConfig.company.location}
                 </Typography>
