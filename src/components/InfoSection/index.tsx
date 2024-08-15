@@ -64,11 +64,11 @@ const InfoSection = () => {
                 as={"h1"}
                 className="Spartan-SemiBold p-0 mb-6 overflow-wrap break-words"
               >
-                <span className="text-gradient1">Take control of your</span>
-                <span className="text-gradient2"> career with smart </span>
-                <span className="text-gradient3">automation.</span>
+                <span className="text-gradient1">
+                  Human Resources and Career Management together, in one place.
+                </span>
               </GradientText>
-              <p className="Montserrat-Regular !mx-auto mb-6 !text-[--white-text] text-base lg:text-[20px] leading-8">
+              <p className="Montserrat-Regular !mx-auto mb-6 !text-[--white-text] text-base lg:text-[20px] leading-tight">
                 On-demand HR and Career Services support. Through Talente. Right into an Applicant
                 Tracking System (ATS) or Human Resources Information System (HRIS).
                 {/* <span className="!text-[--button-border]">so you can focus on what really matters.</span> */}
@@ -88,7 +88,7 @@ const InfoSection = () => {
                 Join Our Waitlist
               </Button>
 
-              <Typography className="Montserrat-Regular mt-6 !text-[--white-text] text-[14px] lg:text-[16px]">
+              <Typography className="Montserrat-Regular mt-6 !text-[--white-text] text-[14px] lg:text-[16px] leading-tight">
                 We will only use this to keep you in the loop. We hate spam too!
               </Typography>
             </Grid>

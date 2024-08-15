@@ -4,16 +4,10 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Image from "next/image";
 import SecondaryButton from "@/common/SecondaryButton";
-import BgPattern from "@/assets/images/AskTashaBgPattern.png";
-import TashaChat from "@/assets/images/Frame 5434.png";
-import ChatLeft from "@/assets/images/chat-left.png";
-import ChatLeft1 from "@/assets/images/chat-left.png";
-import ChatRight from "@/assets/images/chat-right.png";
-import ChatRight1 from "@/assets/images/chat-right.png";
 import BlueCircle from "@/assets/svg/BlueCircle.svg";
 import Container from "@/components/Container";
 import { Grid, styled } from "@mui/material";
-import TypingEffect from "@/common/TypingEffect";
+import TashaCapabilities from "@/components/TashaCapabilities";
 
 const GradientText = styled(Typography)({
   background: "linear-gradient(45deg, var(--button-shadow), var(--white-text))",
@@ -30,51 +24,52 @@ const AskTashaPage = () => {
   return (
     <>
       <Box
-        className="h-auto pt-28 lg:pt-12 flex justify-center relative sm:!overflow-hidden overflow-x-hidden"
         sx={{
           background:
             "linear-gradient(to bottom, var( --black-color), var(--bg-gradient-color)) !important",
         }}
       >
-        <Box
-          className="flex text-[var(--white-text)] items-center justify-between gap-7 relative w-full px-2 sm:px-0"
-          sx={{
-            background: `url(${BgPattern.src})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <Box className="absolute bottom-6 -left-8 md:!-left-7 lg-left-16 spinCircle z-10 overflow-clip">
-            <Image
-              draggable="false"
-              src={BlueCircle}
-              alt="Blue Circle"
-              className="xl:!w-[80px] xl:!h-[80px] lg:!w-[67px] lg:!h-[61px] !w-[80px] !h-[80px] spinGlobe"
-            />
-          </Box>
-          <Container className="sm:!justify-between sm:!flex lg:!mt-0 sm:!mb-0 mb-0">
-            <Grid container className="space-y-16 md:space-y-0 items-center justify-between">
-              <Grid xs={12} lg={6}>
-                <div>
-                  <GradientText
-                    as="h1"
-                    className="Spartan-SemiBold p-0 mb-6 overflow-wrap break-words flex flex-wrap"
-                  >
-                    <span className="text-gradient1">
-                      Tired of <br /> company-centric <br /> HR Support?
-                      <br />
-                      So are we.
-                    </span>
-                  </GradientText>
-                  <p className="Montserrat-Regular text-white mb-6 lg:max-w-[600px] w-full">
-                    With Talente you control your career. Get as little or as much HR and Career
-                    support as you want. You decide.
-                  </p>
-                  <SecondaryButton text="Get Started" color="#FBCC3E" />
-                </div>
-              </Grid>
-              <Grid xs={12} lg={6} className="relative">
-                <Box className="max-w-[600px] lg:max-w-full mx-auto relative">
+        <Box className="h-auto pt-36 lg:pt-30 flex justify-center relative sm:!overflow-hidden overflow-x-hidden">
+          <Box className="text-[var(--white-text)] relative w-full px-2 sm:px-0">
+            <Box className="absolute bottom-6 -left-8 md:!-left-7 lg-left-16 spinCircle z-10 overflow-clip">
+              <Image
+                draggable="false"
+                src={BlueCircle}
+                alt="Blue Circle"
+                className="xl:!w-[80px] xl:!h-[80px] lg:!w-[67px] lg:!h-[61px] !w-[80px] !h-[80px] spinGlobe"
+              />
+            </Box>
+            <Container className="sm:!justify-between sm:!flex lg:!mt-0 sm:!mb-0 mb-0">
+              <Grid container className="space-y-16 md:space-y-0 items-center justify-between">
+                <Grid xs={12} lg={6}>
+                  <div>
+                    <GradientText
+                      as="h1"
+                      className="Spartan-SemiBold p-0 mb-6 overflow-wrap break-words flex flex-wrap"
+                    >
+                      <span className="text-gradient1">Meet Tasha.</span>
+                    </GradientText>
+                    <p className="Montserrat-Regular text-white mb-6 lg:max-w-[600px] w-full leading-tight">
+                      Tasha is your AI-powered career companion. Whether you’re navigating your
+                      career path solo or managing a diverse team, Tasha is here to streamline your
+                      journey and elevate your success.
+                    </p>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-5">
+                      <SecondaryButton text="Try Tasha" color="#fff" />
+                      <SecondaryButton text="Get API access" color="#FBCC3E" />
+                    </div>
+                  </div>
+                </Grid>
+                <Grid xs={12} lg={6} className="relative">
+                  <div className="relative max-w-[500px] w-full aspect-square mx-auto lg:mx-[initial] lg:ml-auto z-[1]">
+                    <Image
+                      src="/images/tasha/tasha-hero.png"
+                      alt="tasha image"
+                      fill
+                      loading="eager"
+                    />
+                  </div>
+                  {/* <Box className="max-w-[600px] lg:max-w-full mx-auto relative">
                   <Box className="flex justify-center items-center">
                     <Image
                       src={TashaChat}
@@ -138,16 +133,18 @@ const AskTashaPage = () => {
                       </Box>
                     </Box>
                   </Box>
-                </Box>
+                </Box> */}
+                </Grid>
               </Grid>
-            </Grid>
-          </Container>
+            </Container>
+          </Box>
+          <Image
+            src={BlueCircle}
+            alt="BlueCircle image for Tasha page"
+            className="w-[110px] absolute bottom-36 right-[-2.4rem] z-0 spinGlobe"
+          />
         </Box>
-        <Image
-          src={BlueCircle}
-          alt="BlueCircle image for Tasha page"
-          className="w-[110px] absolute bottom-36 right-[-2.4rem] z-0 spinGlobe"
-        />
+        <TashaCapabilities />
       </Box>
     </>
   );
