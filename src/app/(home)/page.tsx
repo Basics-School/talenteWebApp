@@ -10,7 +10,6 @@ import ExperienceSection from "@/components/ExperienceSection";
 import CareerAutomate from "@/components/CareerAutomate";
 // import CoreValuesSection from "@/components/CoreValuesSection";
 import Container from "@/components/Container";
-import AnimatedGradientText from "@/common/AnimatedGradientText";
 import { List, ListItem, Typography } from "@mui/material";
 import CareerSingle from "@/assets/images/career-single-left.png";
 import CareerDoubleTop from "@/assets/images/career-right-top.png";
@@ -66,7 +65,7 @@ export default function Home() {
       <Box
         sx={{
           background:
-            "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
+            "linear-gradient(to right, var(--black-color), var(--bg-gradient-color)) !important",
           position: "relative",
           overflow: "hidden",
           paddingBottom: "3rem",
@@ -82,27 +81,30 @@ export default function Home() {
           <Container>
             <Box className="!text-center flex flex-wrap">
               <Box className="w-full mb-14">
-                <AnimatedGradientText
+                {/* <AnimatedGradientText
                   text="Gain a competitive advantage by making data-driven career decisions."
                   as="h2"
-                  // className="lg:text-[3rem]"
-                />
+                // className="lg:text-[3rem]"
+                /> */}
+                <h2 className="Spartan-SemiBold overflow-wrap break-words mx-auto max-w-[1000px] text-white">
+                  Gain a competitive advantage by making data-driven career decisions.
+                </h2>
               </Box>
               <div className="flex flex-col gap-10 min-[1024px]:gap-0 min-[1024px]:flex-row">
-                <Box className="w-full min-[1024px]:w-[40%] md:w-full">
+                <Box className="w-full min-[1024px]:w-[40%] md:w-full mt-10">
                   <Typography
                     variant="h3"
-                    className="Spartan-SemiBold lg:text-[30px] xl:text-[36px] leading-[1.3] text-left text-white mb-6"
+                    className="Spartan-SemiBold lg:text-[30px] xl:text-[36px] leading-[1.1] text-left text-white mb-6"
                   >
                     Realtime Insights and Predictions To Optimize Your Career.
                   </Typography>
-                  <p className="Montserrat-Medium text-white text-left">
+                  <p className="Montserrat-Medium text-white text-left leading-tight">
                     Talente is your one-stop shop for career data management, with instant,
                     automated feedback and insights, and in-depth analytics to inform your career
                     decisions and keep you competitive
                   </p>
 
-                  <Box className="mt-6">
+                  <Box className="mt-4">
                     <List
                       sx={{
                         listStyleType: "disc",
@@ -112,7 +114,7 @@ export default function Home() {
                         sx={{
                           display: "list-item",
                           color: "#fff",
-                          padding: "5px 0px !important",
+                          padding: "1px 0px !important",
                           marginLeft: "1.5rem",
                         }}
                         disablePadding
@@ -123,11 +125,10 @@ export default function Home() {
                         sx={{
                           display: "list-item",
                           color: "#fff",
-                          padding: "5px 0px !important",
+                          padding: "1px 0px !important",
                           marginLeft: "1.5rem",
                         }}
                         disablePadding
-                        className="mt-2"
                       >
                         <p className="Montserrat-Medium text-white text-lg">Automated Reporting</p>
                       </ListItem>
@@ -135,11 +136,10 @@ export default function Home() {
                         sx={{
                           display: "list-item",
                           color: "#fff",
-                          padding: "5px 0px !important",
+                          padding: "1px 0px !important",
                           marginLeft: "1.5rem",
                         }}
                         disablePadding
-                        className="mt-2"
                       >
                         <p className="Montserrat-Medium text-white text-lg">
                           Industry Insights and Trends
@@ -149,11 +149,10 @@ export default function Home() {
                         sx={{
                           display: "list-item",
                           color: "#fff",
-                          padding: "5px 0px !important",
+                          padding: "1px 0px !important",
                           marginLeft: "1.5rem",
                         }}
                         disablePadding
-                        className="mt-2"
                       >
                         <p className="Montserrat-Medium text-white text-lg">
                           Mobile App - iOS and Android

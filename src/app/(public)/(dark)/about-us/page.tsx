@@ -116,7 +116,7 @@ const AboutUs = () => {
                     </p>
 
                     <p className="Montserrat-Regular text-[var(--white-text)] mb-7">
-                      We&apos;re here to shake stuff up!{" "}
+                      We&apos;re here to shake stuff up!
                     </p>
                   </Stack>
                 </Stack>

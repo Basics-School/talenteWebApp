@@ -2,7 +2,6 @@
 import Box from "@mui/material/Box";
 import React from "react";
 import ExperinceSectionCards from "@/common/ExperienceSectionCards";
-import AnimatedGradientText from "@/common/AnimatedGradientText";
 import Image from "next/image";
 // import DottedCircle from "@/assets/svg/DottedCircle.svg";
 import Container from "@/components/Container";
@@ -71,11 +70,9 @@ const ExperienceSection = () => {
         /> */}
         <Container>
           <Box className="!text-center">
-            <AnimatedGradientText
-              as="h2"
-              text="A single platform where everything works together."
-              className="md:!pt-12 !pt-6 lg:!mb-0 md:!pb-6 !pb-6 !mt-0"
-            />
+            <h2 className="text-white Spartan-SemiBold md:!pt-12 !pt-6 lg:!mb-0 md:!pb-6 !pb-6 !mt-0">
+              A single platform where everything works together.
+            </h2>
             <Typography className="Montserrat-Regular !mx-auto mb-10 !text-[--white-text] xl:text-[20px] lg:text-[18px] text-[16px] max-w-auto md:max-w-[1000px] ">
               Talente saves you time and effort so you can focus on what matters most—growing your
               skills, improving your earning power, and taking your career forward.

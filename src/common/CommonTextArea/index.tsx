@@ -18,7 +18,7 @@ const CommonTextArea = ({ heading, content, className }: TextAreaProps) => {
         className="max-h-[460px] m-auto my-4 md:my-6 h-1 bg-gradient-to-r from-black via-[#5E17EB8F] to-[#5E17EB8F] xl:max-w-[300px] md:!max-w-[170px] !max-w-[125px]"
       />
       <p
-        className={`Montserrat-Medium  max-w-[800px] md:text-2xl md:leading-9 md:mt-10 ${className}`}
+        className={`Montserrat-Medium  max-w-[800px] md:text-2xl leading-none md:mt-10 ${className}`}
       >
         {content}
       </p>

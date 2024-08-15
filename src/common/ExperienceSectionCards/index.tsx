@@ -63,9 +63,10 @@ const ExperinceSectionCards = ({
           text={subText}
           className="lg:!text-[30px] !text-2xl !ml-0 tab:!mx-auto !px-[0px] tab:!px-[10px]"
         />
+        {/* <h4 className="overflow-wrap break-words lg:!text-[30px] !text-2xl !ml-0 tab:!mx-auto !px-[0px] tab:!px-[10px] Spartan-Bold text-orange mb-5">{subText}</h4> */}
 
         <div className="mb-7">
-          <Typography className="Montserrat-Regular text-[20px] text-white tab:text-center !mx-auto !px-0 tab:px-[10px]">
+          <Typography className="Montserrat-Regular text-[20px] text-white tab:text-center !mx-auto !px-0 tab:px-[10px] leading-[1.1]">
             {detailText}
           </Typography>
         </div>
@@ -83,7 +84,7 @@ const ExperinceSectionCards = ({
                 sx={{
                   display: "list-item",
                   color: "#fff",
-                  padding: "5px 0px !important",
+                  padding: "2px 0px !important",
                 }}
               >
                 <ListItemText
