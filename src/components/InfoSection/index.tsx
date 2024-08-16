@@ -98,6 +98,7 @@ const InfoSection = () => {
                 src={BannerImg}
                 alt="Banner Image"
                 height={650}
+                loading="eager"
                 className="mx-auto h-[400px] tab:!h-[460px] lg:!h-[650px] object-contain object-bottom"
               />
             </Grid>
