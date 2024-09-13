@@ -1,15 +1,17 @@
+"use client";
 import React from "react";
 import Box from "@mui/material/Box";
 import Container from "@/components/Container";
 import Image from "next/image";
 import CommonTextArea from "@/common/CommonTextArea";
-import CareerGuideImage from "@/assets/images/CareerGuideImage_2x-t.png";
+import CareerGuideImage from "@/assets/images/2.png";
 import DottedArrow from "@/assets/svg/DottedArrow.svg";
 import ArrowLeft from "@/assets/svg/arrow-left.svg";
 import PurpleCircle from "@/assets/svg/PurpleCircle.svg";
 import Stack from "@mui/material/Stack";
+import Button from "../Button";
 
-const CareerGuideSection = () => {
+const ForTeamSection = () => {
   return (
     <Box className="relative">
       <Container>
@@ -34,11 +36,27 @@ const CareerGuideSection = () => {
               alt="Arrow Left"
               className="absolute bottom-0 left-[-50px] lg:!w-[65px] lg:!h-[120px] hidden md:block !w-[50px] !h-[200px] animates z-10"
             />
-            <CommonTextArea
-              heading="Enhance equitable governance."
-              content="On-demand support for work-related challenges, insights into marketable skills, up-to-date industry trends, and personalized guidance to optimize employer-sponsored benefits such as Employee Assistance Programs and 401Ks, all while enhancing corporate governance and compliance."
-            />
-            <Box className="relative overflow-hidden md:border-[2rem] sm:border-[1.2rem] border-8 border-amber-400 rounded-full my-10 mx-auto">
+            <Box>
+              <CommonTextArea
+                heading="For Teams"
+                content="Foster a culture of continuous development. By offering customized support and actionable insights, Talente helps teams work together more effectively, driving collective success."
+              />
+              <div className="flex sm:flex-row flex-col lg:gap-9 sm:gap-6 gap-4 lg:mt-20 sm:mt-9 mt-6">
+                <Button
+                  openDialog
+                  className="bg-white text-black uppercase text-center font-bold py-2 sm:px-6 px-4 md:text-lg text-base rounded-full"
+                >
+                  create account
+                </Button>
+                <a
+                  href="/pdf/Talente.pdf"
+                  className="bg-cyan-600 uppercase text-center font-bold py-2 sm:px-6 px-4 md:text-lg text-base rounded-full"
+                >
+                  download brochure
+                </a>
+              </div>
+            </Box>
+            <Box className="relative max-h-[445px] max-w-[445px] overflow-hidden md:border-[2rem] sm:border-[1.2rem] border-8 border-amber-400 rounded-full my-10 mx-auto">
               <Image
                 draggable="false"
                 src={CareerGuideImage}
@@ -58,4 +76,4 @@ const CareerGuideSection = () => {
     </Box>
   );
 };
-export default CareerGuideSection;
+export default ForTeamSection;

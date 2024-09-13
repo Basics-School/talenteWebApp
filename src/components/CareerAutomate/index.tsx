@@ -11,18 +11,8 @@ const CareerAutomate = () => {
   return (
     <>
       <Box className={"relative pb-7 overflow-hidden"}>
-        {/* <Image
-          draggable="false"
-          src={CareerSupportImage}
-          alt="Blue Circle"
-          className="absolute xl:!w-[400px] lg:!w-[200px] !w-[150px]"
-        /> */}
         <Container>
           <Box className="flex relative flex-col mt-10 md:mt-0 justify-center xl:!px-0 tab:!px-8 max-w-[1280px] mx-auto">
-            {/* <GradientTextCommon
-              text="We’re here to change that!"
-              className="md:!mt-[0] !mt-1 xl:!text-[45px] lg:!text-5xl md:!text-4xl !text-2xl !leading-[1.7rem]"
-            /> */}
             <Box className="flex md:!flex-row !flex-col items-center pb-0 md:pb-20 lg:!gap-20 md:!gap-10 !gap-6 relative">
               <Image
                 draggable="false"
@@ -30,12 +20,11 @@ const CareerAutomate = () => {
                 alt="Arrow Right"
                 className="absolute bottom-0 right-[-50px] lg:!w-[65px] lg:!h-[120px] !w-[50px] hidden md:block !h-[200px] animates z-10"
               />
-              <div className="borderImg my-10">
+              <div className="md:border-[2rem] sm:border-[1.2rem] border-8 border-amber-400 rounded-full my-10 mx-auto">
                 <Image
                   draggable="false"
                   src={AutomateImg}
                   alt="Automate Your Career Management Image"
-                  // className="lg:!w-[260px] lg:!h-[260px] md:!w-[220px] md:!h-[300px] !w-[200px] !h-[200px] z-20 !mx-auto"
                 />
               </div>
               <Image
@@ -46,10 +35,8 @@ const CareerAutomate = () => {
               />
               <CommonTextArea
                 className="pl-0 md:pl-26"
-                heading="Automate your career management."
-                content="Repetitive career tasks like job search and resume writing has never been easier. Need a referral? Connect with other professionals in our Career Hub. Manage work-related issues, saving time and
-reducing stress. 
-"
+                heading="10X HR and Career Management with smart automation."
+                content="Our proprietary Career and Human Resources System surpasses traditional HRIS and ATS by offering a comprehensive solution that follows the full lifecycle of the employment journey."
               />
             </Box>
           </Box>

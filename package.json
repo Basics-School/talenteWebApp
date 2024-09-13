@@ -33,6 +33,7 @@
     "react-international-phone": "^4.3.0",
     "sharp": "^0.33.4",
     "tailwind-merge": "^2.3.0",
+    "yarn": "^1.22.22",
     "yup": "^1.4.0"
   },
   "lint-staged": {

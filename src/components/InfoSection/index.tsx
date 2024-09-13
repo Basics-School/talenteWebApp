@@ -5,11 +5,9 @@ import Box from "@mui/material/Box";
 import { default as MuiButton } from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
-// import ActionButton from "@/common/ActionButton";
 import BannerImg from "@/assets/images/HomeHero.png";
 import { Grid } from "@mui/material";
 import Container from "@/components/Container";
-// import WaitlistModal from "../WaitlistModal";
 import Button from "../Button";
 
 const GradientText = styled(Typography)({
@@ -68,29 +66,46 @@ const InfoSection = () => {
                   Human Resources and Career Management together, in one place.
                 </span>
               </GradientText>
-              <p className="Montserrat-Regular !mx-auto mb-6 !text-[--white-text] text-base lg:text-[20px] leading-tight">
+              <p className="xl:w-4/5 Montserrat-Regular mb-6 !text-[--white-text] lg:text-lg text-sm leading-tight">
                 On-demand HR and Career Services support. Through Talente. Right into an Applicant
                 Tracking System (ATS) or Human Resources Information System (HRIS).
-                {/* <span className="!text-[--button-border]">so you can focus on what really matters.</span> */}
               </p>
-              {/* <ActionButton
-                text="Join Our Waitlist"
-                className="Montserrat-Medium !mb-1 xl:!text-[14px] !text-sm xl:!py-3 xl:!px-6 lg:!py-2 !px-8 border--fix2"
-                openDialog
-              /> */}
-              {/* <GradientTextButton className="Montserrat-Medium tracking-wide mb-8 ml-0 !normal-case flex justify-start text-gradient xl:text-[20px] lg:text-[20px] text-sm bg-[linear-gradient(to_right,theme(colors.pink.400),theme(colors.pink.100),theme(colors.white),theme(colors.pink.400),theme(colors.white),theme(colors.pink.100),theme(colors.pink.400))] bg-[length:200%_auto] animate-gradient bg-clip-text" onClick={handleClick}>
-                Join Our Waitlist
-              </GradientTextButton> */}
-              <Button
-                className="lg:text-xl bg-white text-purple-800 font-extrabold px-5 py-1 relative z-20"
-                openDialog
-              >
-                Join Our Waitlist
-              </Button>
-
-              <Typography className="Montserrat-Regular mt-6 !text-[--white-text] text-[14px] lg:text-[16px] leading-tight">
-                We will only use this to keep you in the loop. We hate spam too!
-              </Typography>
+              <Box className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-2 grid-cols-1 md:gap-6 gap-4">
+                <Box className="bg-white flex flex-col justify-between sm:py-4 py-2.5 sm:px-6 px-4 rounded-xl">
+                  <div className="text-left">
+                    <span className="bg-cyan-600 uppercase font-extrabold py-0.5 sm:px-6 px-4 md:text-lg text-base rounded">
+                      new
+                    </span>
+                    <h2 className="font-extrabold text-black md:text-3xl text-2xl sm:mt-2 mt-1">
+                      Meet Tasha
+                    </h2>
+                    <p className="font-light text-black sm:mt-4 mt-2">
+                      Meet Tasha 1.0, our AI Assistant that will revolutionize the future of work.
+                    </p>
+                  </div>
+                  <Button
+                    openDialog
+                    className="w-fit mx-auto bg-black text-white sm:mt-3 mt-2 py-1.5 sm:px-9 px-6 rounded-full uppercase font-bold md:text-2xl sm:text-xl text-lg shadow-lg shadow-black/15"
+                  >
+                    learn more
+                  </Button>
+                </Box>
+                <Box className="text-black bg-white flex flex-col justify-between sm:py-4 py-2.5 sm:px-6 px-4 rounded-xl">
+                  <div className="text-left">
+                    <h2 className="font-extrabold md:text-3xl text-2xl mt-2">API</h2>
+                    <p className="font-light sm:mt-4 mt-2">
+                      Tasha integrates with existing HRIS and ATS through APIs, serving as a Career
+                      and HR copilot.
+                    </p>
+                  </div>
+                  <Button
+                    openDialog
+                    className="w-fit mx-auto bg-amber-400 sm:mt-3 mt-2 py-1.5 sm:px-9 px-6 rounded-full uppercase font-bold md:text-2xl sm:text-xl text-lg shadow-lg shadow-black/15"
+                  >
+                    REQUEST DEMO
+                  </Button>
+                </Box>
+              </Box>
             </Grid>
 
             <Grid xs={12} md={5} className="z-20">

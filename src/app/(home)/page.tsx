@@ -1,6 +1,5 @@
 import InfoSection from "@/components/InfoSection";
 import Image from "next/image";
-// import Globe from "@/assets/svg/Globe.svg";
 import BlueCircle from "@/assets/svg/BlueCircle.svg";
 import Box from "@mui/material/Box";
 import CareerSupportSection from "@/components/CareerSupportSection";
@@ -8,13 +7,14 @@ import CareerGuideSection from "@/components/CareerGuideSection";
 import Decoration from "@/assets/svg/Decoration.svg";
 import ExperienceSection from "@/components/ExperienceSection";
 import CareerAutomate from "@/components/CareerAutomate";
-// import CoreValuesSection from "@/components/CoreValuesSection";
 import Container from "@/components/Container";
 import { List, ListItem, Typography } from "@mui/material";
 import CareerSingle from "@/assets/images/career-single-left.png";
 import CareerDoubleTop from "@/assets/images/career-right-top.png";
 import CareerDoubleBottom from "@/assets/images/career-right-bottom.png";
 import DottedCircle from "@/assets/svg/DottedCircle.svg";
+import WhoForSection from "@/components/WhoForSection";
+import ForTeamSection from "@/components/ForTeamSection";
 
 export default function Home() {
   return (
@@ -37,17 +37,15 @@ export default function Home() {
             className="xl:!w-[80px] xl:!h-[80px] lg:!w-[67px] lg:!h-[61px] !w-[80px] !h-[80px] spinGlobe"
           />
         </Box>
-        {/* <Box className="absolute lg:-bottom-16 md:-bottom-10 -bottom-5 xl:!-right-[8.5rem] lg:-right-20 md:-right-20 -right-20 z-10">
-          <Image
-            draggable="false"
-            src={Globe}
-            alt="Globe"
-            className="tab:!w-[310px] !w-[40vw] spinGlobe"
-          />
-        </Box> */}
       </Box>
       <div className="overflow-hidden">
-        <Box style={{ background: "var(--section-color)" }} className="relative">
+        <Box
+          sx={{
+            background:
+              "linear-gradient(to right, var(--black-color), var(--bg-gradient-color)) !important",
+          }}
+          className="relative"
+        >
           <CareerSupportSection />
           <Image
             src={Decoration}
@@ -55,10 +53,21 @@ export default function Home() {
             className="!mx-auto sm:-mt-[0rem] xl:!w-[160px] xl:!h-[55px] lg:!w-[120px] !w-[90px]"
           />
         </Box>
-        <Box style={{ background: "var(--section-color)" }}>
+        <Box
+          sx={{
+            background:
+              "linear-gradient(to right, var(--black-color), var(--bg-gradient-color)) !important",
+          }}
+        >
           <CareerGuideSection />
         </Box>
-        <Box className="pb-10 sm:pb-20" style={{ background: "var(--section-color)" }}>
+        <Box
+          className="pb-10 sm:pb-20"
+          sx={{
+            background:
+              "linear-gradient(to right, var(--black-color), var(--bg-gradient-color)) !important",
+          }}
+        >
           <CareerAutomate />
         </Box>
       </div>
@@ -71,6 +80,7 @@ export default function Home() {
           paddingBottom: "3rem",
         }}
       >
+        <ExperienceSection />
         <Box className="relative py-[60] md:py-20 lg:pt-[100px]">
           <Image
             draggable="false"
@@ -81,30 +91,25 @@ export default function Home() {
           <Container>
             <Box className="!text-center flex flex-wrap">
               <Box className="w-full mb-14">
-                {/* <AnimatedGradientText
-                  text="Gain a competitive advantage by making data-driven career decisions."
-                  as="h2"
-                // className="lg:text-[3rem]"
-                /> */}
                 <h2 className="Spartan-SemiBold overflow-wrap break-words mx-auto max-w-[1000px] text-white">
-                  Gain a competitive advantage by making data-driven career decisions.
+                  Gain a competitive advantage by making data-driven decisions.
                 </h2>
               </Box>
               <div className="flex flex-col gap-10 min-[1024px]:gap-0 min-[1024px]:flex-row">
-                <Box className="w-full min-[1024px]:w-[40%] md:w-full mt-10">
+                <Box className="w-full text-left min-[1024px]:w-[40%] md:w-full mt-10">
                   <Typography
                     variant="h3"
-                    className="Spartan-SemiBold lg:text-[30px] xl:text-[36px] leading-[1.1] text-left text-white mb-6"
+                    className="Spartan-SemiBold lg:text-[26px] xl:text-[30px] leading-[1.1] text-left text-white mb-6"
                   >
-                    Realtime Insights and Predictions To Optimize Your Career.
+                    Realtime Insights and Predictions To Optimize Your Career Management.
                   </Typography>
                   <p className="Montserrat-Medium text-white text-left leading-tight">
                     Talente is your one-stop shop for career data management, with instant,
                     automated feedback and insights, and in-depth analytics to inform your career
-                    decisions and keep you competitive
+                    decisions and keep you competitive.
                   </p>
 
-                  <Box className="mt-4">
+                  <Box className="mt-4 mb-12">
                     <List
                       sx={{
                         listStyleType: "disc",
@@ -160,6 +165,12 @@ export default function Home() {
                       </ListItem>
                     </List>
                   </Box>
+                  <a
+                    href="/pdf/Talente.pdf"
+                    className="bg-cyan-600 uppercase font-bold py-2 sm:px-6 px-4 md:text-lg text-base rounded-full"
+                  >
+                    download brochure
+                  </a>
                 </Box>
                 <Box className="w-full min-[1024px]:w-[60%] md:w-full">
                   <Box className="flex">
@@ -188,11 +199,31 @@ export default function Home() {
             </Box>
           </Container>
         </Box>
-        <ExperienceSection />
       </Box>
-      {/* <Box className="gradient-blue-black">
-        <CoreValuesSection />
-      </Box> */}
+      <div className="overflow-hidden">
+        <Box
+          sx={{
+            background:
+              "linear-gradient(to right, var(--black-color), var(--bg-gradient-color)) !important",
+          }}
+          className="relative"
+        >
+          <WhoForSection />
+          <Image
+            src={Decoration}
+            alt="Decoration Image"
+            className="!mx-auto sm:-mt-[0rem] xl:!w-[160px] xl:!h-[55px] lg:!w-[120px] !w-[90px]"
+          />
+        </Box>
+        <Box
+          sx={{
+            background:
+              "linear-gradient(to right, var(--black-color), var(--bg-gradient-color)) !important",
+          }}
+        >
+          <ForTeamSection />
+        </Box>
+      </div>
     </Box>
   );
 }
