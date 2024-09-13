@@ -80,45 +80,40 @@ const Navbar = ({
       className="Spartan-SemiBold !py-0"
     >
       <List>
-        {navItemsAvatar.map(
-          (
-            item,
-            index, // Added index parameter to map function
-          ) => (
-            <ListItem
-              key={item.label}
-              disablePadding
-              className={`Spartan-SemiBold navList !text-[${navColor}] !flex${index === navItemsAvatar.length - 1 ? " last-child-no-border" : ""}`} // Check if it's the last item
-            >
-              {item.url ? (
-                <a
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="Spartan-SemiBold "
-                  style={{ color }}
-                  onClick={(event) => event.stopPropagation()}
-                >
-                  <ListItemButton className="Spartan-SemiBold" sx={{ textAlign: "center" }}>
-                    <ListItemText
-                      className={`Spartan-SemiBold !text-[${navColor}]`}
-                      primary={item.label}
-                    />
-                  </ListItemButton>
-                </a>
-              ) : (
-                <Link className={`Spartan-SemiBold !text-[${navColor}]`} href={item.path}>
-                  <ListItemButton className="Spartan-SemiBold" sx={{ textAlign: "center" }}>
-                    <ListItemText
-                      className={`Spartan-SemiBold !text-[${navColor}]`}
-                      primary={item.label}
-                    />
-                  </ListItemButton>
-                </Link>
-              )}
-            </ListItem>
-          ),
-        )}
+        {navItemsAvatar.map((item, index) => (
+          <ListItem
+            key={item.label}
+            disablePadding
+            className={`Spartan-SemiBold navList !text-[${navColor}] !flex${index === navItemsAvatar.length - 1 ? " last-child-no-border" : ""}`} // Check if it's the last item
+          >
+            {item.url ? (
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="Spartan-SemiBold "
+                style={{ color }}
+                onClick={(event) => event.stopPropagation()}
+              >
+                <ListItemButton className="Spartan-SemiBold" sx={{ textAlign: "center" }}>
+                  <ListItemText
+                    className={`Spartan-SemiBold !text-[${navColor}]`}
+                    primary={item.label}
+                  />
+                </ListItemButton>
+              </a>
+            ) : (
+              <Link className={`Spartan-SemiBold !text-[${navColor}]`} href={item.path}>
+                <ListItemButton className="Spartan-SemiBold" sx={{ textAlign: "center" }}>
+                  <ListItemText
+                    className={`Spartan-SemiBold !text-[${navColor}]`}
+                    primary={item.label}
+                  />
+                </ListItemButton>
+              </Link>
+            )}
+          </ListItem>
+        ))}
       </List>
       <div className="flex flex-col items-start gap-2 px-4 py-2">
         <Button
