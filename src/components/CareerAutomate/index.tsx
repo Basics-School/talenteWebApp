@@ -6,6 +6,7 @@ import CommonTextArea from "@/common/CommonTextArea";
 import AutomateImg from "@/assets/images/automate.png";
 import Arrow from "@/assets/svg/Arrow.svg";
 import ArrowRight from "@/assets/svg/arrow-right.svg";
+import ImageDiv from "@/common/ImageDiv";
 
 const CareerAutomate = () => {
   return (
@@ -20,12 +21,8 @@ const CareerAutomate = () => {
                 alt="Arrow Right"
                 className="absolute bottom-0 right-[-50px] lg:!w-[65px] lg:!h-[120px] !w-[50px] hidden md:block !h-[200px] animates z-10"
               />
-              <div className="md:border-[2rem] sm:border-[1.2rem] border-8 border-amber-400 rounded-full my-10 mx-auto">
-                <Image
-                  draggable="false"
-                  src={AutomateImg}
-                  alt="Automate Your Career Management Image"
-                />
+              <div>
+                <ImageDiv ImgSrc={AutomateImg} ImgAlt="Automate Your Career Management Image" />
               </div>
               <Image
                 draggable="false"

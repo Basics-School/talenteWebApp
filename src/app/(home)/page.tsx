@@ -91,7 +91,7 @@ export default function Home() {
           <Container>
             <Box className="!text-center flex flex-wrap">
               <Box className="w-full mb-14">
-                <h2 className="Spartan-SemiBold overflow-wrap break-words mx-auto max-w-[1000px] text-white">
+                <h2 className="Spartan-SemiBold overflow-wrap break-words mx-auto max-w-[1000px]">
                   Gain a competitive advantage by making data-driven decisions.
                 </h2>
               </Box>
@@ -99,11 +99,11 @@ export default function Home() {
                 <Box className="w-full text-left min-[1024px]:w-[40%] md:w-full mt-10">
                   <Typography
                     variant="h3"
-                    className="Spartan-SemiBold lg:text-[26px] xl:text-[30px] leading-[1.1] text-left text-white mb-6"
+                    className="Spartan-SemiBold lg:text-[26px] xl:text-[34px] leading-[1.1] text-left mb-6"
                   >
                     Realtime Insights and Predictions To Optimize Your Career Management.
                   </Typography>
-                  <p className="Montserrat-Medium text-white text-left leading-tight">
+                  <p className="Montserrat-Medium md:text-2xl text-left leading-tight">
                     Talente is your one-stop shop for career data management, with instant,
                     automated feedback and insights, and in-depth analytics to inform your career
                     decisions and keep you competitive.
@@ -124,7 +124,7 @@ export default function Home() {
                         }}
                         disablePadding
                       >
-                        <p className="Montserrat-Medium text-white text-lg">Employment Records</p>
+                        <p className="Montserrat-Medium md:text-2xl">Employment Records</p>
                       </ListItem>
                       <ListItem
                         sx={{
@@ -135,7 +135,7 @@ export default function Home() {
                         }}
                         disablePadding
                       >
-                        <p className="Montserrat-Medium text-white text-lg">Automated Reporting</p>
+                        <p className="Montserrat-Medium md:text-2xl">Automated Reporting</p>
                       </ListItem>
                       <ListItem
                         sx={{
@@ -146,7 +146,7 @@ export default function Home() {
                         }}
                         disablePadding
                       >
-                        <p className="Montserrat-Medium text-white text-lg">
+                        <p className="Montserrat-Medium md:text-2xl">
                           Industry Insights and Trends
                         </p>
                       </ListItem>
@@ -159,7 +159,7 @@ export default function Home() {
                         }}
                         disablePadding
                       >
-                        <p className="Montserrat-Medium text-white text-lg">
+                        <p className="Montserrat-Medium md:text-2xl">
                           Mobile App - iOS and Android
                         </p>
                       </ListItem>

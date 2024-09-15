@@ -8,6 +8,7 @@ import DottedArrow from "@/assets/svg/DottedArrow.svg";
 import ArrowLeft from "@/assets/svg/arrow-left.svg";
 import PurpleCircle from "@/assets/svg/PurpleCircle.svg";
 import Stack from "@mui/material/Stack";
+import ImageDiv from "@/common/ImageDiv";
 
 const CareerGuideSection = () => {
   return (
@@ -38,15 +39,7 @@ const CareerGuideSection = () => {
               heading="Enhance equitable governance."
               content="On-demand support for work-related challenges, insights into marketable skills, up-to-date industry trends, and personalized guidance to optimize employer-sponsored benefits such as Employee Assistance Programs and 401Ks, all while enhancing corporate governance and compliance."
             />
-            <Box className="relative overflow-hidden md:border-[2rem] sm:border-[1.2rem] border-8 border-amber-400 rounded-full my-10 mx-auto">
-              <Image
-                draggable="false"
-                src={CareerGuideImage}
-                alt="Customer Support Image"
-                className="relative z-10"
-              />
-              <Box className="absolute inset-0 w-full h-full rounded-full bg-white" />
-            </Box>
+            <ImageDiv ImgSrc={CareerGuideImage} ImgAlt="Customer Support Image" />
           </Box>
         </Box>
       </Container>

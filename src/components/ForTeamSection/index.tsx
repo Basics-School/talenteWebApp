@@ -10,6 +10,7 @@ import ArrowLeft from "@/assets/svg/arrow-left.svg";
 import PurpleCircle from "@/assets/svg/PurpleCircle.svg";
 import Stack from "@mui/material/Stack";
 import Button from "../Button";
+import ImageDiv from "@/common/ImageDiv";
 
 const ForTeamSection = () => {
   return (
@@ -56,15 +57,7 @@ const ForTeamSection = () => {
                 </a>
               </div>
             </Box>
-            <Box className="relative max-h-[445px] max-w-[445px] overflow-hidden md:border-[2rem] sm:border-[1.2rem] border-8 border-amber-400 rounded-full my-10 mx-auto">
-              <Image
-                draggable="false"
-                src={CareerGuideImage}
-                alt="Customer Support Image"
-                className="relative z-10"
-              />
-              <Box className="absolute inset-0 w-full h-full rounded-full bg-white" />
-            </Box>
+            <ImageDiv ImgSrc={CareerGuideImage} ImgAlt="Customer Support Image" />
           </Box>
         </Box>
       </Container>

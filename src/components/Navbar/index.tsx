@@ -21,7 +21,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "../Button";
 
 const navItemsAvatar = [
-  { label: "Ask Tasha", path: "/ask-tasha" },
+  { label: "Tasha", path: "/tasha" },
   { label: "Career Hub", path: "/", url: "https://community.mytalente.ai/" },
   { label: "Subscription", path: "/pricing" },
   { label: "Company", path: "/about-us" },

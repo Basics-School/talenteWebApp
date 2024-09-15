@@ -9,6 +9,7 @@ import Container from "@/components/Container";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Button, Typography } from "@mui/material";
+import ImageDiv from "@/common/ImageDiv";
 
 const AboutUs = () => {
   // const coreValues = [
@@ -87,7 +88,7 @@ const AboutUs = () => {
                   className="h-full"
                 >
                   <Stack direction="column">
-                    <p className="Montserrat-Regular text-[var(--white-text)] mb-7">
+                    <p className="Montserrat-Medium md:text-2xl mb-7">
                       During my almost 20-year tenure in human resources leadership, I witnessed
                       firsthand the increasing weaponization of HR against employees often leaving
                       me helpless to provide the kind of direct support employees truly needed. This
@@ -96,7 +97,7 @@ const AboutUs = () => {
                       didn&apos;t think existed.
                     </p>
 
-                    <p className="Montserrat-Regular text-[var(--white-text)] mb-7">
+                    <p className="Montserrat-Medium md:text-2xl mb-7">
                       I founded Talente with a bold mission: to democratize human resources and
                       career management, transforming the future of work. No more missed
                       opportunities to improve employee-employer relationships—Talente is designed
@@ -104,7 +105,7 @@ const AboutUs = () => {
                       empower individuals and teams alike.
                     </p>
 
-                    <p className="Montserrat-Regular text-[var(--white-text)] mb-7">
+                    <p className="Montserrat-Medium md:text-2xl mb-7">
                       Talente is the only platform that addresses the full lifecycle of career
                       management, providing individuals and teams with the comprehensive support and
                       insights needed to thrive at every stage of their professional journey.
@@ -113,28 +114,21 @@ const AboutUs = () => {
                 </Stack>
               </Box>
               <Box className="order-1 md:order-2 xl:w-auto mx-auto">
-                <Box className="relative flex-none xl:!w-[300px] xl:!h-[300px] lg:!w-[270px] lg:!h-[270px]  lg:!mb-10 md:!w-[230px] md:!h-[230px] !mx-auto !w-[180px] !h-[180px] !mb-7">
-                  <Image
-                    draggable="false"
-                    src={FounderImg}
-                    alt="Founder Image"
-                    className="!bg-[var(--section-color)] !relative z-10 md:border-[2rem] sm:border-[1.2rem] border-8 border-amber-400 !rounded-full xl:!w-[300px] xl:!h-[300px] xl:!mb-24 xl:!border-[15px] lg:!w-[270px] lg:!h-[270px] lg:!border-[13px] lg:!mb-12 md:!w-[230px] md:!h-[230px] md:!mb-4  !mx-auto !w-[180px] !h-[180px]"
-                  />
-                </Box>
+                <ImageDiv ImgSrc={FounderImg} ImgAlt="Founder Image" />
                 <Box className={"flex justify-center"}>
                   <Button
                     target="_blank"
                     href="https://www.linkedin.com/in/simmonsmaureen"
                     className="min-w-[fit-content]"
                   >
-                    <LinkedIn className="text-amber-400 w-9 h-9" />
+                    <LinkedIn className="text-[#ffb54d] w-9 h-9" />
                   </Button>
                   <Button
                     target="_blank"
                     href="https://www.instagram.com/maureensimmons_"
                     className="min-w-[fit-content]"
                   >
-                    <InstagramIcon className="text-amber-400 w-9 h-9" />
+                    <InstagramIcon className="text-[#ffb54d] w-9 h-9" />
                   </Button>
                 </Box>
               </Box>
@@ -168,30 +162,30 @@ const AboutUs = () => {
             <h2 className="Spartan-Bold tracking-wide !normal-case flex text-gradient xl:!mb-1 z-20 justify-center">
               Our Core Values
             </h2>
-            <Typography className="text-white Montserrat-Regular !mx-auto mb-2 mt-6 text-center xl:text-[26px] max-w-auto md:max-w-[1000px] ">
+            <Typography className="Montserrat-Medium md:text-2xl mb-2 text-center">
               People first.
             </Typography>
-            <Typography className="text-white Montserrat-Regular !mx-auto mb-0 text-center xl:text-[18px] max-w-auto md:max-w-[1000px] ">
+            <Typography className="Montserrat-Medium md:text-xl mb-2 text-center">
               We envision a future in which leaders can use technology to solve uniquely human
               problems.
             </Typography>
-            <Typography className="text-white Montserrat-Regular !mx-auto mb-0 text-center xl:text-[18px] max-w-auto md:max-w-[1000px] ">
+            <Typography className="Montserrat-Medium md:text-xl mb-10 text-center">
               We help build software that changes lives. Our shared values inform every step we take
               on that journey.
             </Typography>
           </Box>
           <Box className="flex flex-wrap mt-10 text-black">
             <Box className="sm:w-1/2 sm:px-4 sm:space-y-9 space-y-5 sm:mb-0 mb-5">
-              <Box className="flex flex-col justify-center rounded-3xl bg-amber-500 sm:px-6 px-4 sm:min-h-96 py-6">
-                <h3 className="Spartan-SemiBold sm:text-3xl text-2xl">Employee-Centricity</h3>
-                <p className="text-base">
+              <Box className="flex flex-col justify-center rounded-3xl bg-[#ffb54d] sm:px-6 px-4 sm:min-h-96 py-6">
+                <h3 className="Spartan-Bold mb-2">Employee-Centricity</h3>
+                <p className="Montserrat-Medium">
                   We empower employees at every stage of their career journey, whether they are
                   employed or looking for their next opportunity.
                 </p>
               </Box>
               <Box className="flex flex-col justify-center rounded-3xl bg-white sm:px-6 px-4 sm:min-h-60 py-6">
-                <h3 className="Spartan-SemiBold sm:text-3xl text-2xl">Do More With Less</h3>
-                <p className="text-base">
+                <h3 className="Spartan-Bold mb-2">Do More With Less</h3>
+                <p className="Montserrat-Medium">
                   We built a smart platform so we could do more with less. We use innovation
                   thoughtfully to navigate productivity.
                 </p>
@@ -199,17 +193,15 @@ const AboutUs = () => {
             </Box>
             <Box className="sm:w-1/2 sm:px-4 sm:space-y-9 space-y-5 sm:mb-9 mb-5">
               <Box className="flex flex-col justify-center rounded-3xl bg-white sm:px-6 px-4 sm:min-h-60 py-6">
-                <h3 className="Spartan-SemiBold sm:text-3xl text-2xl">Purpose-Driven Disruptors</h3>
-                <p className="text-base">
+                <h3 className="Spartan-Bold mb-2">Purpose-Driven Disruptors</h3>
+                <p className="Montserrat-Medium">
                   We believe change in traditional HR tactics is necessary. We speak up for what we
                   believe in: Diversity, Equity, and Inclusion fuels our mission.
                 </p>
               </Box>
-              <Box className="flex flex-col justify-center rounded-3xl bg-amber-500 sm:px-6 px-4 sm:min-h-96 py-6">
-                <h3 className="Spartan-SemiBold sm:text-3xl text-2xl">
-                  Build Meaningful Relationships
-                </h3>
-                <p className="text-base">
+              <Box className="flex flex-col justify-center rounded-3xl bg-[#ffb54d] sm:px-6 px-4 sm:min-h-96 py-6">
+                <h3 className="Spartan-Bold mb-2">Build Meaningful Relationships</h3>
+                <p className="Montserrat-Medium">
                   We are intentional about building lasting connections. We’re redefining the art of
                   professional networking.
                 </p>
@@ -217,8 +209,8 @@ const AboutUs = () => {
             </Box>
             <Box className="flex flex-col justify-center items-center w-full rounded-3xl bg-white sm:px-6 px-4 sm:min-h-60 py-6">
               <div className="w-1/2">
-                <h3 className="Spartan-SemiBold sm:text-3xl text-2xl">Empower Others</h3>
-                <p className="text-base">
+                <h3 className="Spartan-Bold mb-2">Empower Others</h3>
+                <p className="Montserrat-Medium">
                   We set the stage for others to be the best version of themselves: career
                   professionals, jobseekers, and everyone in between.
                 </p>

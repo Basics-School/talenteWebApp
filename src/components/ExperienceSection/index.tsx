@@ -43,7 +43,7 @@ const ExperienceSection = () => {
             <h2 className="text-white Spartan-SemiBold md:!pt-12 !pt-6 lg:!mb-0 md:!pb-6 !pb-6 !mt-0">
               A single platform where everything works together.
             </h2>
-            <Typography className="Montserrat-Regular !mx-auto mb-10 !text-[--white-text] xl:text-[20px] lg:text-[18px] text-[16px] max-w-auto md:max-w-[1000px] ">
+            <Typography className="Montserrat-Medium md:text-2xl !mx-auto mb-10 max-w-auto md:max-w-[1120px]">
               Talente saves you time and effort, helping you focus on skill development, enhancing
               performance, and achieving meaningful career or organizational progress.
             </Typography>

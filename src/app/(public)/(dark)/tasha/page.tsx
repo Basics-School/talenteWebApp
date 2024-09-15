@@ -8,7 +8,7 @@ import { Grid } from "@mui/material";
 import TashaCapabilities from "@/components/TashaCapabilities";
 import Button from "@/components/Button";
 
-const AskTashaPage = () => {
+const TashaPage = () => {
   return (
     <>
       <Box
@@ -35,7 +35,7 @@ const AskTashaPage = () => {
                       Meet <br />
                       Tasha.
                     </h1>
-                    <p className="Montserrat-Regular text-white mb-6 lg:max-w-[600px] w-full leading-tight">
+                    <p className="Montserrat-Medium md:text-xl text-white mb-6 lg:max-w-[600px] w-full leading-tight">
                       Tasha is your AI-powered career companion. Whether you’re navigating your
                       career path solo or managing a diverse team, Tasha is here to streamline your
                       journey and elevate your success.
@@ -78,4 +78,4 @@ const AskTashaPage = () => {
   );
 };
 
-export default AskTashaPage;
+export default TashaPage;

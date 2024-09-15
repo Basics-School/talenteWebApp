@@ -10,7 +10,7 @@ interface TextAreaProps {
 const CommonTextArea = ({ heading, content, className }: TextAreaProps) => {
   return (
     <Box className="md:!mt-5">
-      <h2 className="Spartan-Bold md:mb-10">{heading}</h2>
+      <h2 className="Spartan-Bold md:mb-10 mb-4">{heading}</h2>
       <p
         className={`Montserrat-Medium  max-w-[800px] md:text-2xl leading-none md:mt-10 ${className}`}
       >

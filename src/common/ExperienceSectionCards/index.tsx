@@ -51,7 +51,7 @@ const ExperinceSectionCards = ({
         <h3 className="Spartan-Medium text-[--white-text] tab:px-[20px] sm:mt-5 mt-3 mb-1 tab:text-center">
           {text}
         </h3>
-        <h2 className="Spartan-SemiBold text-amber-400 sm:mb-5 mb-3 !text-center overflow-wrap break-words !mx-auto lg:!text-[30px] !text-2xl !ml-0 tab:!mx-auto">
+        <h2 className="Spartan-SemiBold text-[#ffb54d] sm:mb-5 mb-3 !text-center overflow-wrap break-words !mx-auto lg:!text-[30px] !text-2xl !ml-0 tab:!mx-auto">
           {subText}
         </h2>
 

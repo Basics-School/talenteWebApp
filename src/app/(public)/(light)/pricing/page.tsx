@@ -106,7 +106,7 @@ const Pricing = () => {
             className="!w-[220px] !h-[220px]"
           />
         </div>
-        <h2 className="Spartan-SemiBold text-amber-400 !text-center overflow-wrap break-words !mx-auto xl:!mt-4 !mt-3 px-[10px] mb-10">
+        <h2 className="Spartan-SemiBold text-[#ffb54d] !text-center overflow-wrap break-words !mx-auto xl:!mt-4 !mt-3 px-[10px] mb-10">
           Pricing & Plans
         </h2>
         <CommonTab
@@ -116,13 +116,13 @@ const Pricing = () => {
           setSelectedItem={setSelectedItem}
         />
 
-        <Typography className="text-white Montserrat-Regular !mx-auto mb-0 mt-10 text-center xl:text-[18px] max-w-auto md:max-w-[1000px] ">
+        <Typography className="text-white Montserrat-Medium !mx-auto mb-0 mt-10 text-center xl:text-2xl max-w-auto md:max-w-[1200px] ">
           Choose a Plan to Take Charge of Your Career Management Today.
         </Typography>
-        <Typography className="text-white Montserrat-Regular !mx-auto mb-0 text-center xl:text-[18px] max-w-auto md:max-w-[1000px] ">
+        <Typography className="text-white Montserrat-Medium !mx-auto mb-0 text-center xl:text-2xl max-w-auto md:max-w-[1200px] ">
           Free 7-Day Trial on Pro and Team Plans. Monthly Subscription Starts After Trial Ends.
         </Typography>
-        <Typography className="text-white Montserrat-Regular !mx-auto mb-0 text-center xl:text-[18px] max-w-auto md:max-w-[1000px] ">
+        <Typography className="text-white Montserrat-Medium !mx-auto mb-0 text-center xl:text-2xl max-w-auto md:max-w-[1200px] ">
           Cancel Anytime.
         </Typography>
         <Box className={"pricing-Cards-wrapper flex flex-wrap my-10 gap-y-3 tab:gap-0"}>

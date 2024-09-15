@@ -57,7 +57,7 @@ const TashaCapabilities = () => {
       <section className="pt-16 md:pt-20 lg:pt-32">
         <Container>
           <h2 className="Montserrat-Bold text-center text-white mb-3">Tasha&apos;s Capabilities</h2>
-          <Typography className="Montserrat-Regular text-center !mx-auto md:mb-20 mb-12 !text-[--white-text] xl:text-[20px] lg:text-[18px] text-[16px] max-w-auto md:max-w-[1000px] ">
+          <Typography className="MMontserrat-Medium md:text-2xl max-w-auto md:max-w-[1120px] !mx-auto md:mb-20 mb-12 text-center">
             We leverage AI to deliver comprehensive Career and HR Management solutions, seamlessly
             integrating advanced analytics with personalized employee and organizational development
             strategies.

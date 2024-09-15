@@ -22,7 +22,6 @@ const ComingSoonSection = () => {
                 alt="Customer Support Image"
                 className="relative z-10"
               />
-              <Box className="absolute inset-0 w-full h-full rounded-full bg-white" />
             </Box>
             <Box>
               <CommonTextArea
@@ -30,17 +29,37 @@ const ComingSoonSection = () => {
                 content="Connect with Tasha wherever you are. Whether you’re navigating career decisions, managing HR tasks, or seeking advice, Tasha is always by your side. The Tasha app empowers you to take your career and HR management on the go, putting AI-driven insights and support right in your pocket."
               />
               <div className="max-w-md grid grid-cols-2 sm:gap-6 gap-4 lg:mt-20 sm:mt-6 mt-4">
-                <a href="" className="">
-                  <Image draggable="false" src={PlayStoreImage} alt="Google play store icon" />
+                <a href="">
+                  <Image
+                    className="h-14 object-cover"
+                    draggable="false"
+                    src={PlayStoreImage}
+                    alt="Google play store icon"
+                  />
                 </a>
-                <a href="" className="">
-                  <Image draggable="false" src={AppStoreImage} alt="Google play store icon" />
+                <a href="">
+                  <Image
+                    className="h-14 object-cover"
+                    draggable="false"
+                    src={AppStoreImage}
+                    alt="Google play store icon"
+                  />
                 </a>
-                <a href="" className="">
-                  <Image draggable="false" src={azureImage} alt="Azure icon" />
+                <a href="">
+                  <Image
+                    className="h-16 object-cover"
+                    draggable="false"
+                    src={azureImage}
+                    alt="Azure icon"
+                  />
                 </a>
-                <a href="" className="">
-                  <Image draggable="false" src={awsImage} alt="AWS icon" />
+                <a href="">
+                  <Image
+                    className="h-16 object-cover"
+                    draggable="false"
+                    src={awsImage}
+                    alt="AWS icon"
+                  />
                 </a>
               </div>
             </Box>

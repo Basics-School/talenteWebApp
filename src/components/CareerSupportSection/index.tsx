@@ -7,6 +7,7 @@ import Container from "@/components/Container";
 import CommonTextArea from "@/common/CommonTextArea";
 import CustomerSupporttImg from "@/assets/images/CustomerSupportImg_450.png";
 import Arrow from "@/assets/svg/Arrow.svg";
+import ImageDiv from "@/common/ImageDiv";
 
 const CareerSupportSection = () => {
   return (
@@ -21,7 +22,7 @@ const CareerSupportSection = () => {
         <Container>
           <Box className="flex relative flex-col justify-center lg:!mt-10 md:!mt-12 mt-5 xl:!px-0 tab:!px-8 max-w-[1280px] mx-auto">
             <h2 className="Spartan-Bold tracking-wide !normal-case xl:!mb-1 z-20 mx-auto text-center">
-              Why Talente is the <span className="text-amber-400">smarter</span> choice.
+              Why Talente is the <span className="text-[#ffb54d]">smarter</span> choice.
             </h2>
             <Box className="flex md:!flex-row !flex-col items-center pb-0 mt-5 tab:!mt-10 lg:!gap-20 md:!gap-10 !gap-6 relative">
               <Image
@@ -30,9 +31,7 @@ const CareerSupportSection = () => {
                 alt="Arrow Right"
                 className="absolute -bottom-14 right-[-50px] lg:!w-[65px] hidden md:block lg:!h-[150px] !w-[50px] !h-[200px] animates z-10"
               />
-              <div className="md:border-[2rem] sm:border-[1.2rem] border-8 border-amber-400 rounded-full my-10 mx-auto">
-                <Image draggable="false" src={CustomerSupporttImg} alt="Customer Support Image" />
-              </div>
+              <ImageDiv ImgSrc={CustomerSupporttImg} ImgAlt="Customer Support Image" />
               <Image
                 draggable="false"
                 src={Arrow}

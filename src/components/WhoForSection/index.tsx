@@ -8,6 +8,7 @@ import CommonTextArea from "@/common/CommonTextArea";
 import CustomerSupporttImg from "@/assets/images/1.png";
 import Arrow from "@/assets/svg/Arrow.svg";
 import { Typography } from "@mui/material";
+import ImageDiv from "@/common/ImageDiv";
 
 const WhoForSection = () => {
   return (
@@ -24,7 +25,7 @@ const WhoForSection = () => {
             <h2 className="Spartan-Bold tracking-wide !normal-case xl:!mb-1 z-20 mx-auto text-center">
               Team up with Talente
             </h2>
-            <Typography className="Montserrat-Regular lg:w-3/5 text-center !mx-auto mb-10 !text-[--white-text] xl:text-[20px] lg:text-[18px] text-[16px] max-w-auto md:max-w-[1000px] ">
+            <Typography className="text-center Montserrat-Medium md:text-2xl !mx-auto mb-10 max-w-auto md:max-w-[920px]">
               Shorten the path from idea to impact with an AI assistant that taps into your shared
               expertise.
             </Typography>
@@ -35,9 +36,7 @@ const WhoForSection = () => {
                 alt="Arrow Right"
                 className="absolute -bottom-14 right-[-50px] lg:!w-[65px] hidden md:block lg:!h-[150px] !w-[50px] !h-[200px] animates z-10"
               />
-              <div className="max-h-[445px] max-w-[445px] md:border-[2rem] sm:border-[1.2rem] border-8 border-amber-400 rounded-full overflow-hidden my-10 mx-auto">
-                <Image draggable="false" src={CustomerSupporttImg} alt="Customer Support Image" />
-              </div>
+              <ImageDiv ImgSrc={CustomerSupporttImg} ImgAlt="Customer Support Image" />
               <Image
                 draggable="false"
                 src={Arrow}
