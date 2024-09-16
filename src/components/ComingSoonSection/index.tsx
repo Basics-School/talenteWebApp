@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@/components/Container";
 import Image from "next/image";
 import CommonTextArea from "@/common/CommonTextArea";
-import CareerGuideImage from "@/assets/images/career-single-left.png";
+import MobileBannerImage from "@/assets/images/mobile-banner.png";
 import PlayStoreImage from "@/assets/images/playStore.png";
 import AppStoreImage from "@/assets/images/appStore.png";
 import azureImage from "@/assets/images/azure.png";
@@ -18,7 +18,7 @@ const ComingSoonSection = () => {
             <Box className="relative overflow-hidden my-10 mx-auto">
               <Image
                 draggable="false"
-                src={CareerGuideImage}
+                src={MobileBannerImage}
                 alt="Customer Support Image"
                 className="relative z-10"
               />

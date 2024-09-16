@@ -28,7 +28,7 @@ const card1 = {
 const card2 = {
   recommended: true,
   title: "Pro",
-  price: "$49.99",
+  price: "$360",
   points: [
     "All Basic features plus",
     "Tasha: AI HR & Career Assistant",
@@ -41,7 +41,7 @@ const card2 = {
 
 const card3 = {
   title: "Team",
-  price: "$59.99",
+  price: "$420",
   points: [
     "All Premium features plus",
     "Industry Watch",
@@ -53,7 +53,7 @@ const card3 = {
 
 const card4 = {
   title: "Free",
-  price: "$0/mo",
+  price: "$0/month",
   points: ["Basic Profile", "Talk to Tasha on the Web, iOS and Android", "Access to Career Hub"],
 };
 const card5 = {
