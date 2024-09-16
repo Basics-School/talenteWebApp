@@ -14,7 +14,7 @@
   --black-color: #000000;
   --white-text: #ffffff;
   --button-color: #3533cd;
-  --button-shadow: #cb6ce6;
+  --button-shadow: #cb6ce680;
   --button-gradient: #ec27b699;
   --button-border: #fbcc3e;
   --border-gradient: #004aad;
@@ -62,7 +62,8 @@ h5,
 h6,
 span,
 li,
-p {
+p,
+button {
   color: #ffffff;
 }
 

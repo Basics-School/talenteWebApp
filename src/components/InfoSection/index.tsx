@@ -5,9 +5,20 @@ import Box from "@mui/material/Box";
 import { default as MuiButton } from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import BannerImg from "@/assets/images/HomeHero.png";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import Container from "@/components/Container";
 import Button from "../Button";
+
+const GradientText = styled(Typography)({
+  background: "linear-gradient(45deg, #cb6ce680, var(--white-text))",
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+  backgroundClip: "text",
+  textFillColor: "transparent",
+  maxWidth: "1200px",
+  paddingLeft: "20px",
+  paddingRight: "20px",
+});
 
 const GradientTextButton = styled(MuiButton)(({}) => ({
   textTransform: "none",
@@ -46,10 +57,18 @@ const InfoSection = () => {
               <GradientTextButton className="Montserrat-Medium tracking-wide mb-8 ml-0 !normal-case flex justify-start text-gradient xl:text-[20px] lg:text-[20px] text-sm bg-[linear-gradient(to_right,theme(colors.pink.400),theme(colors.pink.100),theme(colors.white),theme(colors.pink.400),theme(colors.white),theme(colors.pink.100),theme(colors.pink.400))] bg-[length:200%_auto] animate-gradient bg-clip-text">
                 AI-Powered Career Support
               </GradientTextButton>
-              <h1 className="Spartan-SemiBold p-0 mb-6 overflow-wrap break-words">
-                Human Resources and <br />
-                Career Management together, in one place.
-              </h1>
+              <GradientText
+                as={"h1"}
+                className="Spartan-SemiBold p-0 mb-6 overflow-wrap break-words"
+              >
+                <span className="text-gradient1">
+                  Human Resources and
+                  <br />
+                  Career Management
+                  <br />
+                  together, in one place.
+                </span>
+              </GradientText>
               <p className="xl:w-4/5 Montserrat-Regular mb-6 !text-[--white-text] lg:text-lg text-sm leading-tight">
                 On-demand HR and Career Services support. Through Talente. Right into an Applicant
                 Tracking System (ATS) or Human Resources Information System (HRIS).
@@ -76,7 +95,7 @@ const InfoSection = () => {
                 </Box>
                 <Box className="text-black bg-white flex flex-col justify-between sm:py-4 py-2.5 sm:px-6 px-4 rounded-xl">
                   <div className="text-left">
-                    <h2 className="font-extrabold md:text-3xl text-2xl mt-2">API</h2>
+                    <h2 className="text-black font-extrabold md:text-3xl text-2xl mt-2">API</h2>
                     <p className="Montserrat-Medium md:text-2xl leading-none text-black sm:mt-4 mt-2">
                       Tasha integrates with existing HRIS and ATS through APIs, serving as a Career
                       and HR copilot.
@@ -84,7 +103,7 @@ const InfoSection = () => {
                   </div>
                   <Button
                     openDialog
-                    className="w-fit mx-auto bg-[#ffb54d] sm:mt-3 mt-2 py-1.5 sm:px-9 px-6 rounded-full uppercase font-bold md:text-2xl sm:text-xl text-lg shadow-lg shadow-black/15"
+                    className="text-black w-fit mx-auto bg-[#ffb54d] sm:mt-3 mt-2 py-1.5 sm:px-9 px-6 rounded-full uppercase font-bold md:text-2xl sm:text-xl text-lg shadow-lg shadow-black/15"
                   >
                     REQUEST DEMO
                   </Button>

@@ -23,7 +23,7 @@ export default function Home() {
         className="relative flex flex-col w-full overflow-clip pt-[20px] md:pt-20 lg:pt-[120px] xl:pt-[140px]"
         sx={{
           background:
-            "linear-gradient(to bottom, var(--black-color), var(--bg-gradient-color)) !important",
+            "linear-gradient(to right, var(--black-color), var(--bg-gradient-color)) !important",
         }}
       >
         <Box className="xl:!mt-0 !mt-0 flex-1 mb-[0px] flex items-center">
