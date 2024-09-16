@@ -184,8 +184,8 @@ const AboutUs = () => {
                 </p>
               </Box>
               <Box className="flex flex-col justify-center rounded-3xl bg-white sm:px-6 px-4 sm:min-h-60 py-6">
-                <h3 className="Spartan-Bold mb-2">Do More With Less</h3>
-                <p className="Montserrat-Medium">
+                <h3 className="text-black Spartan-Bold mb-2">Do More With Less</h3>
+                <p className="text-black Montserrat-Medium">
                   We built a smart platform so we could do more with less. We use innovation
                   thoughtfully to navigate productivity.
                 </p>
@@ -193,8 +193,8 @@ const AboutUs = () => {
             </Box>
             <Box className="sm:w-1/2 sm:px-4 sm:space-y-9 space-y-5 sm:mb-9 mb-5">
               <Box className="flex flex-col justify-center rounded-3xl bg-white sm:px-6 px-4 sm:min-h-60 py-6">
-                <h3 className="Spartan-Bold mb-2">Purpose-Driven Disruptors</h3>
-                <p className="Montserrat-Medium">
+                <h3 className="text-black Spartan-Bold mb-2">Purpose-Driven Disruptors</h3>
+                <p className="text-black Montserrat-Medium">
                   We believe change in traditional HR tactics is necessary. We speak up for what we
                   believe in: Diversity, Equity, and Inclusion fuels our mission.
                 </p>
@@ -209,8 +209,8 @@ const AboutUs = () => {
             </Box>
             <Box className="flex flex-col justify-center items-center w-full rounded-3xl bg-white sm:px-6 px-4 sm:min-h-60 py-6">
               <div className="w-1/2">
-                <h3 className="Spartan-Bold mb-2">Empower Others</h3>
-                <p className="Montserrat-Medium">
+                <h3 className="text-black Spartan-Bold mb-2">Empower Others</h3>
+                <p className="text-black Montserrat-Medium">
                   We set the stage for others to be the best version of themselves: career
                   professionals, jobseekers, and everyone in between.
                 </p>

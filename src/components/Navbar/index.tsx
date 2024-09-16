@@ -31,14 +31,12 @@ interface StyleProps {
   logo?: any;
   scrollColor?: string;
   navColor?: string;
-  theme?: "light" | "dark";
 }
 const Navbar = ({
   color = "var(--white-text)",
   // logo = TalenteLogo,
   scrollColor = "var(--hover-nav-color)",
   navColor = "var(--black-color)",
-  theme = "dark",
 }: StyleProps) => {
   const [mobileOpen, setMobileOpen] = useState(true);
   const [scrolled, setScrolled] = useState(false);
@@ -116,14 +114,12 @@ const Navbar = ({
         ))}
       </List>
       <div className="flex flex-col items-start gap-2 px-4 py-2">
-        <Button
-          className={`${theme === "dark" ? "text-white" : "text-black"} font-extrabold text-sm lg:text-base py-2 px-5 text-white w-[100px] tab:hidden`}
-        >
+        <Button className="font-extrabold text-sm lg:text-base py-2 px-5 text-white w-[100px] tab:hidden">
           Log In
         </Button>
         <Button
           openDialog
-          className={`${theme === "dark" ? "bg-white text-black" : "bg-black text-white"} font-extrabold text-sm lg:text-base py-2 px-5 w-[100px] tab:hidden`}
+          className="font-extrabold text-sm lg:text-base py-2 px-5 w-[100px] tab:hidden"
         >
           Sign Up
         </Button>

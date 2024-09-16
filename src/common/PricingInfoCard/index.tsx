@@ -19,10 +19,13 @@ const PricingInfoCard = ({ card }: PricingInfoCardProps) => {
       <Box className={"w-full tab:w-1/2 md:w-1/3 p-3 relative z-10"}>
         <Box className="flex flex-col justify-between border-2 border-[#ececec] !overflow-hidden rounded-xl sm:p-12 p-6 sm:px-7 px-4 h-full relative transition-transform hover:-translate-y-1 bg-white text-black">
           <Box>
-            <Typography variant="h4" className="Spartan-Medium sm:text-[20px] text-[18px]">
+            <Typography
+              variant="h4"
+              className="Spartan-Medium text-black sm:text-[20px] text-[18px]"
+            >
               {card?.title}
             </Typography>
-            <Typography variant="h3" className="Spartan-Bold sm:text-[30px] text-[24px]">
+            <Typography variant="h3" className="Spartan-Bold text-black sm:text-[30px] text-[24px]">
               {card?.price}
             </Typography>
             <Box className="Spartan-Medium text-[14px] mt-3">
@@ -43,7 +46,7 @@ const PricingInfoCard = ({ card }: PricingInfoCardProps) => {
                     disablePadding
                     classes="Montserrat-Medium text-white text-lg"
                   >
-                    <p>{point}</p>
+                    <p className="text-black">{point}</p>
                   </ListItem>
                 ))}
               </List>
