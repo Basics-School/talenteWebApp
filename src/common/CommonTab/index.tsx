@@ -30,12 +30,12 @@ const CommonTab = ({ selectedItem, tab1, tab2, setSelectedItem }: IProps) => {
           <Tab
             label={tab1}
             value={1}
-            className={`Spartan-Medium !px-12 paddingTabs py-[6px] !rounded-full !border-none !cursor-pointer !text-[--black-color] lg:!text-lg !text-base !normal-case !h-fit !min-h-0 ${selectedItem === 1 ? "bgButton !text-[--white-text] !rounded-full" : ""}`}
+            className={`Spartan-Medium !px-12 paddingTabs py-[6px] !rounded-full !border-none !cursor-pointer !text-[--black-color] lg:!text-lg !text-base !normal-case !h-fit !min-h-0 ${selectedItem === 1 ? "bg-black !text-[--white-text] !rounded-full" : ""}`}
           />
           <Tab
             label={tab2}
             value={2}
-            className={`Spartan-Medium !px-12 paddingTabs py-[6px] !rounded-full !border-none !cursor-pointer !text-[--black-color] lg:!text-lg !text-base !normal-case !h-fit !min-h-0 ${selectedItem === 2 ? "bgButton !text-[--white-text] !rounded-full" : ""}`}
+            className={`Spartan-Medium !px-12 paddingTabs py-[6px] !rounded-full !border-none !cursor-pointer !text-[--black-color] lg:!text-lg !text-base !normal-case !h-fit !min-h-0 ${selectedItem === 2 ? "bg-black !text-[--white-text] !rounded-full" : ""}`}
           />
         </Tabs>
       </Box>
